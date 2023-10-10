@@ -2,7 +2,13 @@
 Monitoring is used to detect errors, failures, and changes in performance. 
 
 ## Metrics
-Metrics are samples of ongoing conditions. Below is a list of examples.
+Metrics are samples of ongoing conditions. There are two main types: business metrics and operational metrics. 
+
+**Business Metrics**  
+Text goes here. 
+
+**Operational Metrics**
+Operational metrics measure the internal efficiency of DevOps processes. They emphasize performace and the stability of operations. Below are some examples.
 * Latency: response time
 * Throughput: requests per minute
 * Availability: percent of time an app is responsive
