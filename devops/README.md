@@ -1,5 +1,5 @@
 # DevOps
-DevOps is an organizational strategy for rapidly providing high-quality software. Organizational strategies describe how people, process, and technology will be used to meet stakeholder requirements. 
+Organizational strategies describe how people, process, and technology will be used to meet stakeholder requirements. DevOps is an organizational strategy for rapidly producing high-quality software. 
 
 ## Principles
 An organization can implement DevOps by adopting the principles described below.
