@@ -43,7 +43,7 @@ DevOps automates as much as possible to reduce human error and time.
 **Better Software**  
 DevOps requires early, automated, and frequent software testing. 
 
-**Faster Software Releases** 
+**Faster Software Releases**  
 DevOps is able to release software often because of the technology pipeline that automates committing, building, testing, and deploying/delivering software
 
 **Better User Experiences**  
