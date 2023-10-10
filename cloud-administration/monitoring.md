@@ -1,7 +1,6 @@
 # Monitoring
 
-**Motivation**  
-We need to know if there are errors, failures, and changes in performance. 
+Monitoring is used to detect errors, failures, and changes in performance. 
 
 ## Logs, Metrics, Traces
 **Logs**  
