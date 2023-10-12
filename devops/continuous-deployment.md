@@ -14,15 +14,21 @@ Benefits
 
 ## Steps
 ```mermaid
-flowchart TD
-  ContinousIntegration("Continous Integration")
-    --> Commit
-    --> Build
-    --> Test --> AcceptanceTest("Acceptance Test")
-  ContinousDeployment("Continous Deployment")
-    --> AcceptanceTest
-    --> Stage --> Deliver("Deliver (manual)")
-    Stage --> Deploy("Deploy (automated)")
+---
+title: DevOps
+---
+flowchart LR
+  subgraph "Continous Integration"
+    Commit 
+    --> Build 
+    --> Test
+  end
+  subgraph "Continous Deployment"
+    AcceptanceTest("Acceptance Test") --> Stage 
+      --> Deliver("Deliver (manual)")
+      --> Deploy("Deploy (automated)")
+  end
+  Test --> AcceptanceTest
 ```
 
 ## Text Goes Here
