@@ -11,7 +11,7 @@ There's five prerequisites for cloning via SSH.
 SSH key pairs can be created using a virtual machine hosted by a Cloud Service Provider (e.g., Microsoft Azure).  
 
 **Step 1.** Generate an SSH key pair.  `-t` defines the key pair type. `-b` defines the key lengths (i.e., the number of bits). `-C` is used to include a comment.   
-```
+```bash
 ssh-keygen -t rsa -b 4096 -C "Laptop"
 ```
 
@@ -23,19 +23,19 @@ ssh-keygen -t rsa -b 4096 -C "Laptop"
 Setting up SSH-based SSO allows you to present your SSH private key automatically during authentication (e.g., when authenticating with GitHub).
 
 **Step 1.** Open your BASH configuration file using your favorite text-editor
-```
+```bash
 vim .bashrc
 ```
 
 **Step 2.** Append the commands below to your BASH configuration file (they will be executed every time you login).
-```
+```bash
 eval "$(ssh-agent -s)" # start the SSH authentication agent
 ssh-add ~/.ssh/id_rsa  # add my SSH private key to the SSH authentication agent
 ```
 
 ### Add Your SSH Public Key to GitHub
 **Step 1.** Print your SSH public key.
-```
+```bash
 cat ~/.ssh/id_rsa.pub
 ```
 
@@ -54,24 +54,24 @@ cat ~/.ssh/id_rsa.pub
 **Step 7.** Click "Add SSH key" and go back to the CLI.
 
 **Step 8.** Reload your environment (to simulate a logoff/login and load your private key into memory).
-```
+```bash
 source .bashrc
 ```
 
 ### Configure Git Settings
 **Step 1.** Set your email.
-```
+```bash
 git config --global user.email "goober@dev.edu"
 ```
 
 **Step 2.** Set your username.
-```
+```bash
 git config --global user.name "cyberphor"
 ```
 
 ### Clone the Repo Using SSH
 **Step 1.** Clone a GitHub repo.
-```
+```bash
 git clone git@github.com:cyberphor/knowledge-base &&\
 cd knowledge-base
 ```

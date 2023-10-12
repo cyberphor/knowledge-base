@@ -1,4 +1,30 @@
 # Continuous Deployment
+**Continous Deployment**  
+Properties
+* Automated software delivery
+* Seamless integration
+* Minimal human intervention
+* Customer-centric approach
+
+Benefits
+* Faster time to market
+* Reduced manual errors
+* Enhanced user satsifaction
+* CD implements Agile development
+
+## Steps
+```mermaid
+flowchart TD
+  ContinousIntegration("Continous Integration")
+    --> Commit
+    --> Build
+    --> Test --> AcceptanceTest("Acceptance Test")
+  ContinousDeployment("Continous Deployment")
+    --> AcceptanceTest
+    --> Stage --> Deliver("Deliver (manual)")
+    Stage --> Deploy("Deploy (automated)")
+```
+
 ## Text Goes Here
 * Acceptance Test
 * Deploy to Staging

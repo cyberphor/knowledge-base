@@ -1,4 +1,4 @@
-# Python Virtual Environments
+# Virtual Environments
 **Tasks**  
 1. [Configure a Virtual Environment](#task-01)
 2. [Configure Your IDE to Use a Specific Python Interpreter](#task-02)
