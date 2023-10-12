@@ -12,7 +12,7 @@ SSH key pairs can be created using a virtual machine hosted by a Cloud Service P
 
 **Step 1.** Generate an SSH key pair.  `-t` defines the key pair type. `-b` defines the key lengths (i.e., the number of bits). `-C` is used to include a comment.   
 ```
-ssh-keygen -t rsa -b 4096 -C "for DevOps"
+ssh-keygen -t rsa -b 4096 -C "Laptop"
 ```
 
 **Step 2.** Press "Enter" to save your private key to the default location (i.e., under `.ssh/id_rsa` within your home directory).  
@@ -49,7 +49,7 @@ cat ~/.ssh/id_rsa.pub
 
 **Step 6.** Click "New SSH key."  
 
-**Step 6.** Enter a "Title" (e.g., "for DevOps").  
+**Step 6.** Enter a "Title" (e.g., "Personal laptops").  
 
 **Step 7.** Click "Add SSH key" and go back to the CLI.
 
