@@ -70,6 +70,24 @@ The Release phase is when the deployable package is released.
 **Monitor**  
 The Monitor phase is when monitoring tools are used to track performance, error rates, and user feedback. 
 
+```mermaid
+---
+title: DevOps
+---
+flowchart LR
+  subgraph "Continous Integration"
+    Commit 
+    --> Build 
+    --> Test
+  end
+  subgraph "Continous Deployment"
+    AcceptanceTest("Acceptance Test") --> Stage 
+      --> Deliver("Deliver (manual)")
+      --> Deploy("Deploy (automated)")
+  end
+  Test --> AcceptanceTest
+```
+
 ## Roles
 **Development Teams**  
 The Development Team does the following:

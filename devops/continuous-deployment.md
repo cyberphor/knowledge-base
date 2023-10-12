@@ -12,25 +12,6 @@ Benefits
 * Enhanced user satsifaction
 * CD implements Agile development
 
-## Steps
-```mermaid
----
-title: DevOps
----
-flowchart LR
-  subgraph "Continous Integration"
-    Commit 
-    --> Build 
-    --> Test
-  end
-  subgraph "Continous Deployment"
-    AcceptanceTest("Acceptance Test") --> Stage 
-      --> Deliver("Deliver (manual)")
-      --> Deploy("Deploy (automated)")
-  end
-  Test --> AcceptanceTest
-```
-
 ## Text Goes Here
 * Acceptance Test
 * Deploy to Staging
