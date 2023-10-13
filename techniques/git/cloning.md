@@ -1,5 +1,6 @@
-# Cloning
-## Cloning via SSH
+# Git 
+
+## Git Cloning via SSH
 There's five prerequisites for cloning via SSH. 
 1. Generate an SSH private/public key pair
 2. Setup SSH-based Single Sign-On (SSO)

@@ -20,7 +20,6 @@ Python is a general-purpose and interpreted computer programming language.
 * Dictionaries
 * Sets
 * Files
-* [Virtual Environments](/python/virtual-environments.md)
 
 ## Preface
 **Algorithms**  

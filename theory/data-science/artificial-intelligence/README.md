@@ -11,7 +11,7 @@ Data (historical context) > Training > Learning
 A tree of if statements. 
 
 **Machine Learning**  
-[Machine learning](/artificial-intelligence/machine-learning/) is a subset of AI. Machine learning systems make predictions. Machine learning systems can learn from experience to find patterns in data. 
+[Machine learning](/theory/data-science/artificial-intelligence/machine-learning/README.md) is a subset of AI. Machine learning systems make predictions. Machine learning systems can learn from experience to find patterns in data. 
 
 **Deep Learning**  
 Deep learning is a subset of ML. It uses Deep Neural Networks. 
