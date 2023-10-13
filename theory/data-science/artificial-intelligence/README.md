@@ -7,21 +7,21 @@ AI needs context (i.e., poor weather conditions) to make decisions and be accura
 
 Data (historical context) > Training > Learning
 
-**Expert Systems**  
+## Expert Systems
 A tree of if statements. 
 
-**Machine Learning**  
+## Machine Learning
 [Machine learning](/theory/data-science/artificial-intelligence/machine-learning/README.md) is a subset of AI. Machine learning systems make predictions. Machine learning systems can learn from experience to find patterns in data. 
 
-**Deep Learning**  
+### Deep Learning
 Deep learning is a subset of ML. It uses Deep Neural Networks. 
 * Deep = several layers of networks. 
 
-**Deep Neural Networks**  
+### Deep Neural Networks  
 Text goes here. 
 
-**Neural Networks**  
+### Neural Networks
 A network of nodes and edges (i.e., connections).  
 
-**Structured Data**
+### Structured Data
 Structured data has a schema. 

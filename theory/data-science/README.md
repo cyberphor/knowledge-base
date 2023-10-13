@@ -7,7 +7,7 @@ Analytic data science projects are used to gain insight from a data set (e.g., g
 **Exploratory Data Science Projects**  
 Exploratory data science projects are used to identify solutions/problems using a data set.
 
-**Development Data Science Projects**
+**Development Data Science Projects**  
 Development data science projects are used to develop intelligence apps (e.g., AI). 
 
 ## Software Development Life Cycle Model
