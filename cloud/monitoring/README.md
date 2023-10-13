@@ -39,6 +39,16 @@ A log is a table of data used to record an event. A log can be generated using m
 * Duration
 * Concurrency information
 
+**Auditable Logs**  
+Logs are auditable when they allow you to analyze the operation of a system. Auditable logs must include the properties listed below. 
+| Property                                  | Example           | 
+| ----------------------------------------- | ----------------- |
+| Activity time                             | 2023-10-13 11:16  |
+| Activity category                         | Logon             |
+| The identity of the activity owner        | cyberphor         |
+| Names of objects affected by the activity | Domain Controller |
+| Activity result                           | Successful        |
+
 **Log Management Systems**  
 Log management systems are used to manage log access and life cycles. Log management systems also perform the tasks listed below. 
 * Normalization
