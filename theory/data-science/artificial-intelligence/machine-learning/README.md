@@ -14,6 +14,14 @@ Machine learning (ML) is when machines use experience (data, not knowledge) to f
   * In-context learning
 * Zero-Shot Machine Learning
 
+**Use Cases**  
+* Financial Institutions: detecting and preventing fraud
+* Governments: increase efficiency and service
+* Medicine & Science: diagnostics and drug research & development
+* Marketing & Sales: Ad placement, discount offerings, etc.
+  * Static profile: things that don’t change (e.g., location). 
+ * Dynamic profile: variables (e.g., time of year, milestones).
+
 **Programming vs ML**  
 ```python
 # programming
@@ -32,7 +40,7 @@ def computer(data, output):
 A model is a representation of something in the real-world. An ML model has the ability to learn.
 
 ## Featurization
-Featurization includes ingesting, cleaning, and preprocessing data. It also includes feature encoding. 
+Featurization includes data ingesting, data cleaning, data preprocessing, and feature engineering (e.g., feature encoding and feature binning). 
 
 ### Feature Encoding
 Feature encoding is the process of representing an object as a list of numbers. Feature encoding includes decisions made about using properties like punctuation and capitalization to represent an object. 
