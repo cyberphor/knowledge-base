@@ -9,29 +9,22 @@ Within an agent-based APM architecture, the resources you want to monitor genera
 
 **Tools**
 Below is a list of agent-based APM tools. 
-* New Relic 
-  * Includes multiple classes of agents (e.g., infrastructure, browser, and mobile)
-  * Offers a service map feature (i.e., a graph to visualize the last 30 minutes of activity between a web app's individual components, aka "entities")
+* New Relic: includes multiple classes of agents (e.g., infrastructure, browser, and mobile) and offers a service map feature (i.e., a graph to visualize the last 30 minutes of activity between a web app's individual components, aka "entities")
 
 ### Agentless
 Within an agent-less APM architecture, the resources you want to monitor generate, collect, and transmit metrics and/or logs to an APM server. 
 
-**Integrated with Microservices**  
-Text goes here. 
+**Tools**
+Below is a list of agentless APM tools. 
+* Sumo Logic: uses a proprietary algorithm called "LogReduce" to combine data from different logs
+* Prometheus: 
 
-**Integrated with the Platform**  
-Text goes here. 
+### Integrated 
 
-### Alerts  
+
+## Alerts  
 An alert is a warning or indication of a negative condition. APM servers can be configured to generate alerts. Below is a list of examples describing when an APM server should generate an alert. 
 * A metric is below an expected baseline
 * A metric is above a set threshold
 * A metric is outside the range of normal
 * A metric indicates an app is no longer responding
-
-## Remediation Plans
-**Scaling**  
-Scaling is the process of adjusting infrastructure to meet changes in demand. Workloads in production are too unpredictable for manual scaling. The Azure Monitor service provides auto-scaling.
-
-**Availability Tests**   
-Availability tests are used to check if an app is responding as expected. 
