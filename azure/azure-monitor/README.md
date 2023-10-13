@@ -1,6 +1,8 @@
 # Azure Monitor
 Azure Monitor is a cloud monitoring service. It is used to collect and analyze real-time data of cloud-based apps and/or individual resources.  
 
+![Azure Monitor](/azure/azure-monitor/azure-monitor-platform.png)  
+
 **The Microsoft Insights Resource Provider**  
 The `microsoft.insights` resource provider allows you to generate, collect, and manage the following:
 * Metrics
