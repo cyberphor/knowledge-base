@@ -38,3 +38,4 @@ Prometheus is an agentless APM developed by SoundCloud in 2012. It was designed 
   * Azure Application Insights: produces insight based on native and/or custom telemetry
   * PowerBI: visualizes telemetry
   * Azure Log Analytics: analyzes telemetry
+
