@@ -1,5 +1,5 @@
 # Cloud Monitoring
-Cloud monitoring is used to detect changes, errors, failures, and threats to a cloud's reliability and availability. It is automated observation and depends on telemetry, or the remote measurement of variables. A monitoring system usually waits for an app to do something (e.g., respond to a request) and then measures the service level observed. 
+Cloud monitoring is when the performance of cloud-based resources are measured. It uses telemetry (i.e., the remote measurement of variables) to detect changes, errors, failures, and threats to reliability and availability. 
 
 ```mermaid
 flowchart LR
