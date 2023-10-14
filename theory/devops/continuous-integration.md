@@ -1,5 +1,5 @@
 # Continuous Integration
-Continuous Integration (CI) is a software quality control process. It uses a Version Control System (VCS) and automated pipeline to continuously commit, build, and test software before it is released as an artifact. It is the process of frequently integrating and testing code changes as they are developed.
+Continuous Integration (CI) is a quality control process. It uses a Version Control System (VCS) and automated pipeline to continuously commit, build, and test software before it is released as an artifact. It is the process of frequently integrating and testing code changes as they are developed.
 
 ## Benefits
 **Detect Bugs Early**  
