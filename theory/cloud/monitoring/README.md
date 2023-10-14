@@ -40,16 +40,16 @@ Used to quantify and describe user satisfaction. Toleration is categorized using
 * Any level above tolerable implies the user is frustrated. 
 
 #### Correlations
-A correlation is the comparison of two or more sets of metrics. 
+A correlation is the comparison of two or more metrics. 
 
 **The USE Method**  
-The USE method correlates the metrics listed below to measure performance. This technique was developed by Brendan Gregg, a software engineer from Oracle Corp. 
+The USE method measures performance by correlating the metrics listed below. This technique was developed by Brendan Gregg, a software engineer from Oracle Corp. 
 * Utilization: the difference between how often a resource is busy versus idle
 * Saturation: the difference between the number of requests processed versus the number of requests that have not been processed yet
 * Errors: the difference between handled and unhandled exceptions
 
 **The RED Method**  
-The RED method correlates the metrics listed below to measure performance. This technique is designed for microservice architectures. It was developed by Tom Wilkie, a software engineer from Grafana.  
+The RED method measures performance by correlating the metrics listed below. This technique is designed for microservice architectures. It was developed by Tom Wilkie, a software engineer from Grafana.  
 * Rate: the number of requests processed during a given interval
 * Errors: the number of failed requests
 * Duration: the average time an app takes to respond to a request
