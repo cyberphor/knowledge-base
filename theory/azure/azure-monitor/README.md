@@ -7,8 +7,8 @@ Azure Monitor is a cloud monitoring service. It is used to collect and analyze r
 The `microsoft.insights` resource provider allows you to generate, collect, and manage the following:
 * Metrics
 * Logs
-* Autoscaling
 * Alerts
+* Autoscaling
 
 ## Autoscale Settings
 **How to List Autoscale Settings for a Specific Resource Group**

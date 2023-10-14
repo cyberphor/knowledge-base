@@ -1,6 +1,7 @@
-# Azure 
+# Azure App Services
 
-## Create a Web App 
+## Web Apps
+### Create a Web App 
 **Step 1.** Define your variables. 
 ```bash
 export SUBSCRIPTION_NAME="Personal"

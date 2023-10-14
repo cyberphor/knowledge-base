@@ -1,5 +1,5 @@
 # Cloud Monitoring
-Cloud monitoring is used to detect changes, errors, failures, and threats to a cloud's reliability and availability. Cloud monitoring depends on telemetry, or the remote measurement of variables. 
+Cloud monitoring is used to detect changes, errors, failures, and threats to a cloud's reliability and availability. Cloud monitoring depends on telemetry, or the remote measurement of variables. A monitoring system usually waits for an app to do something (e.g., respond to a request) and then measures the service level observed. 
 
 ```mermaid
 flowchart LR
@@ -13,7 +13,7 @@ flowchart LR
 In cloud administration, reliability and availability are measured using [metrics](/cloud/monitoring/README.md#metrics), logs, and traces. Each of these can be thought of as different types of measurements. 
 
 ### Metrics
-Metrics are measurements of performance and represent the state of a service. The metrics an organization chooses to collect are based on what is most important to their users and/or customers. 
+Metrics are measurements of performance and represent the state of a service. The metrics an organization chooses to collect are based on what is most important to their users and/or customers.
 
 **Business Metrics**   
 Text goes here. 
@@ -71,6 +71,9 @@ Traces used multiple logs describe a chain of events across a system. Below is a
 3. The Ingestion Service puts the request on a Service Bus
 4. The Service Bus sends the request to a Workflow Service
 5. The Worfklow Service sends the request to a delivery service, drone scheduler, and package service
+
+**Tracing Activity Within a Microservice Architecture**  
+Use APMs designed for microservices (e.g., [Prometheus](/theory/cloud/monitoring/apm.md#prometheus)). Traditional APMs are meant for monolithic apps. Microservices are difficult to monitor because every service is an app unto itself. They also generate more observable activity (e.g., service discovery and replication). 
 
 ## Cloud Monitoring Stategies
 **Monitor at a High-Level**  
