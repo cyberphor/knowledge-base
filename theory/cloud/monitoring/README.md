@@ -115,7 +115,13 @@ A ticketing system can be developed using the steps described below.
 4. Define who is able and available to respond when there is an adverse event
 
 **Use Key Performance Indicators**  
-Key Performance Indicators (KPIs) are metrics used to identify when something is about to or has gone wrong. They trigger warnings and alerts. Below is a list of common KPIs to monitor. 
+Key Performance Indicators (KPIs) are metrics used to identify when something is about to or has gone wrong. They represent performance as it relates to two or more of the following metrics:
+* System health
+* Success in meeting business objectives
+* User satisfaction
+* Efficiency in resolving issues
+
+Below is a list of common KPIs to monitor. 
 * Time required to enter data into a form
 * The correlation between items in a catalog and number of purchases made
 * Mean Time to Detect (MTTD)
@@ -129,8 +135,8 @@ Availability tests are used to check if an app is responding as expected.
 Continous improvement is represented by the principles listed below. 
 * Be the best, not better
 * Avoid upheaval using small and frequent changes
-* Understand the system before hunting for the root cause of a failure
-* Treat performance issues as security issues 
+* Everyone responsible for a component within the system must understand the system as a whole 
+* Ops and Security must work together to prevent performance issues from being exploited
 
 **Use Scaling**  
 Scaling is the process of adjusting infrastructure to meet changes in demand. Workloads in production are too unpredictable for manual scaling. The Azure Monitor service provides auto-scaling.
