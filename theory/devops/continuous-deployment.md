@@ -1,4 +1,13 @@
 # Continuous Deployment
+Continuous Deployment is a process used to release software into the production environment automatically. It includes the software development phases listed below. 
+* User acceptance testing
+* Automated deployment to the staging environment
+* Automated deployment to the production environment
+* Smoke testing
+
+### Deployment Pipelines
+**Artifacts**
+
 **Continous Deployment**  
 Properties
 * Automated software delivery
