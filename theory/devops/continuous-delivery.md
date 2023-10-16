@@ -1,6 +1,2 @@
 # Continuous Delivery
-Continuous Delivery is a process used to prepare software for a manual release into the production environment. It includes the software development phases listed below. 
-* User acceptance testing
-* Manual deployment to the staging environment
-* Manual deployment to the production environment
-* Smoke testing
+Continuous Delivery is a process used to release and manually deploy software into the production environment. The decision to deploy is based on whether or the software meets business, security, and regulatory requirements. Continuous Delivery prioritizes reliability over speed. 

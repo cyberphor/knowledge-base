@@ -1,38 +1,8 @@
 # Continuous Deployment
-Continuous Deployment is a process used to release software into the production environment automatically. It includes the software development phases listed below. 
-* User acceptance testing
-* Automated deployment to the staging environment
-* Automated deployment to the production environment
-* Smoke testing
+Continuous Deployment is a process used to release and automatically deploy software into the production environment. It prioritizes speed and therefore requires a mature DevOps capability. 
 
 ### Deployment Pipelines
 **Artifacts**
-
-**Continous Deployment**  
-Properties
-* Automated software delivery
-* Seamless integration
-* Minimal human intervention
-* Customer-centric approach
-
-Benefits
-* Faster time to market
-* Reduced manual errors
-* Enhanced user satsifaction
-* CD implements Agile development
-
-## Text Goes Here
-* Acceptance Test
-* Deploy to Staging
-* Deploy to Production
-* Smoke Tests (check if it works and there is nothing burning)
-
-## Toil
-Below are some examples of toil. 
-* Copying commands from a playbook
-* Running a script
-* Handling user requests
-* Reviewing non-critical alerts
 
 ## Artifacts
 * Source code
@@ -46,7 +16,7 @@ Below are some examples of toil.
 **Round-Robin**  
 Text goes here.
 
-**Blue/Breen**  
+**Blue/Green**  
 Text goes here. 
 
 **Canary**  

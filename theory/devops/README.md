@@ -1,8 +1,11 @@
 # DevOps
-Organizational strategies describe how people, process, and technology will be used to meet stakeholder requirements. DevOps is an organizational strategy for rapidly producing high-quality software. 
+DevOps is an organizational strategy for rapidly producing high-quality software. 
+
+**Organizational Strategy**  
+An Organizational strategy describes how people, process, and technology will be used to meet business requirements.
 
 ## Principles
-An organization can implement DevOps by adopting the principles described below.
+An organization can implement DevOps by promoting the principles described below.
 
 **Change is Good**  
 Embrace and foster collaboration, innovation, and continuous improvement. 
@@ -67,6 +70,12 @@ The Test phase is when the deployable package of code produced in the Build phas
 **Release**  
 The Release phase is when the deployable package is released. 
 
+**Deploy**  
+Text goes here.
+
+**Operate**  
+Text goes here.
+
 **Monitor**  
 The Monitor phase is when monitoring tools are used to track performance, error rates, and user feedback. 
 
@@ -75,17 +84,18 @@ The Monitor phase is when monitoring tools are used to track performance, error 
 title: DevOps
 ---
 flowchart LR
-  subgraph "Continous Integration"
-    Commit 
+  subgraph "Continuous Integration"
+    Plan
+    --> Code
     --> Build 
     --> Test
   end
-  subgraph "Continous Deployment"
-    AcceptanceTest("Acceptance Test") --> Stage 
-      --> Deliver("Deliver (manual)")
-      --> Deploy("Deploy (automated)")
+  Test --> Release
+  subgraph "Continuous Deployment"
+    Release --> Deliver("Deliver (manual)") --> Operate
+    Release --> Deploy("Deploy (automated)") --> Operate
+    Operate --> Monitor
   end
-  Test --> AcceptanceTest
 ```
 
 ## Roles
