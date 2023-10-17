@@ -9,3 +9,19 @@ An object is an instance of a class.
 
 ## The self Reference
 `self` is used to reference an object's attributes and methods. 
+
+# Code reuse
+
+# Classes
+
+## Encapsulation
+
+## Objects
+
+## Inheritance
+
+## Polymorphism
+
+## Composition
+
+# Modules

@@ -1,15 +1,5 @@
 # Object-Oriented Programming
 
-# Code reuse
-
-# Classes
-
-## Encapsulation
-
-## Objects
-
-## Inheritance
-
 ### Super() Method
 ```python
 class SuperHero():
@@ -25,9 +15,3 @@ iron_man = MarvelSuperHero("Intelligence")
 print(iron_man.major_super_power) # Flight
 print(iron_man.minor_super_power) # Intelligence
 ```
-
-## Polymorphism
-
-## Composition
-
-# Modules
