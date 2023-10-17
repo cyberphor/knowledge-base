@@ -1,26 +1,6 @@
 # Python
 Python is a general-purpose and interpreted computer programming language. 
 
-**Contents**  
-* Preface
-* Introduction
-* [Operations](/python/operations.md)
-* [Operators](/python/operators.md)
-* Data Structures
-* Data Types
-* Variables
-* Functions
-* Modules
-* Comments
-* Errors
-* Control Flow
-* Strings
-* List
-* Tuples
-* Dictionaries
-* Sets
-* Files
-
 ## Preface
 **Algorithms**  
 An algorithm describes the instructions (i.e., steps and operations) required to solve a problem. They can be expressed in natural languages (e.g., English and Spanish) or computer languages (e.g., Python). Algorithms expressed in computer languages are called computer programs. It is more efficient to develop algorithms or solutions in a natural language before implementing it as a computer program. 
