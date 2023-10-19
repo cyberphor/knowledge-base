@@ -1,4 +1,4 @@
-# Azure App Services
+# App Services
 
 ## Web Apps
 ### Create a Web App 

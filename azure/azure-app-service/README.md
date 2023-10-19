@@ -1,5 +1,5 @@
-# Azure App Service
-The Azure App Service is web app, REST API, and backend hosting service. 
+# App ServiceS
+Azure App Services is a web app, REST API, and backend hosting service. 
 
 **App Service Plans (ASP)**  
 An ASP defines what resources are needed to run an app. Every ASP defines the following:
