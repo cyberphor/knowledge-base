@@ -8,28 +8,27 @@ The responsibility of cloud security is *shared* between developers, administrat
 * CSPs: responsible for data center security (NOTE: organizations surrender a portion of integrity control to the CSP)
 
 # Risk Management
-Risk management is the process of designing, building, sustaining, and modifying policies and systems to protect asset Confidentiality, Integrity, and Availability from *manageable risk*. It requires organizations to understand their risk appetite and be adaptable (preserving the organization is more important than preserving an asset). 
+Risk management is the process of designing, building, sustaining, and modifying policies and systems to protect asset Confidentiality, Integrity, and Availability from *manageable risk*. It requires organizations to define what their risk acceptance level and be adaptable (preserving the organization is more important than preserving an asset). 
 
 **Manageable Risk**  
-Manageable risk can be accepted, avoided, mitigated, or transferred. 
+Manageable risk can be avoided, mitigated, or transferred. 
 
-## FAIR
-The Factor Analysis of Information Risk (FAIR) framework is a risk assessment process for measuring the impact of an incident. 
-* Productivity: the ability to provide services
-* Response: the capability to mitigate loss
-* Replacement: the fix value of a compromised asset
-* Fines and Judgements: the legal/regulatory cost sustained  
-* Competitive Advantage: the ability for the organization to differentiate itself from other competitors
-* Reputation: the damage sustained to the organization's image
+**Unmanageable Risk**  
+Unmanageable risk must be accepted. Examples of unmanageable risk is global catastrophic events and unforeseeable technology failures. 
 
-| Loss Category         | Impact to Confidentiality | Impact to Integrity | Impact to Availability |
-| --------------------- | ------------------------- | ------------------- | ---------------------- |
-| Productivity          |                           |                     |                        | 
-| Response              |                           |                     |                        | 
-| Replacement           |                           |                     |                        | 
-| Fines and Judgements  |                           |                     |                        | 
-| Competitive Advantage |                           |                     |                        | 
-| Reputation            |                           |                     |                        | 
+## Risk Assessment
+Risk assessment is the first step in risk management. 
+
+### The FAIR Framework
+The Factor Analysis of Information Risk (FAIR) framework is a risk assessment process. It is used to measure the impact of an asset compromise. 
+| Loss Category         | Description                                                                     | 
+| --------------------- | ------------------------------------------------------------------------------- | 
+| Productivity          | The ability to provide services                                                 | 
+| Response              | The capability to mitigate loss                                                 | 
+| Replacement           | The fix value of a compromised asset                                            | 
+| Fines and Judgements  | The legal/regulatory cost sustained                                             | 
+| Competitive Advantage | The ability for the organization to differentiate itself from other competitors | 
+| Reputation            | The damage sustained to the organization's image                                | 
 
 ### STRIDE
 Text goes here.
