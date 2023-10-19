@@ -1,4 +1,5 @@
 # Cloud Administration
+
 ## Cloud
 A cloud is a data center used to offer distributed computing resources and services. Clouds are evaluated based on the properties listed below. 
 * Elasticity

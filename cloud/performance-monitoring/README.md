@@ -1,5 +1,5 @@
-# Cloud Monitoring
-Cloud monitoring is when the performance of cloud-based resources are measured. It uses telemetry (i.e., the remote measurement of variables) to detect changes, errors, failures, and threats to reliability and availability. 
+# Performance Monitoring
+Cloud performance monitoring is when the performance of cloud-based resources are measured. It uses telemetry (i.e., the remote measurement of variables) to detect changes, errors, failures, and threats to reliability and availability. 
 
 ```mermaid
 flowchart LR
