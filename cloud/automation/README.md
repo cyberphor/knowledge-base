@@ -1,2 +1,2 @@
-# Automating Cloud Administration Tasks
+# Automation
 Automation is when a sequence of operations is recorded, performed, and repeated the same way every time with minimal human intervention. You can automate cloud administration using Scripting, Configuration management, and/or Infrastructure Orchestration. 

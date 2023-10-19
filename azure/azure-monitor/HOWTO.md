@@ -1,7 +1,7 @@
 # Azure Monitor
 
 ## Action Groups
-### List Action Groups
+### How to List Action Groups
 **Step 1.** Set your subscription
 ```bash
 export SUBSCRIPTION_NAME="Personal"

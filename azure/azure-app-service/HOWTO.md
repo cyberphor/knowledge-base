@@ -1,7 +1,6 @@
 # App Services
 
-## Web Apps
-### Create a Web App 
+## How to Create a Web App 
 **Step 1.** Define your variables. 
 ```bash
 export SUBSCRIPTION_NAME="Personal"
