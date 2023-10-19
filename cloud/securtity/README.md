@@ -8,7 +8,7 @@ The responsibility of cloud security is *shared* between developers, administrat
 * CSPs: responsible for data center security (NOTE: organizations surrender a portion of integrity control to the CSP)
 
 # Risk Management
-Risk management is the process of designing, building, sustaining, and modifying policies and systems to protect asset Confidentiality, Integrity, and Availability from *manageable risk*. It requires organizations to understand their risk appetite and be adaptable. In risk management preserving the organization is more important than preserving an asset. 
+Risk management is the process of designing, building, sustaining, and modifying policies and systems to protect asset Confidentiality, Integrity, and Availability from *manageable risk*. It requires organizations to understand their risk appetite and be adaptable (preserving the organization is more important than preserving an asset). 
 
 **Manageable Risk**  
 Manageable risk can be accepted, avoided, mitigated, or transferred. 
