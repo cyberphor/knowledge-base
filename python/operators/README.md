@@ -27,3 +27,60 @@ The code and comments below show the mapping between arithmetic operators and ar
 1 % 1  # modulo 
 1 ** 1 # exponentiation
 ```
+
+## Comparison Operators
+Comparison operations check for equality, inequality, and magnitude. They result in either True or False. The code and comments below the mapping between comparison operators and comparison operations. 
+```python
+1 == 1  # is equal
+1 !=    # not equal
+1 > 1   # greater than
+1 >=    # greater than or equal to
+1 < 1   # less than
+1 <= 1  # less than or equal to
+```
+
+## Membership Operators
+Membership operators check if an object is part of another object. 
+```python
+"u" in "us"       # True
+"i" not in "team" # False
+```
+
+## Conditional Operators
+Conditional operators define boolean-value expressions (decisions based on one or more conditions). Conditional operators are also called Ternary operators.  
+```python
+if motorpool_monday: # if this condition is met
+  pmcs()             #   run this function
+elif taco_tuesday:   # otherwise if this condition is met
+  eat_tacos()        #   run this one
+else:                # otherwise if none of these conditions are met
+  drink_coffee()     #   run this
+```
+
+## Logical Operators
+Logical operators check for conjunction, disjunction, and negation. 
+
+### Conjunction
+Conjunction is when both operands are true. 
+```python
+money > 100 and bills = 0 
+```
+
+### Disjunction
+Disjunction is when one of the operands is true. 
+```python
+day or night 
+```
+
+### Negation
+Negation is the opposite of the Boolean value the operand results in. 
+```python
+dinner = "burgers"
+not (dinner == "pizza") # True; pizza is not for dinner
+```
+
+## Identity Operators
+```python
+is
+is not
+```
