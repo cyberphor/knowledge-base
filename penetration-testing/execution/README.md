@@ -1,6 +1,6 @@
 # Execution
 
-## Metasploit, MSFVenom, Meterpreter, and Windows
+## Metasploit, MSFVenom, and Meterpreter
 **Metasploit**
 ```bash
 # attacker: terminal 1
