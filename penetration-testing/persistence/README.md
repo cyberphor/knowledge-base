@@ -1,6 +1,1 @@
 # Persistence
-
-### smbclient
-```
-
-```

