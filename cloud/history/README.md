@@ -1,42 +1,28 @@
 # History
 
-## The History of Cloud Computing Summarized
-**1950s - 1960s**  
+## Timeline
+People transition from owning a product themselves to using a service when the service becomes cheaper and more reliable. It is cheaper than the total cost of owning and sustaining the product itself. The service is reliable enough to not have to operate the product oneself. 
+
+**1950 - 1966**  
 Compute resources had to be shared because they were expensive. 
+* Herb Grosh suggested 15 data centers should be enough compute for the world
+* John McCarthy proposed the idea of compute being public utility
+* Douglas Parkhill described what we now call “cloud computing” in “The Challenge of the Computer Utility”
 
-**1980s - 1990s**  
+**1969 - 1993**  
 Compute resources became accessible at the business and household level. 
+* ARPANET and UNIX are developed
+* Internet-age began
+* Browsers became popular thanks to the World Wide Web
 
-**1999**  
-Salesforce started providing browser-based access to business apps (reducing the need for businesses to have on-prem computing resources). 
+**1995 - 2000**
+* Amazon and eBay launched
+* One of the first Software-as-a-Service organizations, Salesforce, launched
+* The “dot com” bubble burst, forcing organizations to begin seeking for ways to improve their IT utilization
 
-**2002**  
-Amazon introduced Amazon Web Services (AWS), extending the list of solutions that could be outsourced to a Cloud Service Provider. 
-
-## Computing Domains 
-### Business Computing
-Business computing uses management-focused Information Systems to drive logistics, operations, Enterprise Resource Planning, Customer Relation Management (CRM), and Business Intelligence (BI). CRM allows organizations to collect, store, manage, and interpret data about past, current, and future customers. 
-
-### Scientific Computing
-Scientific computing uses models implemented on computers to solve problems (e.g., predicting the weather). They typically require distributed computing platforms or supercomputers. 
-
-### Personal Computing
-Personal computing uses applications for general-purposes (e.g., email, and games). 
-
-## Scaling 
-### Scaling
-Increasing the capacity of an IT solution vertically (i.e., add more) or horizontally (i.e., replace or upgrade). 
-
-### Capacity Planning
-Capacity planning is when an organization measures the utilization of existing IT services to establish a benchmark for future expansion. Below are some examples:
-* If one cabinet can support 1,000 users, two additional cabinets would be needed for the organization to support 3,000. 
-* If 5 licenses can support 100 servers, 6 licenses would be needed to support up to 120. 
-
-### Vertical Scaling
-Vertical scaling is when old technology is upgraded or replaced with newer technology (e.g., faster CPUs and memory). The number of resources does NOT change after something has been vertically scaled. 
-
-### Horizontal Scaling
-Horizontal scaling is when the number of resources dedicated to a system is increased or decreased (e.g., adding an additional CPU). It’s used to address task division and assignment. 
+**2006 - 2007**
+* Amazon launches AWS, providing storage and compute via S3 and EC2 respectively
+* Salesforce launches force.com, a cloud computing platform
 
 ### Co-Location Services
 Co-location services allow small and/or medium-sized organizations to lease rack space, power, cooling, and network connectivity in a shared data center. Co-location services are cheaper to sustain than an in-house data center. They are primarily used within the business computing domain. 
@@ -122,39 +108,3 @@ Grid computing introduced resource-management tools like schedulers and load bal
 
 ### The Economic Model of Utility Computing
 The model or technique of using a third-party to host your IT solution (like a utility) became cost effective. 
-
-## Timeline
-People transition from a product to a service because the service is cheaper and reliable enough. It is cheaper than the total cost of owning and sustaining the product itself. The service is reliable enough to not have to operate the product oneself. 
-
-### Ideas
-1950 - 1966
-* Herb Grosh suggested 15 data centers should be enough compute for the world
-* John McCarthy proposed the idea of compute being public utility
-* Douglas Parkhill described what we now call “cloud computing” in “The Challenge of the Computer Utility”
-
-### Products
-1969 - 1993
-* ARPANET and UNIX are developed
-* Internet-age began
-* Browsers became popular thanks to the World Wide Web
-
-### Services
-1995 - 2000
-* Amazon and eBay launched
-* One of the first Software-as-a-Service organizations, Salesforce, launched
-* The “dot com” bubble burst, forcing organizations to begin seeking for ways to improve their IT utilization
-
-2006 - 2007
-* Amazon launches AWS, providing storage and compute via S3 and EC2 respectively
-* Salesforce launches force.com, a cloud computing platform
-
-## Key Elements of Cloud Computing
-| Key Element                                            | Benefit                                  |
-| ------------------------------------------------------ | ---------------------------------------- |
-| High-speed and ubiquitous networking                   | Increases availability                   |
-| Virtualization                                         | Reduces complexity in management         |
-| Large-scale storage systems and database architectures | Reduces cost                             |
-| Parallel and distributed computing                     | Increases efficiency and and flexibility |
-| Programming models (reduces complexity)                | Reduces complexity                       |
-
-
