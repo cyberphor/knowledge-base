@@ -1,5 +1,18 @@
 # History
 
+## The History of Cloud Computing Summarized
+**1950s - 1960s**  
+Compute resources had to be shared because they were expensive. 
+
+**1980s - 1990s**  
+Compute resources became accessible at the business and household level. 
+
+**1999**  
+Salesforce started providing browser-based access to business apps (reducing the need for businesses to have on-prem computing resources). 
+
+**2002**  
+Amazon introduced Amazon Web Services (AWS), extending the list of solutions that could be outsourced to a Cloud Service Provider. 
+
 ## Computing Domains 
 ### Business Computing
 Business computing uses management-focused Information Systems to drive logistics, operations, Enterprise Resource Planning, Customer Relation Management (CRM), and Business Intelligence (BI). CRM allows organizations to collect, store, manage, and interpret data about past, current, and future customers. 
