@@ -29,19 +29,21 @@ Cloud resources are measured, controlled, and billed (e.g., using a pay-per-use 
 ## Service Models
 Cloud services are categorized into one of three models based on how much responsibility is outsourced to the CSP.
 
-| Service Model                      | CSP Responsibility           | Level of Customer Control                             |
-| ---------------------------------- | ---------------------------- | ----------------------------------------------------- |
-| Software as a Service (SaaS)       | Infrastructure, OS, app      | Manage access to apps                                 |
-| Platform as a Service (PaaS)       | Infrastructure, OS,          | Pick apps and configure settings                      |
-| Infrastructure as a Service (IaaS) | Infrastructure               | Pick the OS and/or network resources (e.g., firewall) |
+| Service Model                      | CSP Responsibility           | Level of Customer Control                             | Audience       | Example            |
+| ---------------------------------- | ---------------------------- | ----------------------------------------------------- | -------------- | ------------------ |
+| Software as a Service (SaaS)       | Infrastructure, OS, app      | Manage access to apps                                 | Users          | Office 365         |
+| Platform as a Service (PaaS)       | Infrastructure, OS,          | Pick apps and configure settings                      | Developers     | Azure SQL Database |
+| Infrastructure as a Service (IaaS) | Infrastructure               | Pick the OS and/or network resources (e.g., firewall) | Administrators | Azure              |
 
 **Anything as a Service** (XaaS)  
-XaaS is a catch-all phrase for technical solutions that have been moved to the cloud (e.g., Monitoring as a Service). 
+XaaS is a catch-all phrase for technical solutions that have been moved to the cloud. 
+* Transportation as a Service
+* Groceries as a Service 
 
 ![cloud-server-models.png](/cloud/cloud-service-models.png)
 
 ## Deployment Models
-There are three types of clouds: public, private, and hybrid. 
+The infrastructure of cloud services can be deployed using one of four models. 
 
 | Differences    | Public         | Private         | Hybrid                 |
 | -------------- | -------------- | --------------- | ---------------------- |
@@ -52,11 +54,9 @@ There are three types of clouds: public, private, and hybrid.
 | Security       | Defined by CSP | Defined by unit | Regulated              |
 | Data Location  | Internet       | Intranet        | Intranet and Internet  |
 
-**Sovereign Clouds**  
-A sovereign cloud is a variant of the public cloud. They are restricted to authorized personnel only and physically isolated from other public clouds.
-
 **Community Clouds**  
 A community cloud is when different organizations with common security concerns share infrastructure. 
 
-**Distributed Clouds**  
-A distributed cloud provides organizations access to machines in different geographical locations. 
+**Sovereign Clouds**  
+A sovereign cloud is a variant of the public cloud. They are restricted to authorized personnel only and physically isolated from other public clouds.
+ 

@@ -2,7 +2,8 @@
 Security is a process for ensuring assets are used by authorized personnel in accordance with organizational policies. 
 
 ## Shared Responsibility Model
-The Shared Responsibility Model (SRM) is a cloud security policy. It separates cloud security responsibilities between Cloud Security Providers (CSPs) and organizations based on service classes (e.g., IaaS, PaaS, and SaaS). 
+The Shared Responsibility Model (SRM) is a cloud security policy. It separates cloud security responsibilities between Cloud Security Providers (CSPs) and organizations based on service classes (e.g., IaaS, PaaS, and SaaS). CSPs are responsible for security *of* the cloud, customers are responsible for security *in* the cloud.
+
 ![SRM.png](/cloud/security/SRM.png)
 
 ## Risk Management
