@@ -1,37 +1,38 @@
-# Design
+# Cloud Design
+Cloud architects design clouds based on decisions relating to the topics below. 
 
-The design of a cloud is based on decisions relating to the following:
-* [Cloud Service Model](/cloud/README.md#service-models)
-* [Cloud Service Deployment Model](/cloud/README.md#service-deployment-models)
-* [Scalability](#scalability)
-* [Risk Management](#risk-management)
+## Cloud Service Model
+The decision to pick one [Cloud Service Model](/cloud/README.md#service-models) (i.e., Public, Private, Community, or Hybrid) over the other is based on security. 
 
-## Scalability
-Increasing the capacity of an IT solution vertically (i.e., add more) or horizontally (i.e., replace or upgrade). 
+## Cloud Service Deployment Model
+The decision to implement one [Cloud Service Deployment Model](/cloud/README.md#service-deployment-models) (i.e., SaaS, PaaS, and IaaS) over the other depends on how much responsibility a customer wants to outsource to a CSP for a given service. For example, your organization may wish to use SaaS for email but conduct malware analysis using IaaS. 
 
-**Scale-Up**
+## Cloud Elasticity
+Cloud elasticity requirements are based on the output of [capacity planning](/cloud/scaling/README.md#capacity-planning). 
+
+**Elasticity**  
+Elasticity is the ability to [scale](/cloud/scaling/README.md) to meet demand. 
+
+**Scale-Up**  
+Scaling-up is the process of upgrading existing resources within a cloud service (e.g., one small VM becomes a medium VM). 
 
 **Scale-Out**
-
-### Vertical Scaling
-Vertical scaling is when old technology is upgraded or replaced with newer technology (e.g., faster CPUs and memory). The number of resources does NOT change after something has been vertically scaled. 
-
-### Horizontal Scaling
-Horizontal scaling is when the number of resources dedicated to a system is increased or decreased (e.g., adding an additional CPU). It’s used to address task division and assignment. 
-
-## Capacity Planning
-Capacity planning is when an organization measures the utilization of existing IT services to establish a benchmark for future expansion. Below are some examples:
-* If one cabinet can support 1,000 users, two additional cabinets would be needed for the organization to support 3,000. 
-* If 5 licenses can support 100 servers, 6 licenses would be needed to support up to 120.
+Scaling-out is the process of adding additional resources to a cloud service (e.g., one small VM becomes two small VMs). 
 
 ## Risk Management
-**Redundancy**
+Redundancy, high availability, and diaster recovery requirements are based on how much loss can be sustained if there was an incident. 
 
-**High Availability**  
+**Redundancy**  
+Redundancy is when there is more than one resource available. 
+
+**Availability**  
+Availability represents how long a cloud service can be offline. It's a measurement of time described in 9s. For example, if a cloud service must be online 99.999% of time, it can only be offline for 5 minutes all year. 
 
 **Disaster Recovery**  
+Disaster recovery is the process of restoring cloud services in the event of a failure (the size of the "disaster" is irrelevant). 
 
-### Recovery Objectives
-**Recovery Point Objectives**  
+*Recovery Point Objective* (RPO)  
+The RPO is the time between the most recent backup and the disaster. It helps describe how much data can be lost (ex: "I can afford to reboot this VM and lose data because my RPO is 72 hours"). 
 
-**Recover Time Objective**  
+*Recover Time Objective* (RTO)  
+The RTO is the time between a disaster and when the affected cloud service needs to be back online (ex: "we have 6 hours to meet our RTO and fix this").

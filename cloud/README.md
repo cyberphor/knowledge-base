@@ -52,7 +52,7 @@ XaaS is a catch-all phrase for technical solutions that have been moved to the c
 ![cloud-server-models.png](/cloud/cloud-service-models.png)
 
 ## Service Deployment Models
-Cloud services can be deployed using one of the four models described below. 
+Cloud services can be deployed using one of the four models described below. The decision to pick one over the other is based on security. 
 
 **Private**  
 In a Private cloud service deployment model, a single customer owns the cloud and access is restricted to its employees. 
