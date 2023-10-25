@@ -1,5 +1,14 @@
 # Benefits
-Cloud computing provides a number of benefits.
+Cloud computing provides three main benefits to business operations. 
+
+**Utility**  
+Cloud computing reduces [Capital Expenditures (CapEx)](/cloud/business-operations/expenditures/README.md#categories) through its elasticity and measured service [characteristics](/cloud/README.md#cloud-elasticity). 
+
+**Process Transformation**  
+Cloud computing improves efficiency and collaboration through its on-demand self-service and broad network access [characteristics](/cloud/README.md#cloud-elasticity).
+
+**Business Transformation**  
+Cloud computing exposes business operations to new revenue streams. 
 
 ## Cloud Characteristics 
 | Cloud Characteristic   | Benefit 
@@ -8,7 +17,7 @@ Cloud computing provides a number of benefits.
 | Broad Network Access   | Makes it easier to use different clients and "work-from-home"
 | Resource Pooling       | Improves hardware utilization and the return-on-investment 
 | Rapid Elasticity       | Allows businesses to meet demand and improve profitability
-| Measure Services       | Reduces OpEx is based on the services and capacity used
+| Measured Service       | Reduces OpEx is based on the services and capacity used
 
 ## Cloud Service Models
 | Cloud Service Model    | Benefit 

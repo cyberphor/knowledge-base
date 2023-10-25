@@ -3,10 +3,13 @@ Cloud Service Providers (CSPs) offer computing resources as a utility. Microsoft
 
 ## Services
 **Time to Market**  
-Time to Market is the length of time between developing an idea and making it available to a customer. CSPs help reduce time to market.
+Time to Market is the length of time between developing an idea and making it available to a customer. CSPs can help reduce time to market.
 
 **Managed Services**  
 A Managed Service is when the design, deployment, migration, or management of your cloud resources is outsourced to the CSP or a Managed Service Provider. 
+
+**License Managers**  
+License managers mitigate license violations and overspending.
 
 ## Requests
 **Request for Information**  

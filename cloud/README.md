@@ -99,10 +99,7 @@ The decision to pick one [Cloud Service Model](/cloud/README.md#service-models) 
 The decision to implement one [Cloud Service Deployment Model](/cloud/README.md#service-deployment-models) (i.e., SaaS, PaaS, and IaaS) over the other depends on how much responsibility a customer wants to outsource to a CSP for a given service. For example, your organization may wish to use SaaS for email but conduct malware analysis using IaaS. 
 
 ### Cloud Elasticity
-Cloud elasticity requirements are based on the output of [capacity planning](/cloud/techincal-operations/scaling/README.md#capacity-planning). 
-
-**Elasticity**  
-Elasticity is the ability to [scale](/cloud/techincal-operations/scaling/README.md) to meet demand. 
+Cloud elasticity requirements are based on the output of [capacity planning](/cloud/techincal-operations/scaling/README.md#capacity-planning).  
 
 **Scaling-Up**  
 Scaling-up is the process of upgrading existing resources within a cloud service (e.g., one small VM becomes a medium VM). 
