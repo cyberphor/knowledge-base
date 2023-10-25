@@ -1,7 +1,7 @@
 # Licensing
 A license represents authorization to use something (e.g., software or service).
 
-## Licensing Models
+## Licensing Types
 **Perpetual License**
 In a Perpetual-based License model, customers are licensed forever and billed upfront. The ROI is not guaranteed and scaling will become a problem. 
 

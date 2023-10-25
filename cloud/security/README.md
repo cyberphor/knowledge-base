@@ -7,13 +7,7 @@ The Shared Responsibility Model (SRM) is a cloud security policy. It separates c
 ![SRM.png](/cloud/security/SRM.png)
 
 ## Risk Management
-Risk management is the process of designing, building, sustaining, and modifying policies and systems to protect asset Confidentiality, Integrity, and Availability from *manageable risk*. It requires organizations to define their risk acceptance level and be adaptable. Preserving the organization is more important than preserving an asset. 
-
-**Manageable Risk**  
-Manageable risk can be avoided, mitigated, or transferred. 
-
-**Unmanageable Risk**  
-Unmanageable risk must be accepted. Examples of unmanageable risk is global catastrophic events and unforeseeable technology failures. 
+Risk management is the process of designing, building, sustaining, and modifying policies and systems to protect asset Confidentiality, Integrity, and Availability from risk that can be avoided, mitigated, or transferred. It requires organizations to define their risk acceptance level and be adaptable. Preserving the organization is more important than preserving an asset. 
 
 ### Risk Assessment
 The first step of risk management if conducting a risk assessment. 
