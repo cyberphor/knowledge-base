@@ -1,4 +1,11 @@
 # Azure Storage
+* Compare Azure Storage services
+* Describe storage tiers
+* Describe redundancy options
+* Describe storage account options and storage types
+* Identify options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync
+* Describe migration options, including Azure Migrate and Azure Data Box
+
 Azure Storage is a platform for storing and accessing structured (e.g., tables), semi-structured (e.g., dictionaries), and unstructured data (e.g., images). It provides the following benefits:
 - **High availability:** it replicates data across data centers 
 - **Security:** it encrypts data and uses configurable access

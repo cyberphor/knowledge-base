@@ -50,44 +50,10 @@ Hardware resources are shared between customers. Resource pooling is an example 
 Multitenancy is when multiple users share physical resources but are logically isolated from one another.
 
 **Rapid Elasticity**  
-Cloud resources are *elastic* and can be manually or automatically scaled to meet demand. Cloud resources should feel unlimited (i.e., you can use any number of instances at any time).
-
-<u>Elasticity</u>  
-Elasticity is the ability to scale to meet demand. 
+Cloud resources are elastic and can be manually or automatically scaled to meet demand. Cloud resources should feel unlimited (i.e., you can use any number of instances at any time).
 
 **Measured Service**  
 Cloud resources are measured, controlled, and billed (e.g., using a pay-per-use model).
-
-## Service Models
-Cloud services are categorized into one of three models based on how much responsibility is outsourced to the CSP.
-
-| Service Model                      | CSP Responsibility           | Level of Customer Control                             | Audience       | Example            |
-| ---------------------------------- | ---------------------------- | ----------------------------------------------------- | -------------- | ------------------ |
-| Software as a Service (SaaS)       | Infrastructure, OS, app      | Manage access to apps                                 | Users          | Office 365         |
-| Platform as a Service (PaaS)       | Infrastructure, OS,          | Pick apps and configure settings                      | Developers     | Azure SQL Database |
-| Infrastructure as a Service (IaaS) | Infrastructure               | Pick the OS and/or network resources (e.g., firewall) | Administrators | Azure              |
-
-**Anything as a Service**    
-Anything as a Service (XaaS) is a catch-all phrase for technical solutions that have been moved to the cloud. 
-* Transportation as a Service
-* Groceries as a Service 
-
-![cloud-server-models.png](/cloud/cloud-service-models.png)
-
-## Service Deployment Models
-Cloud services can be deployed using one of the four models described below. The decision to pick one over the other is based on security. 
-
-**Private**  
-In a Private cloud service deployment model, a single customer owns the cloud and access is restricted to its employees. 
-
-**Public**  
-In a Public cloud service deployment model, the CSP owns the cloud and access is available to any customer.
-
-**Community**  
-In a Community cloud service deployment model, a single customer owns the cloud and access is restricted to multiple customers.
-
-**Hybrid Cloud**  
-In a Hybrid cloud deployment model, two or more of the cloud service deployment models described above are combined. 
 
 ## Cloud Design
 Cloud design is based on requirements relating to the topics described above and listed below. 
