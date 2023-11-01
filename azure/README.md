@@ -1,11 +1,14 @@
 # Azure
-I am organizing this topic based on what I learned while attending the Army Artificial Intelligence Technician Program hosted by Carnegie Mellon University. The "CompTIA Cloud Essentials" and "Microsoft Azure Fundamentals" certification exams were part of our curriculum.
+Azure is a cloud computing platform hosted by Microsoft. 
 
+## Contents
 * [Cloud Concepts](/cloud/concepts/README.md)
   * [Cloud Computing](/cloud/concepts/README.md#cloud-computing)
   * [Cloud Benefits](/cloud/concepts/README.md#cloud-benefits)
   * [Cloud Service Types](/cloud/concepts/README.md#cloud-service-types)
 * [Azure Architecture](/azure/architecture/README.md)
+  * [Management Infrastructure](/azure/architecture/management-infrastructure/README.md)
+  * [Physical Infrastructure](/azure/architecture/physical-infrastructure/README.md)
 * [Azure Services](/azure/services/)
   * [Compute](/azure/services/compute/README.md)
   * [Network](/azure/services/network/README.md)
@@ -14,9 +17,9 @@ I am organizing this topic based on what I learned while attending the Army Arti
     * [Identity](/azure/services/security/identity/README.md)
 * [Azure Management](/azure/)
   * [Costs](/azure/management/README.md#cost-management-tools)
-  * [Deployments](/azure/management/README.md#deployment-tools)
+  * [Deployment Tools](/azure/management/README.md#deployment-tools)
     * [Azure Arc](/azure/management/arc/README.md)
-  * [Monitoring](/azure/management/README.md#monitoring-tools)
+  * [Monitoring Tools](/azure/management/README.md#monitoring-tools)
 * [Azure Governance](/azure/governance/README.md)
   * [Microsoft Purview](/azure/governance/README.md)
   * [Azure Policy](/azure/governance/README.md)
