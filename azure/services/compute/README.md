@@ -1,5 +1,8 @@
 # Azure Compute Services
-There are three types of compute in Azure: virtual machines, containers, and serverless functions.
+Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings include the compute services listed and described below. 
+* [Virtual Machines](#virtual-machines)
+* [Containers](#containers)
+* [Serverless Functions](#serverless-functions)
 
 ## Virtual Machines
 [Virtual machines](/virtualization/virtual-machines/README.md) are provided through Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings. 
