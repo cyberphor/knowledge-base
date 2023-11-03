@@ -5,7 +5,10 @@ Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings include
 * [Communication Between Cloud Resources](#communication-between-cloud-resources)
 * [Communication With the Internet](#communication-with-the-internet)
 * [Communication With On-Prem Resources](#communication-with-on-prem-resources)
+  * [Azure VPN Gateway](/azure/services/network/vpn-gateway/README.md)
+  * [Azure ExpressRoute](/azure/services/network/expressroute/README.md)
 * [Traffic Filtering](#traffic-filtering)
+* [Domain Name Resolution](#domain-name-resolution)
 
 ## Virtual Networking
 **Virtual Network**  
@@ -24,10 +27,10 @@ User-Defined Routes (UDR) are used to control routing tables.
 **Virtual Subnets**  
 A virtual subnet is a segment of a virtual network.
 
+## Communication Between Cloud Resources 
 **Private Endpoints**  
 A private endpoint is a virtual network interface with a private IP address. 
 
-## Communication Between Cloud Resources 
 **Service Endppoint**  
 A service endpoint allows resources to connect to Azure services as they are within the same virtual network. They are similar to Virtual Private Network (VPN) technology. 
 
@@ -39,22 +42,17 @@ A public endpoint is a virtual network interface with a public IP address.
 Load balancers are used to distribute traffic from the Internet to a resource. 
 
 ## Communication with On-Prem Resources
-Communication with on-prem resources is provided through Virtual Private Networks and Azure ExpressRoute. 
-
-**Virtual Private Network**  
-A Virtual Private Network (VPN) is an connect between two trusted locations across an untrusted location (e.g., the Internet). 
-
-*Point-to-Site VPN*  
-A point-to-site VPN allows external machines (i.e., machines not part of your on-prem network) to connect to an virtual network. 
-
-*Site-to-Site VPN*  
-A site-to-site VPN allows on-prem networks to connect to a virtual network. The result is the Azure cloud appears local. 
-
-**ExpressRoute**  
-An ExpressRoute is a direct and physical connection from an on-prem network to Azure. 
+Communication with on-prem resources is provided through the two [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings below.
+* [Azure VPN Gateway](/azure/services/network/vpn-gateway/README.md)
+* [Azure ExpressRoute](/azure/services/expressroute/README.md)
 
 ## Traffic Filtering
 Traffic filtering is provided through Network Security Groups (NSG). 
 
 **Network Security Groups**  
-A NSG is a firewall. It uses rules to approve or deny network communication.  
+A NSG is a virtual firewall. It uses rules to approve or deny network communication.  
+
+## Domain Name Resolution
+Azure DNS allows you to use and manage Domain Name System (DNS) records. Azure DNS is not used for purchasing domain names. 
+* DNS records hosted in Azure can be managed using the Azure portal, Azure CLI, and PowerShell
+* DNS records hosted in Azure can be protected using Azure's Role-Based Access Control features
