@@ -4,8 +4,8 @@ Management infrastructure in Azure is represented by accounts and scopes.
 ## Accounts
 An Azure account is a globally unique identity that represents a customer (e.g., an individual or business). Azure accounts are used to manage Azure subscriptions and management groups. 
 
-## Scope  
-A scope is one or more resources. For example, subscriptions, management groups, resource groups, and resources are all scopes. Scopes are protected using [Role-based Access Control (RBAC)](/security/concepts/access-control/README.md#role-based-access-control) and the [Azure Resource Manager](/azure/architecture/management-infrastructure/resource-manager/README.md).  
+## Scope 
+A scope is one or more resources. For example, subscriptions, management groups, resource groups, and resources are all scopes. Scopes are protected using the [Azure Resource Manager](/azure/architecture/management-infrastructure/resource-manager/README.md).  
 
 ### Subscriptions
 A subscription is a organizational unit used for managing billing and resource groups. For example, a business could organize billing and resources for each of their deparments using subscriptions (e.g., the "cyber security" subscription includes a "threat hunting" resource group and is paid for using the CISO's company credit card). 
