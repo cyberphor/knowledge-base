@@ -1,0 +1,2 @@
+# Security
+The word "security" originates from the the latin pharse *secura* which means "free from care" ("se" is "free from" and "cura" is "care"). As in, one is secure when they don't need aid. They are free from trouble and don't need help. 

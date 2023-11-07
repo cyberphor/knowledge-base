@@ -4,7 +4,7 @@
 A directory is a "book of rules." 
 
 **Directory Services**  
-Directory services are used for identity and access management (e.g., who has access to what). Below is a list of directory services. 
+Directory services are used for identity and authorization management (e.g., who has access to what). Below is a list of directory services. 
 * Creating an account (i.e., an entity to represent someone)
 * Creating a group
 * Adding an account to a group
@@ -15,7 +15,4 @@ Directory services are used for identity and access management (e.g., who has ac
 Active Directory Users and Computers is a directory service for on-prem resources. 
 
 ## Entra ID  
-Entra ID is a [PaaS](/cloud/concepts/README.md#cloud-service-models) offering and directory service for on-prem and Azure resources.
-
-**Entra Connect**  
-Entra Connect is used for syncing directory information between Active Directory and Entra ID. 
+[Entra ID](/azure/services/security/directory-services/README.md) is a [PaaS](/cloud/concepts/README.md#cloud-service-models) offering and directory service for managing access to resources on-prem and in Azure.  

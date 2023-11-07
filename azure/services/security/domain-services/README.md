@@ -1,13 +1,13 @@
 # Domain Services
 
 **Domain**  
-A domain is group of machines that share the same directory information and security policy.
+A domain is group of machines that share the same resources and security policy (i.e., directory information).
 
 **Domain Services**  
 Domain services are used for domain management. Below is a list of domain services.
 * Establishing a policy 
 * Joining a machine to the domain
-* Authenticating an account (via the NTLM and/or Kerberos protocol)
+* Interacting with directory services to authenticate an account (via the NTLM and/or Kerberos protocol)
 * Removing a machine from the domain
 
 ## Active Directory Domain Services
@@ -36,13 +36,4 @@ Text goes here.
 Text goes here.
 
 **Entra External ID**  
-Entra External ID is a service used to authenticate and collaborate external entities (i.e., people who use a different directory service, but have been authorized to access resources within your domain). 
-
-*Business-to-Business Collaboration*  
-Business-to-Business collaboration is when external entities are authenticated using their preferred directory service (e.g., Google, Facebook, or Apple) before access to Azure resources is granted.
-
-*Business-to-Business Direct Connect Collaboration*  
-Business-to-Business Direct Connect collaboration is when external entities are authenticated using their Entra ID directory services before access to Azure resources is granted.
-
-*Business-to-Customer Collaboration*   
-Business-to-Customer collaboration is when external entities are authenticated using Entra ID before access to an third-party app is granted.
+[Entra External ID](/azure/services/security/directory-services/entra-external-id/README.md) is a service used to authenticate and collaborate with external entities (i.e., people who use a different directory service, but have been authorized to access resources within your domain). 

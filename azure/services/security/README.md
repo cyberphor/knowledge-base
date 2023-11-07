@@ -1,11 +1,8 @@
 # Azure Security Services
 
-Describe Conditional Access in Azure AD
-
-Describe Azure role-based access control (RBAC)
-
-Describe the concept of Zero Trust
-
-Describe the purpose of the defense-in-depth model
-
-Describe the purpose of Microsoft Defender for Cloud
+* [Directory Services](/azure/services/security/directory-services/README.md)  
+  * [Entra ID](/azure/services/security/directory-services/entra-id/README.md)
+  * [Entra External ID](/azure/services/security/domain-services/entra-domain-services/README.md)
+  * [Conditional Access](/azure/services/security/directory-services/conditional-access/README.md)
+* [Domain Services](/azure/services/security/domain-services/README.md)  
+  * [Entra Domain Services](/azure/services/security/domain-services/README.md#entra-domain-services)
