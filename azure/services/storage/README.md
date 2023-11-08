@@ -1,29 +1,77 @@
 # Azure Storage
-* Compare Azure Storage services
-* Describe storage tiers
-* Describe redundancy options
-* Describe storage account options and storage types
-* Identify options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync
-* Describe migration options, including Azure Migrate and Azure Data Box
+Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings include the storage services and options described below. Data stored in Azure is organized using *storage accounts*. 
 
-Azure Storage is a platform for storing and accessing structured (e.g., tables), semi-structured (e.g., dictionaries), and unstructured data (e.g., images). It provides the following benefits:
-- **High availability:** it replicates data across data centers 
-- **Security:** it encrypts data and uses configurable access
-- **Accessibility:** it provides a number of APIs and Software Development Kits
+## Storage Services
+### Azure Blobs  
+Azure Blobs is a service for storing [blobs](/storage/README.md#unstructured-data). 
 
-## Data Types
+### Azure Tables  
+Azure Tables is a service for storing [dictionaries](/storage/README.md#semi-structured-data). 
 
-### Structured Data
-Structured data follows a schema. A schema defines field data types, field formats, and relationships between tables. It also requires all records in a table to have the same fields. It’s hard to change a schema after it’s created without having a negative impact. 
+## Azure Files  
+Azure Files is a service for sharing files using the Server Message Block (SMB) protocol. In practice, files are made available after an SMB share is mounted.  
 
-### Semi-Structured
-Semi-structured data is denoted with tags and look like dictionaries (e.g., JSON, XML, key-value pairs, and graph data). New fields can be added without having a negative impact on existing data. 
+## Azure Queue
+Azure Queue is a *message broker* service. 
 
-### Unstructured
-Unstructured data is data that does not completely follow a schema or use tags. Some examples are images, audio files, video files, email, and Microsoft Office documents. An instance of unstructured data is known as a Binary Large Object (BLOB) or blob. Blobs account for 70% of the world’s data. 
+**Message Broker**  
+A message broker translates messages between an app’s frontend, backend, and/or database components. It is used to improve the responsiveness of an app. For example, after a user submits a request to the frontend, the frontend passes the request to the message broker. The message broker acknowledges the request (allowing the frontend to resume listening for new requests) and then sends it to the backend for processing.
 
-## Services
-- **Azure Blobs:** Azure Blobs is a service for storing blobs. 
-- **Azure Tables:** Azure Tables is a service for storing dictionaries. 
-- **Azure Files:** Azure Files is a service for sharing files using the Server Message Block (SMB) protocol. In practice, files are made available after an SMB share is mounted.  
-- **Azure Queue:** Azure Queue is a message broker service. A message broker translates messages between an app’s frontend, backend, and/or database components. It is used to improve the responsiveness of an app. For example, after a user submits a request to the frontend, the frontend passes the request to the message broker. The message broker acknowledges the request (allowing the frontend to resume listening for new requests) and then sends it to the backend for processing.
+## Storage Options
+### Tiers
+
+### Redundancy Options
+**Locally Redundant Storage**  
+
+**Geo-Redundant Storage**  
+
+**Read-Access Geo-Redundant Storage**  
+
+**Zone-Redundant Storage**  
+
+**Geo-Zone-Redundant Storage**  
+
+**Read-Access Geo-Zone-Redundant Storage**  
+
+## Storage Accounts
+Storage accounts are used to organize data. 
+
+### Storage Account Endpoints
+Storage accounts provide a unique namespace that can be accessed via HTTP or HTTPS. The endpoint is a combination of the storage account name and service. 
+```bash
+# Blobs
+https://cyberphorstorage.blob.core.windows.net
+
+# Files
+https://cyberphorstorage.file.core.windows.net
+
+# Queue
+https://cyberphorstorage.queue.core.windows.net
+```
+
+**Naming Convention**  
+Storage account accounts must follow the naming convention described below. 
+* Length: 3 to 24 characters
+* Character sets: lowercase and numbers only
+
+### Storage Account Types
+There are four types of storage accounts. 
+
+| Type                | Services Supported              | Redundancy Options                   |
+| ------------------  | ------------------------------- | ------------------------------------ |
+| Standard            | Blobs, Tables, Files, and Queue | LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS |
+| Premium Block Blob  | Blobs                           | LRS, ZRS                             |
+| Premium Page Blobs  | Blobs                           | LRS                                  |
+| Premium File Shares | Files                           | LRS, ZRS                             |
+
+### Transfer Options
+**AzCopy**  
+
+**Azure Storage Explorer**  
+
+**Azure File Sync**
+
+### Migration Options
+**Azure Migrate**
+
+**Azure Data Box**

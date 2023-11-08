@@ -36,4 +36,4 @@ Text goes here.
 Text goes here.
 
 **Entra External ID**  
-[Entra External ID](/azure/services/security/directory-services/entra-external-id/README.md) is a service used to authenticate and collaborate with external entities (i.e., people who use a different directory service, but have been authorized to access resources within your domain). 
+[Entra External ID](/azure/services/security/directory/entra-external-id/README.md) is a service used to authenticate and collaborate with external entities (i.e., people who use a different directory service, but have been authorized to access resources within your domain). 

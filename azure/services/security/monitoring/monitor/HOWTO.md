@@ -13,3 +13,11 @@ az account set \
 ```bash
 az monitor action-group list
 ```
+
+## Autoscale Settings
+**How to List Autoscale Settings for a Specific Resource Group**
+```bash
+export RESOURCE_GROUP="web_app_monitor"
+az monitor autoscale list \
+  --resource-group "${RESOURCE_GROUP}" 
+```

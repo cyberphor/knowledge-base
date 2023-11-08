@@ -1,8 +1,16 @@
 # Azure Security Services
 
-* [Directory Services](/azure/services/security/directory-services/README.md)  
-  * [Entra ID](/azure/services/security/directory-services/entra-id/README.md)
-  * [Entra External ID](/azure/services/security/domain-services/entra-domain-services/README.md)
-  * [Conditional Access](/azure/services/security/directory-services/conditional-access/README.md)
-* [Domain Services](/azure/services/security/domain-services/README.md)  
-  * [Entra Domain Services](/azure/services/security/domain-services/README.md#entra-domain-services)
+## Authentication
+* [Directory Services](/azure/services/security/directory/README.md)  
+  * [Entra ID](/azure/services/security/directory/entra-id/README.md)
+    * [Conditional Access](/azure/services/security/directory/entra-id/README.md#conditional-access)
+  * [Entra External ID](/azure/services/security/directory/entra-external-id/README.md)
+
+## Authorization
+* [Domain Services](/azure/services/security/domain/README.md)  
+  * [Entra Domain Services](/azure/services/security/domain/README.md#entra-domain-services)
+
+## Auditing
+* [Monitoring Services](/azure/services/security/monitoring/README.md)
+  * [Azure Monitor](/azure/services/security/monitoring/monitor/README.md)
+  * [Defender for Cloud](/azure/services/security/monitoring/defender-for-cloud/README.md)

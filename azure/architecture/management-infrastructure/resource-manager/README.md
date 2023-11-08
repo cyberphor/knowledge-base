@@ -24,8 +24,8 @@ Scopes include subscriptions, management groups, resource groups, and resources.
 ### Resource Providers
 A resource provider is an API for executing actions within a specific Azure service. Resource providers must be added to your subscription for ARM to be aware of the roles and actions relating to the services you're interested in. Some resource providers are included with your subscription by default. Below is a list of resource providers.  
 
-| Resource Provider             | Purpose                  |
-| ----------------------------- | ------------------------ |
-| `microsoft.compute`           | Virtual machines         |
-| `microsoft.cognitiveservices` | Azure Cognitive Services |
-| `microsoft.insights`          | Azure Monitor            | 
+| Resource Provider             | Service                  | Actions                                                              |
+| ----------------------------- | ------------------------ | -------------------------------------------------------------------- | 
+| `microsoft.compute`           | Virtual machines         |                                                                      |
+| `microsoft.cognitiveservices` | Azure Cognitive Services |                                                                      |
+| `microsoft.insights`          | Azure Monitor            | Generate, collect, and manage metrics, logs, alerts, and autoscaling |

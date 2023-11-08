@@ -1,13 +1,43 @@
-**AZ-900**  
-Describe Azure role-based access control (RBAC)
-
-Describe the concept of Zero Trust
-
-Describe the purpose of the defense-in-depth model
+# AZ-900
 
 Describe the purpose of Microsoft Defender for Cloud
 
-**AZ-104**  
+# Azure Governance
+
+Describe the purpose of Microsoft Purview in Azure
+
+Describe the purpose of Azure Policy
+
+Describe the purpose of resource locks
+
+## Cost Management
+Describe factors that can affect costs in Azure
+
+Compare the pricing calculator and the Total Cost of Ownership (TCO) Calculator
+
+Describe cost management capabilities in Azure
+
+Describe the purpose of tags
+
+## Deployment Tools
+
+Describe the Azure portal
+
+Describe Azure Cloud Shell, including Azure Command-Line Interface (CLI) and Azure PowerShell
+
+Describe infrastructure as code (IaC)
+
+Describe Azure Resource Manager (ARM) and ARM templates
+
+## Monitoring Tools
+
+Describe the purpose of Azure Advisor
+
+Describe Azure Service Health
+
+Describe Azure Monitor, including Log Analytics, Azure Monitor alerts, and Application Insights
+
+# AZ-104
 Manage Azure identities and governance (20–25%)
 Manage Microsoft Entra users and groups
 Create users and groups
