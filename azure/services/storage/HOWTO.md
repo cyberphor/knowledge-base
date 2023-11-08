@@ -30,14 +30,14 @@ az storage account create \
   --kind $STORAGE_KIND
 ```
 
-**Step 4.** Create a blob container. 
+**Step 4.** Create a blob storage container. 
 ```bash
 az storage container create \
   --name $CONTAINER_NAME \
   --account-name $STORAGE_ACCOUNT_NAME
 ```
 
-**Step 5.** Upload a blob to the blob container.
+**Step 5.** Upload a blob to the blob storage container.
 ```bash
 az storage blob upload \
   --account-name $STORAGE_ACCOUNT_NAME
@@ -46,4 +46,4 @@ az storage blob upload \
   --name $BLOB_NAME 
 ```
 
-**Step 6.** Change the container’s access level.
+**Step 6.** Set the blog storage container’s access level.
