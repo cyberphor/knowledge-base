@@ -1,5 +1,8 @@
 # Azure Security Services
 
+## Service Trust Portal  
+The [Microsoft Service Trust Portal](https://servicetrust.microsoft.com) is a web site with resources that describe how Microsoft protects Azure and Azure customers.
+
 ## Authentication
 * [Directory Services](/azure/services/security/directory/README.md)  
   * [Entra ID](/azure/services/security/directory/entra-id/README.md)

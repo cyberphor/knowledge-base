@@ -1,33 +1,46 @@
 # Azure
 Azure is a cloud computing platform hosted by Microsoft. 
 
-## Contents
-[Cloud Concepts](/cloud/concepts/README.md)
-  * [Cloud Computing](/cloud/concepts/README.md#cloud-computing)
-  * [Cloud Service Models](/cloud/concepts/README.md#cloud-service-models)
-  * [Cloud Service Deployment Models](/cloud/concepts/README.md#cloud-service-deployment-models)
-  * [Cloud Benefits](/cloud/concepts/README.md#cloud-benefits)
+## Cloud Concepts
+* [Cloud Computing](/cloud/concepts/README.md#cloud-computing)
+* [Cloud Service Models](/cloud/concepts/README.md#cloud-service-models)
+* [Cloud Service Deployment Models](/cloud/concepts/README.md#cloud-service-deployment-models)
+* [Cloud Benefits](/cloud/concepts/README.md#cloud-benefits)
 
-[Azure Architecture](/azure/architecture/README.md)
-* [Physical Infrastructure](/azure/architecture/physical-infrastructure/README.md)
-  * [Data Centers](/azure/architecture/physical-infrastructure/README.md#data-centers)
-  * [Regions](/azure/architecture/physical-infrastructure/README.md#regions)
-  * [Availability Zones](/azure/architecture/physical-infrastructure/README.md#availability-zones)
-* [Management Infrastructure](/azure/architecture/management-infrastructure/README.md)
+## Azure Infrastructure
+* [Physical Infrastructure](/azure/infrastructure/physical/README.md)
+* [Logical Infrastructure](/azure/infrastructure/logical/README.md)
 
-[Azure Services](/azure/services/)
+## Azure Services
 * [Compute](/azure/services/compute/README.md)
 * [Network](/azure/services/network/README.md)
 * [Storage](/azure/services/storage/README.md)
 * [Security](/azure/services/security/README.md)
 
-[Azure Management](/azure/management/README.md)
-* [Costs](/azure/management/README.md#cost-management-tools)
-* [Deployment Tools](/azure/management/README.md#deployment-tools)
-  * [Azure Arc](/azure/management/arc/README.md)
-* [Monitoring Tools](/azure/management/README.md#monitoring-tools)
+## Azure Intefaces
+* Azure Portal: web GUI for interacting with Azure
+* Azure Cloud Shell: browser-accessible virtual machine for interacting with Azure (offers two shell options: BASH and PowerShell) 
+* Azure PowerShell: PowerShell cmdlets designed for interacting with Azure (can be installed on Windows, macOS, and Linux)
+* Azure CLI: a group of programs for interacting with Azure (considered an alternative to Azure PowerShell; can be installed on Windows, macOS, and Linux) 
 
-[Azure Governance](/azure/governance/README.md)
-* [Microsoft Purview](/azure/governance/README.md)
-* [Azure Policy](/azure/governance/README.md)
-* [Resource Locks](/azure/governance/README.md)
+## Cost 
+### Cost Factors
+The cost to use Azure is determined by the factors described below. 
+* Resource Type: some resources are more expensive than others. 
+* Consumption: reserve capacity in advance to take advantage of the discounts offered by Azure. 
+* Maintenance: deprovision resources when they are no longer needed to reduce cost. 
+* Geography: different regions will show different prices for the same resource type. 
+* Network Traffic: putting data in Azure is mostly free, getting data out of Azure is not (Azure maintains a "bandwidth pricing page")
+* Subscription Type: Azure offers multiple [subscription types](/azure/infrastructure/logical/README.md#subscription-types) with varying costs
+* Azure Marketplace: products purchased in the Azure Marketplace may include paying for third-party services (e.g., paying for SonarQube's vulnerability scanner)
+
+### Cost Management
+Cost Management is a service used monitoring costs and configuring spending notifications. 
+
+### Cost Calculators
+**Pricing Calculator**   
+The Pricing Calculator is used for estimating how much it will cost to provision resources in Azure. 
+
+**Total Cost of Ownership Calculator**  
+The Total Cost of Ownership Caclulator is used for comparing the difference in cost between hosting infrastructure on-prem vs in Azure. 
+
