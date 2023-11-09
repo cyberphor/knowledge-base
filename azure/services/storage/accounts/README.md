@@ -14,7 +14,7 @@ https://cyberphorstorage.file.core.windows.net
 https://cyberphorstorage.queue.core.windows.net
 ```
 
-**Naming Convention**  
+### Storage Account Naming Conventions  
 Storage account accounts must follow the naming convention described below. 
 * Length: 3 to 24 characters
 * Character sets: lowercase and numbers only

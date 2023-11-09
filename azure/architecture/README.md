@@ -1,3 +1,0 @@
-# Azure Architecture
-
-Azure's architecture is represented by [physical infrastructure](/azure/architecture/physical-infrastructure/README.md) and [management infrastructure](/azure/architecture/management-infrastructure/README.md). 
