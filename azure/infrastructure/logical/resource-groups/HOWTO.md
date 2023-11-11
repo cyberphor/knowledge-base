@@ -1,6 +1,6 @@
 # Azure Resource Groups
 
-**How to Create a Resource Group**  
+## Create a Resource Group  
 **Step 1.** Define your variables. 
 ```bash
 export SUBSCRIPTION_NAME="Personal"
@@ -13,4 +13,9 @@ export RESOURCE_GROUP="${PREFIX}-rg"
 az group create \
   --name "${RESOURCE_GROUP}" \
   --location "${LOCATION}"
+```
+
+## Remove a Resource Group
+```powershell
+Remove-AzResourceGroup -Name "cyberDefenseRg"
 ```

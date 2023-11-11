@@ -1,5 +1,5 @@
-# Azure Resource Manager Request Templates
-ARM supports two templates for resource action requests: *ARM templates* and *Bicep templates*. Both are considered examples of Infrastructure-as-Code. 
+# Resource Templates
+A resource template is a file used to define one or more resources to deploy. ARM supports two types of resource templates: *ARM templates* and *Bicep templates*. 
 
 ## ARM Templates
 ARM templates are written in JSON and provide the following benefits. 
