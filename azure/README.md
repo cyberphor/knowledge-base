@@ -17,11 +17,11 @@ Azure is a cloud computing platform hosted by Microsoft.
 * [Storage](/azure/services/storage/README.md)
 * [Security](/azure/services/security/README.md)
 
-## Azure Intefaces
-* Azure Portal: web GUI for interacting with Azure
-* Azure Cloud Shell: browser-accessible virtual machine for interacting with Azure (offers two shell options: BASH and PowerShell) 
-* Azure PowerShell: PowerShell cmdlets designed for interacting with Azure (can be installed on Windows, macOS, and Linux)
-* Azure CLI: a group of programs for interacting with Azure (considered an alternative to Azure PowerShell; can be installed on Windows, macOS, and Linux) 
+## Azure Interfaces
+* [Azure Portal](/azure/interfaces/portal/README.md)
+* [Azure Cloud Shell](/azure/interfaces/cloud-shell/README.md)
+* [Azure PowerShell](/azure/interfaces/powershell/README.md)
+* [Azure CLI](/azure/interfaces/cli/README.md)
 
 ## Cost 
 ### Cost Factors

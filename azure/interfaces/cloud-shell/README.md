@@ -1,0 +1,2 @@
+# Azure Cloud Shell
+Azure Cloud Shell is a browser-accessible virtual machine for interacting with Azure. It offers two shell options: BASH or PowerShell. The user's `$HOME` directory is a mounted Azure Files share (5 GBs). The built-in text editor is based on Monaco. 
