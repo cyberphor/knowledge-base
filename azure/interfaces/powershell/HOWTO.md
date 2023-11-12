@@ -1,7 +1,7 @@
 # Azure PowerShell
 
 ## Create and Configure a Managed Disk
-**Step 1.** Login. 
+**Step 1.** Login to Azure.
 ```powershell
 Connect-AzAccount
 ```

@@ -1,6 +1,6 @@
 # Azure Subscriptions
 
-**How to Set Your Subscription**  
+## Set Your Subscription
 **Step 1.** Define your variables. 
 ```bash
 export SUBSCRIPTION_NAME="Personal"

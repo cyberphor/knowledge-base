@@ -26,10 +26,10 @@ Azure is a cloud computing platform hosted by Microsoft.
 ## Cost 
 ### Cost Factors
 The cost to use Azure is determined by the factors described below. 
-* Resource Type: some resources are more expensive than others. 
-* Consumption: reserve capacity in advance to take advantage of the discounts offered by Azure. 
-* Maintenance: deprovision resources when they are no longer needed to reduce cost. 
-* Geography: different regions will show different prices for the same resource type. 
+* Resource Type: some resources are more expensive than others 
+* Consumption: reserve capacity in advance to take advantage of the discounts offered by Azure
+* Maintenance: deprovision resources when they are no longer needed to reduce cost 
+* Geography: different regions will show different prices for the same resource type 
 * Network Traffic: putting data in Azure is mostly free, getting data out of Azure is not (Azure maintains a "bandwidth pricing page")
 * Subscription Type: Azure offers multiple [subscription types](/azure/infrastructure/logical/README.md#subscription-types) with varying costs
 * Azure Marketplace: products purchased in the Azure Marketplace may include paying for third-party services (e.g., paying for SonarQube's vulnerability scanner)
