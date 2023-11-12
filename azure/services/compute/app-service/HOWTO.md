@@ -1,6 +1,6 @@
 # App Services
 
-## How to Create a Web App 
+## Create a Web App 
 **Step 1.** Define your variables. 
 ```bash
 export SUBSCRIPTION_NAME="Personal"
@@ -39,4 +39,14 @@ az webapp create \
   --resource-group "${RESOURCE_GROUP}" \
   --plan "${ASP_NAME}" \
   --name "${WEB_APP_NAME}"
+```
+
+**Step 6.** Deploy code from GitHub into the web app. 
+```bash
+az webapp deployment source config \
+  --name "${WEB_APP_NAME}" \
+  --resource-group "${RESOURCE_GROUP}" \
+  --repo-url "https://github.com/Azure-Samples/php-docs-hello-world" \
+  --branch "main" \
+  --manual-integration
 ```
