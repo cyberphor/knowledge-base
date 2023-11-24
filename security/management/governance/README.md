@@ -1,4 +1,4 @@
-# Data governance
+# Governance
 Data governance is represented by the activities listed below. 
 * Assigning a data owner
 * Classifying data

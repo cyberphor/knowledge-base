@@ -1,4 +1,4 @@
-# Governance
+# Compliance
 
 ## Microsoft Purview
 Microsoft Purview is a family of [data governance](/security/concepts/data-governance/README.md), risk, and compliance solutions. 
