@@ -15,4 +15,4 @@ Directory services are used for identity and authorization management (e.g., who
 Active Directory Users and Computers is a directory service for on-prem resources. 
 
 ## Entra ID  
-[Entra ID](/azure/services/security/directory-services/README.md) is a [PaaS](/cloud/concepts/README.md#cloud-service-models) offering and directory service for managing access to resources on-prem and in Azure.  
+[Entra ID](/azure/services/security/directory-services/README.md) is a [PaaS](/cloud/concepts/README.md#cloud-service-models) offering and directory service for managing access to on-prem, Microsoft 365, and Azure resources. 
