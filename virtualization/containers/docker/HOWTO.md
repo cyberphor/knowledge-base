@@ -1,8 +1,13 @@
 # Docker
 
-**Build a Container**
+**Build an Image**
+```bash
+docker build -t elastic/elasticsearch:latest --file elasticsearch/
 ```
-docker build . -t foo:latest
+
+**Run a Container**  
+```bash
+docker run -t elasticsearch:latest -d 
 ```
 
 **Rebuild a Container Using Docker Compose**

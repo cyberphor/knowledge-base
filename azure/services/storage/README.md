@@ -1,29 +1,74 @@
 # Azure Storage
-* Compare Azure Storage services
-* Describe storage tiers
-* Describe redundancy options
-* Describe storage account options and storage types
-* Identify options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync
-* Describe migration options, including Azure Migrate and Azure Data Box
+Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings include the [storage-related](/storage/README.md) services, options, and tools listed below. 
 
-Azure Storage is a platform for storing and accessing structured (e.g., tables), semi-structured (e.g., dictionaries), and unstructured data (e.g., images). It provides the following benefits:
-- **High availability:** it replicates data across data centers 
-- **Security:** it encrypts data and uses configurable access
-- **Accessibility:** it provides a number of APIs and Software Development Kits
+**Services**  
+Storage Services
+* [Azure Blobs](/azure/services/storage/blobs/README.md)
+* [Azure Disks](/azure/services/storage/disks/README.md)
+* [Azure Files](/azure/services/storage/files/README.md)
+* [Azure Queues](/azure/services/storage/queues/README.md)
+* [Azure Tables](/azure/services/storage/tables/README.md)
 
-## Data Types
+Migration Services
+* [Azure Data Box](/azure/services/storage/data-box/README.md)
+* [Azure Migrate](/azure/services/storage/migrate/README.md)
 
-### Structured Data
-Structured data follows a schema. A schema defines field data types, field formats, and relationships between tables. It also requires all records in a table to have the same fields. It’s hard to change a schema after it’s created without having a negative impact. 
+**Options**
+* [Storage Accounts](/azure/services/storage/accounts/README.md)
+* [Storage Access Options](#access-options)
+* [Storage Redundancy Options](#redundancy-options)
 
-### Semi-Structured
-Semi-structured data is denoted with tags and look like dictionaries (e.g., JSON, XML, key-value pairs, and graph data). New fields can be added without having a negative impact on existing data. 
+**Tools**  
+* [AzCopy](#azcopy)
+* [Azure Storage Explorer](#azure-storage-explorer)
+* [Azure File Sync](#azure-file-sync)
 
-### Unstructured
-Unstructured data is data that does not completely follow a schema or use tags. Some examples are images, audio files, video files, email, and Microsoft Office documents. An instance of unstructured data is known as a Binary Large Object (BLOB) or blob. Blobs account for 70% of the world’s data. 
+## Access Options
+There are four options for optimizing the way your data is stored in Azure. 
 
-## Services
-- **Azure Blobs:** Azure Blobs is a service for storing blobs. 
-- **Azure Tables:** Azure Tables is a service for storing dictionaries. 
-- **Azure Files:** Azure Files is a service for sharing files using the Server Message Block (SMB) protocol. In practice, files are made available after an SMB share is mounted.  
-- **Azure Queue:** Azure Queue is a message broker service. A message broker translates messages between an app’s frontend, backend, and/or database components. It is used to improve the responsiveness of an app. For example, after a user submits a request to the frontend, the frontend passes the request to the message broker. The message broker acknowledges the request (allowing the frontend to resume listening for new requests) and then sends it to the backend for processing.
+### Hot Access Tier
+Data labeled with "hot access" is stored in a way to faciliate frequent and fast access (e.g., SSDs and load balancing). 
+
+### Cool Access Tier  
+Data labeled with "cool access" is stored for at least 30 days and optimized to faciliate infrequent and slow access (e.g., SSDs). 
+
+### Cold Access Tier
+Data labeled with "cold access" is stored for at least 90 days and optimized to faciliate infrequent and slow access (e.g., HDDs). 
+
+### Archive Access Tier  
+Data labeled with "archive access" is stored for at least 180 days and optimized to faciliate infrequent and slow access (e.g., stored offline). 
+
+
+## Redundancy Options
+There are four options for achieving data redundancy in Azure. 
+
+### Primary Regions
+There is always three copies of your data in your storage account's primary region. Yet, data is replicated using either *Locally Redundant Storage (LRS)* or *Zone Redundant Storage (ZRS)*.
+
+**Locally Redundant Storage**  
+LRS replicates your data within in the same data center (e.g., all three copies are in the same building). 
+
+**Zone-Redundant Storage**  
+ZRS replicates your data between three separate availability zones (e.g., one copy per zone). By definition, ZRS provides *high-availability*. 
+
+### Secondary Regions
+Using an secondary region to store another copy of your data provides *high durability*. Data between primary and secondary regions is replicated using either *Geo-Redundant Storage (GRS)* or *Geo-Zone-Redundant Storage (GZRS)*.
+
+**Geo-Redundant Storage**  
+GRS copies your data using LRS and then asynchronously replicates it to another data center in a different region (e.g., three copies within building 1 of region A and three copies within building 1 of region B). 
+
+**Geo-Zone-Redundant Storage**  
+GZRS replicates your data using ZRS and then asynchronously replicates it to another data center in a different region (e.g., one copy per zone in region A and three copies within building 1 of region B). 
+
+
+## Tools
+There are three tools for moving data in Azure. 
+
+### AzCopy
+AzCopy is a CLI-based program for copying blobs or files to and from a storage account. 
+
+### Azure Storage Explorer
+Azure Storage Explorer is a self-contained, GUI-based program for copying blobs or files to and from a storage account. 
+
+### Azure File Sync
+Azure File Sync is a tool used for syncing files between on-prem and Azure.  
