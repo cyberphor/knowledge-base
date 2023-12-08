@@ -1,11 +1,11 @@
 # Machine Learning
 Machine learning (ML) is when machines use experience (data, not knowledge) to find patterns and make predictions. The different paradigms and techniques of ML are listed below. 
-* [Supervised Machine Learning](/theory/data-science/artificial-intelligence/machine-learning/supervised-learning/README.md)
+* [Supervised Machine Learning](/data-science/artificial-intelligence/machine-learning/supervised-learning/README.md)
   * Regression
   * Classification
-* [Unsupervised Machine Learning](/theory/data-science/artificial-intelligence/machine-learning/unsupervised-learning/README.md)
+* [Unsupervised Machine Learning](/data-science/artificial-intelligence/machine-learning/unsupervised-learning/README.md)
   * Clustering 
-* [Reinforcement Machine Learning](/theory/data-science/artificial-intelligence/machine-learning/reinforcement-learning/README.md)
+* [Reinforcement Machine Learning](/data-science/artificial-intelligence/machine-learning/reinforcement-learning/README.md)
 * Transfer Machine Learning
   * Pre-training
   * Domain adaptation
@@ -55,3 +55,29 @@ Feature encoding is the process of representing an object as a list of numbers. 
 ["Mary", "also", "likes", "to", "watch", "football", "games"]
 [0, 1, 1, 1, 0, 1, 0, 1, 1, 1]
 ```
+
+## Risks
+**Extraction of Training Data**  
+It's hard to clean and remove sensitive data given the size of the data set
+
+**Replacing the Rule Set**  
+If you can replace the rule set, you can get the LLM to disclose the prompt and potentially reveal the prompt
+* Exploits
+  * Give the input in Chinese characters (i.e., something other than Unicode)
+
+**Data Set Poisoning**    
+It might contain malware that can be extracted later.
+* Vulnerable libraries and files
+  * Pickle: can be used to run arbitrary code
+  * HDF5: vulnerable to buffer overflows
+  * NumPy: vulnerable to zip-bombs (i.e., denial-of-service)
+
+## Risk Mitigation Techniques
+**Data Sanitization**  
+Removing sensitive data.
+
+**Differential Privacy**  
+Change the way the model is developed (more computationally intense and therefore more expensive).
+* Take the numbers the module uses to train
+* Reduce their size
+* Add noise to them
