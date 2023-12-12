@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# figures
-# axes
-# plots
+# figure = the window
+# axes = the L shape within the window
+# plots = the data within the L shape
 
 plt.clf() # clear figure
 
