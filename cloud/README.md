@@ -6,7 +6,7 @@ Cloud computing is a *model* for enabling ubiquitous, convenient, and on-demand 
 * [Three service deployment models](/cloud/README.md#cloud-service-deployment-models)
 
 **CompTIA Cloud+**  
-The CompTIA Cloud+ certification proves you have the knowledge and skill required to
+The [CompTIA Cloud+ certification](https://partners.comptia.org/docs/default-source/resources/comptia-cloud-cv0-003-exam-objectives-(1-0)) proves you have the knowledge and skills required to do the following:
 * Understand cloud architecture
 * Design and deploy cloud-based solutions
 * Maintain, secure, and optimize a cloud environment
@@ -30,17 +30,17 @@ Resource utilization can be measured and then billed using a consumption-based m
 
 ## Cloud Service Models
 **Infrastructure as a Service**  
-In a Infrastructure as a Service (IaaS) model, you're renting hardware to host a platform. 
-* You are responsible for the virtual machine and above
+In a Infrastructure as a Service (IaaS) model, you're renting the physical hardware and hypervisor needed to host virtualized resources (e.g., virtual machines, containers, storage appliances, or load balancers). 
+* You are responsible for the virtualized resources and above
 * The CSP is responsible for the hypervisor and below
 
 **Platform as a Service**  
-In a Platform as a Service (PaaS) model, you're renting a platform to host software. 
-* You are responsible for the app and above
-* The CSP is responsible for the virtual machine and below 
+In a Platform as a Service (PaaS) model, you're renting the physical hardware, hypervisor, and virtualized resources needed to develop applications. 
+* You are responsible for what you develop
+* The CSP is responsible for the platform and below 
 
 **Software as a Service**  
-In a Software as a Service (IaaS) model, you're renting software. 
+In a Software as a Service (IaaS) model, you're renting software to manage data. 
 * You are responsible the data and the identities used to access it
 * The CSP is responsible for the app and below 
 
@@ -73,31 +73,23 @@ In a Multi-Cloud model, a customer uses two or more CSPs for cloud computing. [A
 
 ## Benefits of Cloud Computing
 **Scalability**  
-Scalability is the ability to adjust resources to meet demand. 
+Cloud computing provides the ability to adjust resources to meet demand. 
 * Vertical Scaling: increasing/decreasing the *capability* of a resource (e.g., giving a virtual machine a faster CPU). 
 * Horizontal Scaling: increasing/decreasing the *quantity* of a resource (e.g., adding another virtual machine). Its used to address task division and assignment. 
 
 **Reliability**  
-Reliability is the ability for a service to recover from a failure and continue to function. 
+Cloud computing services are able to recover from a failure and continue to function. 
 
 **High Availability**  
 High availability is the ability for a service to remain online despite a disruption. Availability guarantees are documented as percentages in [Service Level Agreements (SLAs)](/cloud/business-operations/service-providers/README.md#service-documents).
 
 **Predictability**  
-Predictability is the ability to anticipate performance and/or cost to deliver a service. 
-* Performance factors: load balancing, high availability, and autoscaling.
-* Cost factors: monitoring and analytics.
+Cloud computing provides the ability to estimate how much it will cost to deliver a service. 
+* Performance factors: load balancing, high availability, and autoscaling
+* Cost factors: monitoring and analytics
 
-**Governance**  
-Set templates are used to ensure resources are deployed in compliance with regulatory requirements and organizational policies. 
-
-**Security**  
-The cloud is resilient to Distributed Denial-of-Service (DDoS) attacks. 
-
-**Manageability**  
-There are two types of cloud management. 
-* Management of the cloud: represents "what you manage" (e.g., resources)
-* Management in the cloud: represents "how you manage" (e.g., Azure Portal, Azure CLI, PowerShell, and APIs)
+**Compliance**  
+Cloud computing provides the ability to deploy resources using policy-complaint templates. 
 
 ## Cloud Design
 Cloud design is based on requirements relating to the topics described above and listed below. 
@@ -105,3 +97,10 @@ Cloud design is based on requirements relating to the topics described above and
 * [High Availability](/cloud/security/risk-management/README.md#high-availability)
 * [Disaster Recovery](/cloud/security/risk-management/README.md#disaster-recovery)
   * [Recovery Point Objectives](/cloud/security/risk-management/README.md#recovery-point-objectives)
+
+## Cloud Management
+**Management of the Cloud**  
+Represents "what you manage" (e.g., resources).
+
+**Management in the Cloud**  
+Represents "how you manage" (e.g., Azure Portal, Azure CLI, PowerShell, and APIs).

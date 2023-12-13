@@ -1,71 +1,254 @@
 # Cloud Security
+* Access Control
+* Network Security
+* System Security
+* Data Security
+* Vulnerability Management
+* Incident Handling
 
-## Shared Responsibility Model  
-The Shared Responsibility Model (SRM) is a sustainment and security policy. It separates responsibilities between CSPs and organizations based on cloud service types (e.g., IaaS, PaaS, and SaaS). CSPs are responsible for security *of* the cloud, customers are responsible for security *in* the cloud. 
-* Customers are responsible for their (1) clients, (2) identity management, and (3) data.
-* CSPs are responsible for (1) data centers as well as the capital and operations required to run them.
-
-![shared-responsibility-model.png](/cloud/shared-responsibility-model.png)
-
-## Risk Management
-Risk management is the process of designing, building, sustaining, and modifying policies and systems to protect asset Confidentiality, Integrity, and Availability from risk that can be avoided, mitigated, or transferred. It requires organizations to define their risk acceptance level and be adaptable. Preserving the organization is more important than preserving an asset. 
-
-### Risk Assessment
-The first step of risk management if conducting a risk assessment. 
-
-#### The FAIR Framework
-The Factor Analysis of Information Risk (FAIR) framework is a risk assessment process used to measure the impact an asset compromise would have on an organization. 
-| Loss Category         | Description                                                                     | 
-| --------------------- | ------------------------------------------------------------------------------- | 
-| Productivity          | The ability to provide services                                                 | 
-| Response              | The capability to mitigate loss                                                 | 
-| Replacement           | The fix value of a compromised asset                                            | 
-| Fines and Judgements  | The legal/regulatory cost sustained                                             | 
-| Competitive Advantage | The ability for the organization to differentiate itself from other competitors | 
-| Reputation            | The damage sustained to the organization's image                                | 
-
-## Threats
-The Cloud Security Alliance (CSA) is a group of cloud security experts who routinely publish reports on cloud security threats. 
-
-### Data Breaches
-A data breach is when information is exposed without authorization. Events where the information was not accessed after it was exposed is still a data breach.
-
-### Misconfiguration and Inadequate Change Control
-Change control is the process of authorizing and documenting change. It is designed to bake-in resilience (i.e., the ability to withstand internal and/or external threats). 
-
-### Lack of Cloud Security Architecture and Strategy
-Organizations must be cognizant of their role in the [SRM](/cloud/security/README.md#shared-responsibility-model).
-
-### Insufficient Identity, Credential, Access, and Key Management
-Use Multi-Factor Authentication (MFA) and protect your identity management systems. 
- 
-### Account Hijacking
-Account hijacking is when someone gains unauthorized to an account (e.g., through phishing). 
-
-### Insider Threat
-An insider threat is the potential for someone who has access to cause harm to their organization. 
-
-### Insecure Interfaces and APIs
-Use bastion hosts to access and manage your cloud-based resources. 
-
-### Weak Control Plane
-CSA believes the lack of visibility into [SDN](/cloud/networking/README.md#software-defined-networking) Control Plane activity is a threat to cloud security. 
-
-### Metastructure and Applistructure Failures
-**Metastructure**  
-Metastructure is the interface between infrastructure (e.g., virtual machine) and the resources it supports. 
-
-**Applistructure**  
-Applistructure is represented by application components (e.g., UIs, APIs, and databases) and the and the services used to manage them (e.g., web server). 
-
-### Limited Cloud Usage Visibility
-Shadow IT in the cloud is a threat to security. Organizations must be aware of what cloud resources they have and how they're being used. 
-
-### Abuse and Nefarious Use of Cloud Services
-Threat actors have been observed using the cloud to prepare and execute operations (e.g., commmand and control, CAPTCHA cracking, and building rainbow tables).
-
-## Defense in Depth
+## Access Control
+### Identity
+**Identity**  
 Text goes here. 
 
-## Regulatory Compliance
+**Account Management**  
+* Provisioning
+* Account lockout
+* Password complexity (i.e., length and number of character sets)
+* Deprovisioning
+
+### Authentication
+**Authentication Schemes**  
+* Single-Factor Authentication: 
+* Multi-Factor Authentication:
+
+**Public Key Infrastructure**  
+Text goes here. 
+
+**Key Management**  
+Text goes here. 
+* Public Key (house address)
+* Private Key (house key)
+
+**Certificate Management**  
+Text goes here. 
+* Digital Signatures
+
+**Single Sign-On**  
+Text goes here. 
+* Security Assertion Markup Language (SAML)
+
+**Federation**  
+Text goes here. 
+
+### Authorization
+**Permissions**  
+Text goes here. 
+
+**Authorization Schemes**  
+* Mandatory Access Control (MAC):
+* Role-Based Access Control (RBAC):
+* Discretionary Access Control (DAC):
+* Non-Discretionary Access Control (NDAC):
+
+## Network Security
+### Protocols
+**Hypertext Transfer Protocol Secure**  
+Text goes here. 
+
+**Transport Layer Security**
+Text goes here. 
+
+**Domain Name Service**  
+Text goes here. 
+
+**Lightweight Directory Access Protocol**  
+Text goes here. 
+
+**Network Time Protocol**  
+Text goes here. 
+
+**IPSec**  
+Text goes here. 
+
+**Secure Shell**  
+Text goes here. 
+
+**Layer 2 Tunneling Protocol**  
+Text goes here. 
+
+**Point-to-Point Tunneling Protocol**  
+Text goes here. 
+
+**Generic Routing Encapsulation**  
+Text goes here. 
+
+### Security Devices
+**Firewalls**  
+Text goes here. 
+* Stateful firewalls
+* Stateless firewalls
+* Ingress filtering
+* Egress filtering
+
+**Proxy Servers**  
+Text goes here. 
+
+**Web Application Firewall**  
+Text goes here. 
+
+**Intrusion Detection System**  
+Text goes here. 
+
+**Intrusion Prevention System**  
+Text goes here. 
+
+**Data Loss Prevention**  
+Text goes here. 
+
+**Network Access Control**  
+Text goes here. 
+
+**Packet Broker**  
+Text goes here. 
+
+### Network Segmentation
+**Virtual Local Area Network**  
+Text goes here. 
+
+**Micro-Segmentation**  
+Text goes here. 
+
+**Tiering**  
+Text goes here. 
+
+**Security Incident & Event Management Servers**  
+Text goes here. 
+* Event monitoring
+* Network flow
+
+## System Security
+**Hardening**  
+* Disabling default accounts (reduce the probability of the attacker using the right identity)
+* Disabling unnecessary services (e.g., the print spooler on your domain controller)
+* Disabling unnecessary features (e.g., screen recording software)
+* Disabling weak ciphers (to mitigate downgrade attacks)
+* Configuring application whitelisting
+* Installing anti-malware software (signature-based)
+* Installing a host-based IDS (can be signature or behavior-based)
+* Installing a host-based IPS (behavior-based and proactive) 
+* Installing an Endpoint Detection and Response Agent (behavior-based and reactive)
+* Installing a File Integrity Checker 
+
+**Baselines**  
+Text goes here. 
+* Turning workstations into appliances
+* https://www.stigviewer.com/stig/microsoft_windows_11/2022-06-24/MAC-1_Sensitive/
+
+**Configuration Management**  
+Text goes here. 
+
+**Build Versions**  
+* Stable
+* Long-Term Support
+* Beta
+* Canary
+
+## Data Security
+**Cloud Access Security Broker**  
+Text goes here. 
+
+**Encryption**  
+Text goes here. 
+
+**Hashing**  
+Text goes here. 
+
+**Data Classification**  
+
+**Legal Hold** 
+Text goes here. 
+
+**Records Management**  
+* Versioning
+* Retention
+* Destruction
+* "Write Once, Read Many"
+
+## Vulnerability Management
+### Tools
+**Port Scanner**  
+Text goes here. 
+
+**Vulnerability Scanner**  
+Text goes here. 
+
+### Vulnerability Assessments
+**Credentialed Scans**  
+Text goes here. 
+
+**Network Scans**  
+Text goes here. 
+
+**Agent-based Scans**  
+Text goes here. 
+
+**Service Availabilities**  
+Text goes here. 
+
+### Security Patches
+**Hot Fixes**  
+Text goes here. 
+
+**Scheduled Updates**  
+Text goes here. 
+
+**Signature Updates**  
+Text goes here. 
+
+### Security by Cloud Service Model
+Text goes here. 
+
+### Risk Register
+Text goes here. 
+
+## Incident Handling
+### Preparation
+**Roles**  
+Text goes here. 
+
+**Documentation**  
+Text goes here. 
+
+**Phone Roster**  
+Text goes here. 
+
+**Training**  
+Text goes here. 
+
+**Tabletops**  
+Text goes here. 
+
+**Incident Categories**  
+Text goes here. 
+* https://www.jcs.mil/Portals/36/Documents/Library/Manuals/m651001.pdf
+
+### Incident Response 
+**Identify**  
+Text goes here. 
+
+**Investigate**  
+Text goes here. 
+
+**Contain**  
+Text goes here. 
+
+**Eradicate**  
 Text goes here.
+* Root-Cause Analysis 
+
+**Recover**  
+Text goes here. 
+
+**Lessons Learned**  
+Text goes here. 
