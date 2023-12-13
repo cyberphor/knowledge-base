@@ -1,59 +1,103 @@
 # Cloud Computing
-Cloud computing is a strategy for providing on-demand network access to *resources* that can be rapidly provisioned with minimal [Cloud Service Provider](/cloud/business-operations/service-providers/README.md) interaction. National Institute of Standards and Technology Special Publication 800-145 uses [characteristics](#characteristics), [service models](#service-models), and [service deployment models](#service-deployment-models) to define cloud computing. 
+**The NIST Definition of Cloud Computing**  
+Cloud computing is a *model* for enabling ubiquitous, convenient, and on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or [Cloud Service Provider (CSP)](/cloud/business-operations/service-providers/README.md) interaction. This model includes:
+* [Five characteristics](/cloud/README.md#cloud-computing-characteristics)
+* [Three service models](/cloud/README.md#cloud-service-models)
+* [Three service deployment models](/cloud/README.md#cloud-service-deployment-models)
 
-**Resources**  
-Resources include networks, servers, storage, applications, and services.
+**CompTIA Cloud+**  
+The CompTIA Cloud+ certification proves you have the knowledge and skill required to
+* Understand cloud architecture
+* Design and deploy cloud-based solutions
+* Maintain, secure, and optimize a cloud environment
+* Troubleshoot cloud-related issues
 
-**Cloud Service Components**  
-A cloud service includes the components listed below.
-* Data center: where services are hosted
-* Client: how services are accessed
-* Network connection: the path between the data center and client (path ownership depends the [service deployment model](#service-deployment-models))
-
-## History
-People transition from owning a product to using a service when the service becomes cheaper and more reliable.
-
-**1950 - 1966**  
-Compute resources had to be shared because they were expensive. 
-* Herb Grosh suggested 15 data centers should be enough compute for the world
-* John McCarthy proposed the idea of compute being public utility
-* Douglas Parkhill described what we now call “cloud computing” in “The Challenge of the Computer Utility”
-
-**1969 - 1993**  
-Compute resources became accessible at the business and household level. 
-* ARPANET and UNIX are developed
-* Internet-age began
-* Browsers became popular thanks to the World Wide Web
-
-**1995 - 2000**
-* Amazon and eBay launched
-* One of the first Software-as-a-Service organizations, Salesforce, launched
-* The “dot com” bubble burst, forcing organizations to begin seeking for ways to improve their IT utilization
-
-**2006 - 2007**
-* Amazon launches AWS, providing storage and compute via S3 and EC2 respectively
-* Salesforce launches force.com, a cloud computing platform
-
-## Characteristics
-Clouds are defined by the characteristics described below.
-
+## Cloud Computing Characteristics
 **On-Demand Self-Service**  
-Cloud resources can be provisioned as needed and with minimal interaction from the [Cloud Service Provider (CSP)](/cloud/business-operations/service-providers/README.md).
+Resources can be provisioned as needed and automatically (i.e., with minimal interaction from the CSP).
 
 **Broad Network Access**  
-Cloud services can be accessed using a variety of clients (e.g., desktops, laptops, and mobile devices).
+Resources can be accessed using a variety of clients (e.g., desktops, laptops, and mobile devices).
 
 **Resource Pooling**  
-Hardware resources are shared between customers. Resource pooling is an example of *multitenancy*. 
-
-<u>Multitenancy</u>  
-Multitenancy is when multiple users share physical resources but are logically isolated from one another.
+Hardware resources are aggregated by the CSP and shared between customers. Resource pooling is an example of *multitenancy* (when multiple users share physical resources but are logically isolated from each other).
 
 **Rapid Elasticity**  
-Cloud resources are elastic and can be manually or automatically scaled to meet demand. Cloud resources should feel unlimited (i.e., you can use any number of instances at any time).
+Resources can be dynamically scaled to meet demand. They should feel elastic (i.e., you can use any number of instances at any time). Dynamic scaling helps improve resource utilization and reduce cost. 
 
 **Measured Service**  
-Cloud resources are measured, controlled, and billed (e.g., using a pay-per-use model).
+Resource utilization can be measured and then billed using a consumption-based model (you only pay for what you use). Consumption-based utilities, like cloud computing, are categorized as [Operational Expenditures (OpEx)](/cloud/business-operations/expenditures/README.md#categories). Other examples of OpEx are renting a building and/or paying for electricity. 
+
+## Cloud Service Models
+**Infrastructure as a Service**  
+In a Infrastructure as a Service (IaaS) model, you're renting hardware to host a platform. 
+* You are responsible for the virtual machine and above
+* The CSP is responsible for the hypervisor and below
+
+**Platform as a Service**  
+In a Platform as a Service (PaaS) model, you're renting a platform to host software. 
+* You are responsible for the app and above
+* The CSP is responsible for the virtual machine and below 
+
+**Software as a Service**  
+In a Software as a Service (IaaS) model, you're renting software. 
+* You are responsible the data and the identities used to access it
+* The CSP is responsible for the app and below 
+
+| Service Type | CSP Responsibility            | Use-Case                  | Audience       | Example            |
+| ------------ | ----------------------------- | ------------------------- | -------------- | ------------------ |
+| SaaS         | Infrastructure, platform, app | Email                     | Users          | Office 365         |
+| PaaS         | Infrastructure, platform,     | Data Engineering          | Developers     | Azure SQL Database |
+| IaaS         | Infrastructure                | Lift-and-shift migrations | Administrators | Azure              |
+
+**Anything as a Service**    
+Anything as a Service (XaaS) is any technical solution that has been moved to the cloud-based computing model (e.g., Transportation as a Service or Groceries as a Service).
+
+![cloud-service-models.png](/cloud/cloud-service-models.png)
+
+### Cloud Service Deployment Models
+**Private**  
+In a Private cloud model, a single customer owns the data center and access is restricted to its employees. 
+
+**Public**  
+In a Public cloud model, the CSP owns the data center and access is available to any customer.
+
+**Community**  
+In a Community cloud model, a single customer owns the cloud and access is restricted to multiple customers.
+
+**Hybrid Cloud**  
+In a Hybrid cloud model, two or more of the cloud models above are combined. Hybrid cloud models improve flexibility and security but are expensive. 
+
+**Multi-Cloud**  
+In a Multi-Cloud model, a customer uses two or more CSPs for cloud computing. [Azure Arc](/azure/management/README.md#deployment-tools) is a multi-cloud and on-prem management platform. 
+
+## Benefits of Cloud Computing
+**Scalability**  
+Scalability is the ability to adjust resources to meet demand. 
+* Vertical Scaling: increasing/decreasing the *capability* of a resource (e.g., giving a virtual machine a faster CPU). 
+* Horizontal Scaling: increasing/decreasing the *quantity* of a resource (e.g., adding another virtual machine). Its used to address task division and assignment. 
+
+**Reliability**  
+Reliability is the ability for a service to recover from a failure and continue to function. 
+
+**High Availability**  
+High availability is the ability for a service to remain online despite a disruption. Availability guarantees are documented as percentages in [Service Level Agreements (SLAs)](/cloud/business-operations/service-providers/README.md#service-documents).
+
+**Predictability**  
+Predictability is the ability to anticipate performance and/or cost to deliver a service. 
+* Performance factors: load balancing, high availability, and autoscaling.
+* Cost factors: monitoring and analytics.
+
+**Governance**  
+Set templates are used to ensure resources are deployed in compliance with regulatory requirements and organizational policies. 
+
+**Security**  
+The cloud is resilient to Distributed Denial-of-Service (DDoS) attacks. 
+
+**Manageability**  
+There are two types of cloud management. 
+* Management of the cloud: represents "what you manage" (e.g., resources)
+* Management in the cloud: represents "how you manage" (e.g., Azure Portal, Azure CLI, PowerShell, and APIs)
 
 ## Cloud Design
 Cloud design is based on requirements relating to the topics described above and listed below. 

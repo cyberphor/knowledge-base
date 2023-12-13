@@ -1,5 +1,11 @@
 # Cloud Security
-Security is a process for ensuring assets are used by authorized personnel in accordance with organizational policies. 
+
+## Shared Responsibility Model  
+The Shared Responsibility Model (SRM) is a sustainment and security policy. It separates responsibilities between CSPs and organizations based on cloud service types (e.g., IaaS, PaaS, and SaaS). CSPs are responsible for security *of* the cloud, customers are responsible for security *in* the cloud. 
+* Customers are responsible for their (1) clients, (2) identity management, and (3) data.
+* CSPs are responsible for (1) data centers as well as the capital and operations required to run them.
+
+![shared-responsibility-model.png](/cloud/shared-responsibility-model.png)
 
 ## Risk Management
 Risk management is the process of designing, building, sustaining, and modifying policies and systems to protect asset Confidentiality, Integrity, and Availability from risk that can be avoided, mitigated, or transferred. It requires organizations to define their risk acceptance level and be adaptable. Preserving the organization is more important than preserving an asset. 
