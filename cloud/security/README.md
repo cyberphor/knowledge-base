@@ -1,21 +1,23 @@
 # Cloud Security
-* Access Control
-* Network Security
-* System Security
-* Data Security
-* Vulnerability Management
-* Incident Handling
+* [Access Management](#access-management)
+* [Network Security](#network-security)
+* [System Security](#system-security)
+* [Data Security](#data-security)
+* [Vulnerability Management](#vulnerability-management)
+* [Incident Handling](#incident-handling)
 
-## Access Control
+## Access Management
 ### Identity
 **Identity**  
-Text goes here. 
+An identity is the representation of a person or program. It's a unique attribute like a name, number, or address. 
+
+**Account**  
+An account is an identity with data associated to it. 
 
 **Account Management**  
-* Provisioning
+Account management is when accounts are provisioned, updated, or deprovisioned. 
 * Account lockout
 * Password complexity (i.e., length and number of character sets)
-* Deprovisioning
 
 ### Authentication
 **Authentication Schemes**  
@@ -56,7 +58,7 @@ Text goes here.
 **Hypertext Transfer Protocol Secure**  
 Text goes here. 
 
-**Transport Layer Security**
+**Transport Layer Security**  
 Text goes here. 
 
 **Domain Name Service**  
@@ -165,8 +167,9 @@ Text goes here.
 Text goes here. 
 
 **Data Classification**  
+Text goes here.
 
-**Legal Hold** 
+**Legal Hold**  
 Text goes here. 
 
 **Records Management**  
@@ -183,7 +186,7 @@ Text goes here.
 **Vulnerability Scanner**  
 Text goes here. 
 
-### Vulnerability Assessments
+### Assessments
 **Credentialed Scans**  
 Text goes here. 
 

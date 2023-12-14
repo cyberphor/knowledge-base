@@ -1,4 +1,10 @@
 # Cloud Computing
+* [Cloud Computing Characteristics](#cloud-computing-characteristics)
+* [Cloud Service Models](#cloud-service-models)
+* [Cloud Service Deployment Models](#cloud-service-deployment-models)
+* [Cloud Design](#cloud-design)
+* [Cloud Management](#cloud-management)
+
 **The NIST Definition of Cloud Computing**  
 Cloud computing is a *model* for enabling ubiquitous, convenient, and on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or [Cloud Service Provider (CSP)](/cloud/business-operations/service-providers/README.md) interaction. This model includes:
 * [Five characteristics](/cloud/README.md#cloud-computing-characteristics)
@@ -56,11 +62,11 @@ Anything as a Service (XaaS) is any technical solution that has been moved to th
 ![cloud-service-models.png](/cloud/cloud-service-models.png)
 
 ### Cloud Service Deployment Models
-**Private**  
-In a Private cloud model, a single customer owns the data center and access is restricted to its employees. 
-
 **Public**  
-In a Public cloud model, the CSP owns the data center and access is available to any customer.
+In a Public cloud model, the CSP owns the cloud and access is available to any customer.
+
+**Private**  
+In a Private cloud model, you own the cloud and access is restricted to your organization. 
 
 **Community**  
 In a Community cloud model, a single customer owns the cloud and access is restricted to multiple customers.
@@ -71,25 +77,8 @@ In a Hybrid cloud model, two or more of the cloud models above are combined. Hyb
 **Multi-Cloud**  
 In a Multi-Cloud model, a customer uses two or more CSPs for cloud computing. [Azure Arc](/azure/management/README.md#deployment-tools) is a multi-cloud and on-prem management platform. 
 
-## Benefits of Cloud Computing
-**Scalability**  
-Cloud computing provides the ability to adjust resources to meet demand. 
-* Vertical Scaling: increasing/decreasing the *capability* of a resource (e.g., giving a virtual machine a faster CPU). 
-* Horizontal Scaling: increasing/decreasing the *quantity* of a resource (e.g., adding another virtual machine). Its used to address task division and assignment. 
-
-**Reliability**  
-Cloud computing services are able to recover from a failure and continue to function. 
-
-**High Availability**  
-High availability is the ability for a service to remain online despite a disruption. Availability guarantees are documented as percentages in [Service Level Agreements (SLAs)](/cloud/business-operations/service-providers/README.md#service-documents).
-
-**Predictability**  
-Cloud computing provides the ability to estimate how much it will cost to deliver a service. 
-* Performance factors: load balancing, high availability, and autoscaling
-* Cost factors: monitoring and analytics
-
-**Compliance**  
-Cloud computing provides the ability to deploy resources using policy-complaint templates. 
+**Virtual Private Cloud**  
+In a Virtual Private Cloud (VPC), you are the only tenant using resources hosted by a CSP.  
 
 ## Cloud Design
 Cloud design is based on requirements relating to the topics described above and listed below. 
@@ -99,8 +88,4 @@ Cloud design is based on requirements relating to the topics described above and
   * [Recovery Point Objectives](/cloud/security/risk-management/README.md#recovery-point-objectives)
 
 ## Cloud Management
-**Management of the Cloud**  
-Represents "what you manage" (e.g., resources).
-
-**Management in the Cloud**  
-Represents "how you manage" (e.g., Azure Portal, Azure CLI, PowerShell, and APIs).
+[https://aws.amazon.com/compliance/shared-responsibility-model/](https://aws.amazon.com/compliance/shared-responsibility-model/)
