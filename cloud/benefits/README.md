@@ -21,4 +21,4 @@ Cloud computing provides the ability to estimate how much it will cost to delive
 * Cost factors: monitoring and analytics
 
 ## Compliance  
-Cloud computing provides the ability to deploy resources using policy-complaint templates. 
+Cloud computing provides the ability to deploy resources using policy-compliant templates (i.e., copies of virtual machines with an operating system installed and configured). 
