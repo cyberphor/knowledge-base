@@ -106,7 +106,7 @@ IPSec is a suite of protocols used for establishing encrypted and authenticated 
 * IPSec driver: processes packets sent or received over an SA
 
 *IPSec Protocols*
-* ISAKMP: the protocol used to negotiate the security parameters of a network connection
+* ISAKMP: the protocol used to negotiate (security parameters) and maintain network connections
 * ESP:
   * Transport Mode: encrypts the payload (e.g. TCP data) and provides authentication for the IP layer (use-case: VPN)
   * Tunnel Mode: encrypts the payload (use-case: protecting point-to-point network connections)
@@ -115,10 +115,10 @@ IPSec is a suite of protocols used for establishing encrypted and authenticated 
   * Tunnel Model: provides authentication for both the original and new IP header
 
 **Point-to-Point Tunneling Protocol**  
-Point-to-Point Tunneling Protocol (PPTP) is a protocol used for creating Virtual Private Networks. It was developed by Microsoft and Cisco. It is now considered too vulnerable to be used in production. 
+Point-to-Point Tunneling Protocol (PPTP) is a protocol used for creating VPNs. It was developed by Microsoft and Cisco. It is now considered too vulnerable to be used in production. 
 
 **Layer 2 Tunneling Protocol / IPSec**  
-Layer 2 Tunneling Protocol (L2TP) / IPSec is a protocol used for creating Virtual Private Networks. It L2TP is based on PPTP. L2TP relies on IPSec for encryption. 
+Layer 2 Tunneling Protocol (L2TP) / IPSec is a protocol used for creating VPNs. It L2TP is based on PPTP. L2TP relies on IPSec for encryption. 
 * The data you want to protect is encapsulated in a Point-to-Point Protocol (PPP) frame
 * The PPP frame is encapsulated in a L2TP frame
 * The L2TP frame is encapsulated in a IPSec (e.g., ESP) packet
@@ -128,34 +128,44 @@ Layer 2 Tunneling Protocol (L2TP) / IPSec is a protocol used for creating Virtua
 **Generic Routing Encapsulation**  
 Generic Routing Encapsulation (GRE) is a protocol used for tunneling unsupported routing protocols. Like PPTP and L2TP, it relies on other protocols for encryption. 
 
-### Security Devices
+### Network Security Tools
 **Firewalls**  
-Text goes here. 
-* Stateful firewalls
-* Stateless firewalls
-* Ingress filtering
-* Egress filtering
+A firewall is used to filter connections between trusted and untrusted networks. 
+* Stateless firewalls: filter by IP address and port
+* Stateful firewalls: filter by IP address, port, and the state of a connection
+* Web Application Firewalls (WAF): filter by application request (it's focused on protecting the server)
 
 **Proxy Servers**  
-Text goes here. 
-
-**Web Application Firewall**  
-Text goes here. 
+A proxy server is used to filter and cache application requests. It's like a WAF accept it's focused on protecting the client. 
 
 **Intrusion Detection System**  
-Text goes here. 
+An Intrusion Detection System (IDS) is used to detect anomalous activity. It relies on rules for generating alerts.
 
 **Intrusion Prevention System**  
-Text goes here. 
+An Intrusion Prevention System (IPS) is used to detect and prevent anomalous activity. 
 
 **Data Loss Prevention**  
-Text goes here. 
+Data Loss Prevention (DLP) is the process of preventing data from being lost or stolen. It includes the activities listed below. 
+* Backups
+* Blocking unauthorized file operations (e.g., copy, edit, or delete)
+* Blocking screenshots
+* Blocking removable media 
+* Blocking unauthorized print jobs
 
 **Network Access Control**  
-Text goes here. 
+Network Access Control (NAC) is when a client (aka "supplicant") is evaluated by a security check point (aka "authenticator") before *local* area network access is granted. It's similar to port security, but requires less touch-labor when there's a mistake. 
+* The authenticator is a Layer 2 device (e.g., switch or wireless access point)
+* NAC components use Extensible Authentication Protocol (EAP) frames to exchange data relating to the security check
 
 **Packet Broker**  
-Text goes here. 
+A packet broker is software used to collect packets. They are used for analysis other network security tools. 
+
+**Security Incident & Event Management Servers**  
+A Security Incident & Event Management (SIEM) server is used to collect and correlate security-related data. Organizations use it for detecting and analyzing incidents. Examples of security-related data is listed below. 
+* Alerts
+* Transactions logs (e.g., HTTP, DNS, or LDAP)
+* Netflow
+* Packets
 
 ### Network Segmentation
 **Virtual Local Area Network**  
@@ -166,11 +176,6 @@ Text goes here.
 
 **Tiering**  
 Text goes here. 
-
-**Security Incident & Event Management Servers**  
-Text goes here. 
-* Event monitoring
-* Network flow
 
 ## System Security
 **Hardening**  
