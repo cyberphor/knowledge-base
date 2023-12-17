@@ -33,24 +33,3 @@ Conduct a *gap analysis*
 
 **Gap Analysis**  
 A gap analysis evaluates whether or not technology is being fully utilized.  
-
-### Business
-Text goes here.
-
-### Technical
-Text goes here.
-
-## Reporting
-Text goes here.
-
-### Compute
-Text goes here.
-
-### Network
-Text goes here.
-
-### Storage
-Text goes here.
-
-## Benchmarks
-Text goes here.

@@ -21,7 +21,7 @@ A Request for Information (RFI) is a document used to gather information about a
 * Objectives
 * Required information
 * Selection criteria
-* Timeframe
+* Time frame
 
 **Request for Proposal**  
 A Request for Proposal (RFP) is a document used to communicate the organization's needs to a CSP. The "proposal" is a plan for solving the challenge the organization needs to meet. 

@@ -25,7 +25,7 @@ Sumo Logic is an agentless APM. It is uses a proprietary algorithm called "LogRe
 
 #### Prometheus
 Prometheus is an agentless APM developed by SoundCloud in 2012. It was designed to monitor microservice architectures using the components listed below. 
-* Pushgateway: collects metrics pushed by microservices
+* Push gateway: collects metrics pushed by microservices
 * Prometheus Server: discovers targets (e.g., using Kubernetes), retrieves metrics from targets, and stores metrics in a Time Series Database (TSDB)
 * Alert Manager: manages alerting rules and notification settings
 * Prometheus Web UI: visualizes metrics and alerts
