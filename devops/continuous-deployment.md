@@ -17,10 +17,13 @@ Continuous Deployment is a process used to release and automatically deploy soft
 Text goes here.
 
 **Blue/Green**  
-Text goes here. 
+Blue/Green deployments are when there is two environments. One is production (aka "Blue"), the other one is staging (aka "Green"). After the the staging environment has been tested for quality and acceptance, it becomes the production environment. 
+* Step 1: green is new, blue is now
+* Step 2: green is tested and accepted
+* Step 3: green becomes the new standard for both environments
 
 **Canary**  
-Text goes here.
+Canary deployments are when users are migrated to a new release in small groups. 
 
 ## Releases
 ### Types of Issues Before and After a Release

@@ -3,7 +3,10 @@ Cloud Service Providers (CSPs) offer computing resources as a utility. Microsoft
 
 ## Services
 **License Management**  
-CSPs can help mitigate license violations and overspending.
+CSPs can help mitigate license violations and overspending. A *license* represents authorization to use something (e.g., software or service).
+* Perpetual License: customers are licensed forever and billed upfront (the ROI is not guaranteed and scaling will become a problem)
+* Subscription Licensing: customers are licensed as long as they pay for what they used (this will become more expensive than a Perpetual License model)
+* Bring Your Own License: customers are already licensed and don't need to purchase additional licenses before migrating to the cloud
 
 **Time to Market**  
 CSPs can help reduce the length of time between developing an idea and making it available to a customer. 

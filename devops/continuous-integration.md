@@ -79,7 +79,7 @@ Style testing is used to evaluate the readability and security of source code. O
 Functionality testing evaluates the behavior of your code. 
 * Unit Tests: evaluate individual software components (e.g., functions)
 * Integration Tests: evaluate multiple software components working together
-* Regression Tests: evaluate if individual and/or multiple components will break after changes have been made
+* Regression Tests: evaluate if any component will break after changes have been made
 * System Tests: evaluates deployed software 
 * Acceptance Tests: evaluates deployed software for compliance with business requirements
 

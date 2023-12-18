@@ -2,6 +2,7 @@
 * [Cloud Computing Characteristics](#cloud-computing-characteristics)
 * [Cloud Service Models](#cloud-service-models)
 * [Cloud Service Deployment Models](#cloud-service-deployment-models)
+* [Cloud Benefits](#cloud-benefits)
 * [Cloud Design](#cloud-design)
 * [Cloud Management](#cloud-management)
 
@@ -13,7 +14,7 @@ Cloud computing is a *model* for enabling ubiquitous, convenient, and on-demand 
 
 **CompTIA Cloud+**  
 The [CompTIA Cloud+ certification](https://partners.comptia.org/docs/default-source/resources/comptia-cloud-cv0-003-exam-objectives-(1-0)) proves you have the knowledge and skills required to do the following:
-* Understand cloud architecture
+* Understand cloud architecture (e.g., cloud service models and cloud service deployment models)
 * Design and deploy cloud-based solutions
 * Maintain, secure, and optimize a cloud environment
 * Troubleshoot cloud-related issues
@@ -26,7 +27,7 @@ Resources can be provisioned as needed and automatically (i.e., with minimal int
 Resources can be accessed using a variety of clients (e.g., desktops, laptops, and mobile devices).
 
 **Resource Pooling**  
-Hardware resources are aggregated by the CSP and shared between customers. Resource pooling is an example of *multitenancy* (when multiple users share physical resources but are logically isolated from each other).
+Hardware resources are aggregated by the CSP and shared between customers. Resource pooling is an example of *multi-tenancy* (when multiple users share physical resources but are logically isolated from each other).
 
 **Rapid Elasticity**  
 Resources can be dynamically scaled to meet demand. They should feel elastic (i.e., you can use any number of instances at any time). Dynamic scaling helps improve resource utilization and reduce cost. 
@@ -80,19 +81,104 @@ In a Multi-Cloud model, a customer uses two or more CSPs for cloud computing. [A
 **Virtual Private Cloud**  
 In a Virtual Private Cloud (VPC), you are the only tenant using resources hosted by a CSP.  
 
+## Cloud Benefits
+Cloud computing provides three main benefits to business operations. 
+
+**Utility**  
+Cloud computing reduces [Capital Expenditures (CapEx)](/cloud/business-operations/expenditures/README.md#categories) through its elasticity and measured service [characteristics](/cloud/README.md#cloud-elasticity). 
+
+**Process Transformation**  
+Cloud computing improves efficiency and collaboration through its on-demand self-service and broad network access [characteristics](/cloud/README.md#cloud-elasticity).
+
+**Business Transformation**  
+Cloud computing exposes business operations to new revenue streams. 
+
+### Benefits by Cloud Characteristic 
+| Cloud Characteristic   | Benefit 
+| ---------------------- | --------
+| On-Demand Self-Service | Reduces CapEx
+| Broad Network Access   | Makes it easier to use different clients and "work-from-home"
+| Resource Pooling       | Improves hardware utilization and the return-on-investment 
+| Rapid Elasticity       | Allows businesses to meet demand and improve profitability
+| Measured Service       | Reduces OpEx is based on the services and capacity used
+
+### Benefits by Cloud Service Model
+| Cloud Service Model    | Benefit 
+| ---------------------- | --------
+| SaaS                   | Reduces both CapEx and OpEx because responsibility for "software and below" is offloaded to the CSP
+| PaaS                   | Improves code quality because developers are allowed to focus on writing code instead of hosting it
+| IaaS                   | Reduces both CapEx and OpEx because responsibility of the data center is offloaded to the CSP
+
+### Benefits by Cloud Service Deployment Model
+| Cloud Service Deployment Model | Benefit
+| ------------------------------ | --------
+| Public                         | Reduces both CapEx and OpEx 
+| Private                        | Allows the business to maintain control of its data
+| Community                      | Allows two or more businesses to share resources
+| Hybrid                         | Makes it easier to meet both business and regulatory requirements
+
 ## Cloud Design
-Cloud design is based on requirements relating to the topics above and below. 
+### Business Needs Analysis
+A *business needs analysis* is when you identify and analyze a problem that must be solved to achieve a business goal (ex: we need to find a solution to reduce costs and increase profits). 
 
-**Redundancy**  
-Redundancy is when there is more than one cloud resource available. 
+**Migration Phases**  
+1. A business needs analysis is performed 
+2. Requirements that are cloud-compatible are labeled
+3. Cloud-compatible requirements are mapped to cloud solutions
+4. On-prem services are migrated to the cloud
+5. IT staff operate cloud services
 
-**High Availability**  
-Availability represents how long a cloud service can be offline. It's a measurement of time and described in 9s. For example, if a cloud service must be online 99.999% of time, it can only be offline for 5 minutes all year. 
+What are the goals of your business? Why should IT be aligned with them?
+* Save time and resources
 
-**Disaster Recovery**  
-Disaster recovery is the process of restoring cloud services in the event of a failure (the size of the "disaster" is irrelevant). 
-* Recovery Point Objective (RPO) the time between the most recent backup and the disaster. It helps describe how much data can be lost (ex: "I can afford to reboot this VM and lose data because my RPO is 72 hours")
-* Recovery Time Objective (RTO): the time between a disaster and when the affected cloud service needs to be back online (ex: "we have 6 hours to meet our RTO and fix this").
+How do you align IT with the goals of your business?
+* Identify business and user requirements before you migrate or deploy
+* Develop a Business Requirement Document (BRD)
+  * Project overview
+  * Project scope
+  * Success factors
+  * Stakeholder identification
+  * Project constraints
+  * System functionality
+  * User classes
+  * Interface requirements
+* Conduct usability and security tests
+
+What are some business-focused IT requirements?
+* Low costs (e.g., OpEx and CapEx)
+* High interoperability with existing data sources, legacy software, and partners
+* High compute, storage, and network capacity
+* High availability (e.g., through redundancy) 
+* High resiliency (does the cloud continue to function when there's an issue?)
+* Compliance with regulatory requirements (HIPAA, PII, PCI DSS, etc.)
+* Multiple computing environments (e.g., development, staging, production)
+
+What are some user-focused IT requirements?
+* Easy-to-use interfaces
+* Ubiquitous access (i.e., the system is accessible from almost anywhere) 
+* High reliability 
+* Fast support response times 
+
+### Capacity Planning
+Capacity planning is when an organization measures the utilization of existing services to establish a benchmark for future expansion. Below are some examples:
+* If one cabinet can support 1,000 users, two additional cabinets would be needed for the organization to support 3,000. 
+* If 5 licenses can support 100 servers, 6 licenses would be needed to support up to 120.
+
+
+
+
+
+### Baseline
+Identify the organization's baseline and verify it can be migrated. A *baseline* describes the version of hardware and/or software currently deployed. 
+
+### Documentation
+Verify the organization has documented the relationships and dependencies between their resources. 
+
+## Stakeholders
+Identify stakeholders and categorize them by level of domain (e.g., management, operations, IT, and security), influence, and requirements. 
+
+### Gap analysis
+Conduct a gap analysis. A gap analysis evaluates whether or not technology is being fully utilized.  
 
 ## Cloud Management
 [https://aws.amazon.com/compliance/shared-responsibility-model/](https://aws.amazon.com/compliance/shared-responsibility-model/)

@@ -35,7 +35,8 @@ Text goes here.
 * Root-Cause Analysis 
 
 **Recover**  
-Text goes here. 
+* Recovery Point Objective (RPO) the time between the most recent backup and the disaster. It helps describe how much data can be lost (ex: "I can afford to reboot this VM and lose data because my RPO is 72 hours")
+* Recovery Time Objective (RTO): the time between a disaster and when the affected cloud service needs to be back online (ex: "we have 6 hours to meet our RTO and fix this").
 
 **Lessons Learned**  
 Text goes here. 
