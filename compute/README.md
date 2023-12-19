@@ -22,3 +22,4 @@ A shared GPU is when a physical GPU is shared between multiple virtual machines.
 A pass-through GPU is a physical GPU dedicated to one virtual machine. 
 
 ## Memory
+Text goes here. 
