@@ -1,13 +1,9 @@
-# Containers
-
-A container is a unit of software that includes the code and dependencies it needs to run. 
-
 ## Application Architecture Styles
 **Monolithic Applications**  
 A monolithic app aggregates its components (e.g., UI, business logic, and data access) 
 
 **Microservice Architecture**  
-A microservice app seperates components. 
+A microservice app separates components. 
 * Independent services
 * Loosely coupled
 * Well-defined APIs
