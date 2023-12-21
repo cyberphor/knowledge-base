@@ -12,6 +12,9 @@ Simultaneous Multi-Threading (SMT) is technology that allows a CPU to execute mu
 **Virtual CPUs**  
 A virtual CPU (vCPU) is a virtualized CPU. The number of vCPUs a virtual machine can support is calculated using this formula: (processor cores) X (threads per core) = vCPUs. For example, 4 cores multiplied by 2 threads equals 8 vCPUs. 
 
+**System Load**  
+System load is how many processes are waiting to be executed by the CPU. For example, consider these system load metrics: 0.50 (1 minute), 0.75 (5 minutes), 1.00 (15 minutes). The CPU is overloaded. In the past 15 minutes, there was at least one process waiting to be executed. 
+
 ## Graphics Processing Unit
 A Graphics Processing Unit (GPU) is a processor dedicated to graphics-related tasks like rendering images and video. 
 
@@ -22,4 +25,3 @@ A shared GPU is when a physical GPU is shared between multiple virtual machines.
 A pass-through GPU is a physical GPU dedicated to one virtual machine. 
 
 ## Memory
-Text goes here. 

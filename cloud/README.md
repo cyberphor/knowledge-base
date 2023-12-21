@@ -55,7 +55,10 @@ In a Software as a Service (IaaS) model, you're renting software to manage data.
 | IaaS         | Infrastructure                | Lift-and-shift migrations | Administrators | Azure              |
 
 **Anything as a Service**    
-Anything as a Service (XaaS) is any technical solution that has been moved to the cloud-based computing model (e.g., Transportation as a Service or Groceries as a Service).
+Anything as a Service (XaaS) is any technical solution that has been moved to the cloud-based computing model 
+* Storage as a Service (e.g., OneDrive, Google Drive, and DropBox)
+* Transportation as a Service (e.g., Uber)
+* Food as a Service (e.g., Uber Eats)
 
 ![cloud-service-models.png](/cloud/cloud-service-models.png)
 

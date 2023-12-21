@@ -26,15 +26,12 @@ In a Bring Your Own License (BYOL) Model, customers are allowed to use the licen
 User density is how many concurrent connections are there when system performance is acceptable. 
 
 ### Patterns  
-A pattern is when a design is repeated at specific intervals. One example is system load. 
+A pattern is when a design is repeated at specific intervals. One example is [system load](/compute/README.md#central-processing-unit). 
 
 How can a pattern be used to make a prediction about capacity?
 * If one CPU is overloaded every Monday morning, two CPUs may be necessary
 * Baseline: one CPU is overloaded every Monday morning
 * Prediction: two CPUs may be necessary
-
-**System Load**  
-System load is how many processes are waiting to be executed by the CPU. For example, consider these system load metrics: 0.50 (1 minute), 0.75 (5 minutes), 1.00 (15 minutes). The CPU is overloaded. In the past 15 minutes, there was at least one process waiting to be executed. 
 
 ### Anomalies
 An anomaly is anything outside of the normal range of expected behavior or performance of a system. 

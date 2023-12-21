@@ -13,6 +13,9 @@ A Type 2 Hypervisor is a program used to host virtual machines.
 **Oversubscription**  
 Oversubscription is when you allocate more resources to your virtual machines than what your physical host has available. 
 
+**Memory Ballooning**  
+Memory ballooning is when a hypervisor reclaims unused memory from the virtual machine to avoid starving.  
+
 ## Containers
 A container is a software package used for hosting an application. It contains the operating system and dependencies required, but not the hardware. The lack of virtualized hardware makes them smaller and more portable than virtual machines.  
 
