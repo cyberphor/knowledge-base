@@ -3,6 +3,9 @@
 ## Virtual Machines
 A virtual machine is a computer emulated using a hypervisor. 
 
+**Single Root Input/Output Virtualization**  
+Single Root Input/Output Virtualization (SR-IOV) technology is used to give virtual machines direct access to the host's PCIe bus (specifically the network interface cards on it). SR-IOV is used to improve the efficiency of a virtual machine's networking ability.
+
 ## Hypervisors
 **Type 1 Hypervisor**  
 A Type 1 Hypervisor is an operating system used to host virtual machines. 
