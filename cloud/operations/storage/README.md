@@ -1,10 +1,8 @@
 # Storage
-Cloud administration depends on the storage concepts described below. 
-
-* Cloud Storage Features
-* Cloud Storage Tiers
-* Software-Define Storage
-* Content Delivery Network
+* [Cloud Storage Features](#cloud-storage-features)
+* [Cloud Storage Tiers](#cloud-storage-tiers)
+* [Software-Define Storage](#software-define-storage)
+* [Content Delivery Network](#content-delivery-network)
 
 ## Cloud Storage Features
 The features described below are baked into cloud storage services. 

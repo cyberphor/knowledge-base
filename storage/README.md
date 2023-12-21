@@ -4,6 +4,7 @@
 * [File Sharing Protocols](#storage-protocols)
 * [Storage Area Network](#storage-area-network)
 * [Storage Area Network Protocols](#storage-area-network-protocols)
+* [RAID Configurations](#raid-configurations)
 
 ## Data Types
 ### Structured Data  
@@ -93,3 +94,12 @@ graph TD
   style E F fill:#FFD700,stroke:#FFA500,stroke-width:2px;
   style C D fill:#FFB347,stroke:#FF9224,stroke-width:2px;
 ```
+
+## RAID Array Configurations
+| RAID Array Types | Disks Required | Data                           | Parity                     | 
+| ---------------- | -------------- | ------------------------------ | -------------------------- | 
+| 0                | 2              | Striped across disks           | None                       | 
+| 1                | 2              | Mirrored between disks         | None                       | 
+| 5                | 3              | Striped across disks           | Striped across disks       | 
+| 6                | 4              | Striped across disks           | Striped across disks twice | 
+| 10               | 4              | Mirrored between two disk sets | None                       |  
