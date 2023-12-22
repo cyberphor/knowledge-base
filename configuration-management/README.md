@@ -10,4 +10,4 @@
 * Ruby
 
 ## PowerShell Desired State Configuration
-* Configurations are held in Managed Object Format (MOF) files
+* Configurations are kept in Managed Object Format (MOF) files
