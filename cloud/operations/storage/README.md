@@ -13,6 +13,10 @@ Data compression is when data is encoded in a way that requires less storage cap
 **Data Deduplication**  
 Data deduplication is an automated process for ensuring only one copy of data is stored. 
 
+**Data Replication**  
+* Asynchronous replication: the server with backup data is only up to date as long as primary is sending updates (if it fails before sending an update, the update is lost)
+* Synchronous replication: the backup is not considered complete until both servers have the last update
+
 **Data Encryption**  
 CSPs encrypt storage using encryption algorithm like Advanced Encryption Standard (AES).
 

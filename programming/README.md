@@ -7,6 +7,8 @@ Tiering is when you separate the components of an application. Together, the tie
 * Business logic tier: backend
 * Data access tier: database
 
+*APIs connect applications together so they can exchange data.*
+
 ## Automation
 * Repetive tasks (routine operations)
 * Updating software (deployments and updates)

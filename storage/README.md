@@ -18,7 +18,7 @@ Unstructured data is data that does not use a schema or tags. Some examples are 
 
 ## Storage Types
 **Database**  
-Text goes here. 
+Database dumps are used to export database information without rebooting the server. 
 * Structured data: SQL databases
 * Semi-structured data: NoSQL databases
   * Document
@@ -32,7 +32,7 @@ File-based storage solutions organize data using file systems (e.g., NTFS and UF
 * Unstructured data: Microsoft Office Documents
 
 **Object**  
-Object-based storage solutions organize data using metadata tags. They are used for unstructured data that are written once and read infrequently. The unit of storage used to house an object is called a "bucket."
+Object-based storage solutions organize data using metadata tags. They are used for unstructured data that are written once and read infrequently. The unit of storage used to house an object is called a "bucket." Write Once Read Many (WORM) technology stores data in a way so it can't be modified. 
 * Unstructured data: images, programs
 
 **Block**  

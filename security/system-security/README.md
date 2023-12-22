@@ -11,6 +11,12 @@
 * Installing an Endpoint Detection and Response Agent (behavior-based and reactive)
 * Installing a File Integrity Checker 
 
+**Host Intrusion Detection System**  
+Monitors network traffic for patterns. 
+
+**Endpoint Detection and Response**  
+Monitors network traffic, DNS requests, memory operations, process behavior for thresholds of suspicion. 
+
 ## Baselines  
 Text goes here. 
 * Turning workstations into appliances
@@ -20,7 +26,7 @@ Text goes here.
 Text goes here. 
 
 **Build Versions**  
+* Beta: 
 * Stable
 * Long-Term Support
 * Beta
-* Canary

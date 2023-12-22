@@ -8,7 +8,7 @@ A Dockerfile is a text file that contains commands for building an image. It's l
 A Docker image is a binary file that contains the operating system and dependencies needed to run an application. It's like a cake box. 
 
 **Docker Container**  
-A Docker container is an instance of an image. It's like a cake (think of your database or network as an egg). 
+A Docker container is an instance of an image. It's like a cake (think of your database or network as the egg). 
 
 **Image Registry**  
 Registry are used to store images. They can be local (on disk), private (Azure Container Registry), or global (Docker Hub Registry).

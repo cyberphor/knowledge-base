@@ -19,3 +19,9 @@ Orchestration is an automated process consisting of the steps listed below.
 * Configuring the OS
 * Installing and configuring apps
 * Granting access to a user 
+
+## High Availability
+High Availability in the cloud requires:
+* Monitoring: allows administrators to assess the situation and identify issues
+* Redundancy: between regions and/or availability zones (e.g., data centers)
+* Failover

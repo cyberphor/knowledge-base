@@ -12,7 +12,9 @@ An account is an identity with data associated to it.
 ## Authentication
 **Credential Management**  
 * Passwords
-* Keys
+* Keys: your private and public key 
+* Certificates: the certificates that were generated with your key pair
+* Secrets: sensitive information stored in environment variables (e.g., API token)
 
 ### Public Key Infrastructure 
 Public Key Infrastructure (PKI) is a system for creating, storing, distributing, and using private keys and *digital certificates* for authentication. 
@@ -54,10 +56,10 @@ Permissions represent what you're allowed to do with an object.
 
 ### Authorization Schemes
 **Discretionary Access Control**  
-Discretionary Access Control (DAC) is when access is evaluated by the object owner.
+Discretionary Access Control (DAC) is when access is evaluated using Access Control Lists. 
 
 **Mandatory Access Control**  
-Mandatory Access Control (MAC) is when access is evaluated by the system owner. 
+Mandatory Access Control (MAC) is when access is evaluated using labels and account classifications. A subject must possess the right classification to access an object with a specific label. 
 
 **Role-Based Access Control**  
 Role-Based Access Control (RBAC) is when access is evaluated by the subject's role. RBAC uses roles to represent and manage authorization. For example, a user will only be authorized to modify a resource if were assigned a "Editor" role (i.e., their account was added to the "Editors" group).

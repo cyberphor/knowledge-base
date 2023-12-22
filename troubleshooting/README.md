@@ -65,4 +65,6 @@ Timing
 Text goes here. 
 
 ## Troubleshooting Security Issues
-Text goes here.
+Authentication
+* Correct SSH keys
+

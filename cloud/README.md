@@ -74,6 +74,7 @@ In a Community cloud model, a single customer owns the cloud and access is restr
 
 **Hybrid Cloud**  
 In a Hybrid cloud model, two or more of the cloud models above are combined. Hybrid cloud models improve flexibility and security but are expensive. 
+* Cloud Bursting: spilling out from a private cloud to a public one when on-prem resources are overwhelmed
 
 **Multi-Cloud**  
 In a Multi-Cloud model, a customer uses two or more CSPs for cloud computing. [Azure Arc](/azure/management/README.md#deployment-tools) is a multi-cloud and on-prem management platform. 
@@ -83,13 +84,13 @@ In a Virtual Private Cloud (VPC), you are the only tenant using resources hosted
 
 ## Cloud Migration
 
-## Cloud Migration Phases
+### Cloud Migration Phases
 * Assessment
 * Planning
 * Implementation
 * Optimization
 
-## Cloud Migration Types
+### Cloud Migration Types
 * Rehost: lift and shift
 * Replatform: lift, tinker, and shift
 * Refactor: rip and replace

@@ -1,9 +1,14 @@
 # Windows
 
-## Net
+## Command Prompt
 **Local Administrators**
 ```
 net localgroup administrators
+```
+
+**Elevating Privileges**
+```
+runas
 ```
 
 ## PowerShell

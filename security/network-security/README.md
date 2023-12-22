@@ -8,6 +8,9 @@ A firewall is used to filter connections between trusted and untrusted networks.
 * Stateful firewalls: filter by IP address, port, and the state of a connection
 * Web Application Firewalls (WAF): filter by application request (it's focused on protecting the server)
 
+**Cloud Security Access Broker**  
+A Cloud Security Access Broker (CASB) is an inline software or hardware appliance used to detect data loss incidents between on-prem and cloud environments. 
+
 **Proxy Servers**  
 A proxy server is used to filter and cache application requests. It's like a WAF accept it's focused on protecting the client. 
 
@@ -25,6 +28,11 @@ Data Loss Prevention (DLP) is the process of preventing data from being lost or 
 * Blocking removable media 
 * Blocking unauthorized print jobs
 
+DLP has three goals. 
+* Identify confidential data in use, storage, and transit
+* Apply protection using automation
+* Conduct detection and response
+
 **Network Access Control**  
 Network Access Control (NAC) is when a client (aka "supplicant") is evaluated by a security check point (aka "authenticator") before *local* area network access is granted. It's similar to port security, but requires less touch-labor when there's a mistake. 
 * The authenticator is a Layer 2 device (e.g., switch or wireless access point)
@@ -40,12 +48,3 @@ A Security Incident & Event Management (SIEM) server is used to collect and corr
 * Netflow
 * Packets
 
-## Network Segmentation
-**Virtual Local Area Network**  
-Text goes here. 
-
-**Micro-Segmentation**  
-Text goes here. 
-
-**Tiering**  
-Text goes here. 
