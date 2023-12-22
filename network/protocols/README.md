@@ -25,6 +25,9 @@ HyperText Transfer Protocol Secure (HTTPS) is HTTP transmitted via TLS. HTTP is 
 
 **Domain Name Service**  
 Domain Name Service (DNS) is a protocol used to resolve IP addresses to domain names. DNS allows you to discover the address of public Internet resources.  
+* DNS-over-HTTPS: uses HTTPS to encrypt traffic between DNS clients and servers
+* DNS-over-TLS: uses TLS to encrypt traffic between DNS clients and servers
+* DNSSEC: uses PKI for authenticating DNS servers
 
 **Dynamic Host Configuration Protocol**  
 Dynamic Host Configuration Protocol (DHCP) is used to dynamically assign IP addresses. It involves the four step-process describe below. 
@@ -35,6 +38,7 @@ Dynamic Host Configuration Protocol (DHCP) is used to dynamically assign IP addr
 
 **Network Time Protocol**  
 Network Time Protocol (NTP) is a protocol used to synchronize system clocks with atomic clocks. The lower the "stratum" the more accurate the time. Virtual machines get their timing from their physical host. 
+* NTP clients can be configured to use PKI for authenticating NTP servers (aka "Network Time Security")
 
 ## Directory Protocols
 **Lightweight Directory Access Protocol**  

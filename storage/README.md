@@ -21,6 +21,10 @@ Unstructured data is data that does not use a schema or tags. Some examples are 
 Text goes here. 
 * Structured data: SQL databases
 * Semi-structured data: NoSQL databases
+  * Document
+  * Key-value
+  * Wide Column
+  * Graph Stores
 
 **File**  
 File-based storage solutions organize data using file systems (e.g., NTFS and UFS). 

@@ -80,3 +80,20 @@ In a Multi-Cloud model, a customer uses two or more CSPs for cloud computing. [A
 
 **Virtual Private Cloud**  
 In a Virtual Private Cloud (VPC), you are the only tenant using resources hosted by a CSP.  
+
+## Cloud Migration
+
+## Cloud Migration Phases
+* Assessment
+* Planning
+* Implementation
+* Optimization
+
+## Cloud Migration Types
+* Rehost: lift and shift
+* Replatform: lift, tinker, and shift
+* Refactor: rip and replace
+* Repurchase: drop and shop
+* Retire
+* Retain (i.e., an application stays on-prem, but everything else migrates)
+* Hybrid

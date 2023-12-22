@@ -1,4 +1,7 @@
 # Troubleshooting
+* [Troubleshooting Network Issues](#troubleshooting-methodology)
+* [Troubleshooting System Issues](#troubleshooting-system-issues)
+* [Troubleshooting Security Issues](#troubleshooting-security-issues)
 
 ## Troubleshooting Methodology
 1. Identify the problem
@@ -33,16 +36,33 @@
   * Document while you're troubleshooting: symptoms, research, what didn't work, what worked, etc. 
 
 ## Troubleshooting Network Issues
-Text goes here. 
+Connectivity
+* IP address configurations
+* NSG assignments
+* Inbound ACL rules
+* Inherited ACL rules
+
+VPC connectivity
+* Peering between networks within a VPC
+* NSG assignments
+* DNS
+
+Load balancing
+* HTTP client headers are readable
+* HTTP client headers are compatible 
+
+VLANs
+* Use GENEVE to address compatibility issues between VXLAN, NVGRE, and STT segments
+
+QoS
+* Network congestion impacting all packets
+
+Timing 
+* Certificates used for Network Time Security
+* Virtual machine extensions (e.g., VirtualBox Guest Additions)
 
 ## Troubleshooting System Issues
 Text goes here. 
 
-## Troubleshooting Automation Issues
-Text goes here. 
-
 ## Troubleshooting Security Issues
-Text goes here. 
-
-## Troubleshooting Cloud Deployment Issues
-Text goes here. 
+Text goes here.

@@ -1,5 +1,6 @@
 # DevOps
 DevOps is an organizational strategy for rapidly producing high-quality software. 
+* Source of Truth: all configurations are saved as code
 
 **Organizational Strategy**  
 An Organizational strategy describes how people, process, and technology will be used to meet business requirements.

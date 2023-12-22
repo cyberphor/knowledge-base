@@ -5,4 +5,3 @@
 * [Software-Defined Networking](/network/software-defined-networking/README.md)
 * [Switching](/network/switching/README.md)
 * [Virtual Private Networking](/network/virtual-private-networks/README.md)
-

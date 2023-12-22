@@ -1,5 +1,5 @@
-# Data Analysis
-Data analysis is when you categorize, process, and visualize data to provide insight. 
+# Data Engineering
+Data engineering is when you categorize, process, and visualize data to provide insight. 
 
 > The data problem of every organization is not storage, but how to organize data for maximum accessibility and value. 
 
