@@ -1,7 +1,6 @@
 # Entra ID
-Entra ID is an identity management service for on-prem, Microsoft 365, and Azure-based resources. It is a [PaaS](/cloud/concepts/README.md#cloud-service-models) offering and includes user-friendly features. 
-* Convenience: cross-platform, SSO, and password self-service
-* Security: MFA and RBAC 
+Entra ID is a [PaaS](/cloud/concepts/README.md#cloud-service-models) offering and identity management service for on-prem, Microsoft 365, and Azure-based resources. 
+* Features: MFA, SSO, RBAC, SSPR 
 
 **Active Directory Domain Services vs Entra ID**
 | Difference | AD DS                                      | Entra ID                                       |
@@ -9,7 +8,7 @@ Entra ID is an identity management service for on-prem, Microsoft 365, and Azure
 | Scope      | Directory service for on-prem environments | Identity management for web-based apps         | 
 | Management | You manage it (within your infrastructure) | Microsoft manages it (as a PaaS)               |
 | Federation | Included via AD FS                         | Included within Entra ID itself                |
-| Structure  | OUs and GPOs                               | Flat                                           |
+| Structure  | Hierarchal (i.e., OUs and GPOs)            | Flat                                           |
 | Protocols  | Kerberos                                   | SAML, WS-Federation, OpenID Connect, and OAuth | 
 
 ## Definitions

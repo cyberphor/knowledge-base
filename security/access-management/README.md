@@ -1,4 +1,5 @@
-# Access Control
+# Access Management
+
 ## Identity
 **Entity**  
 An entity is a person or program (aka "subject").
@@ -63,3 +64,4 @@ Mandatory Access Control (MAC) is when access is evaluated using labels and acco
 
 **Role-Based Access Control**  
 Role-Based Access Control (RBAC) is when access is evaluated by the subject's role. RBAC uses roles to represent and manage authorization. For example, a user will only be authorized to modify a resource if were assigned a "Editor" role (i.e., their account was added to the "Editors" group).
+
