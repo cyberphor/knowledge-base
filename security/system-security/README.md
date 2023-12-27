@@ -1,4 +1,9 @@
 # System Security
+* [Hardening](#hardening)
+* [Baselines](#baselines)
+* [Domain Services](/security/system-security/domain-services/README.md)
+* [Configuration Management](#configuration-management)
+
 ## Hardening
 * Disabling default accounts (reduce the probability of the attacker using the right identity)
 * Disabling unnecessary services (e.g., the print spooler on your domain controller)
@@ -24,9 +29,3 @@ Text goes here.
 
 ## Configuration Management
 Text goes here. 
-
-**Build Versions**  
-* Beta: 
-* Stable
-* Long-Term Support
-* Beta

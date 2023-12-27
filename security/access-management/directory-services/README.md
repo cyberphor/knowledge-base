@@ -1,8 +1,10 @@
 # Directory Services
-A directory is a "book of rules." People use directories to lookup phone numbers, store locations, and accounts. In IT, directory services are used for managing accounts and permissions (aka "identity and authorization"). 
+A directory is a "book of rules." People use directory services to lookup locations, phone numbers, permissions, etc. In computing, a directory defines identity and authorization information. It represents the foundation of your domain's security policy because it describes access rules. 
+
+![ADUC vs Entra ID](/security/access-management/directory-services/Entra-ID.png)
 
 ## Active Directory Users and Computers
-Active Directory Users and Computers is a directory service for on-prem resources. 
+Active Directory Users and Computers is a directory service for managing access to on-prem resources. 
 
 ## Entra ID  
-[Entra ID](/azure/services/security/directory-services/README.md) is a [PaaS](/cloud/concepts/README.md#cloud-service-models) offering and directory service for managing access to on-prem, Microsoft 365, and Azure resources. 
+Entra ID is a directory and identity management service for on-prem, Microsoft 365, and Azure-based resources. 

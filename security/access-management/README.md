@@ -43,7 +43,7 @@ A Registration Authority processes certificate requests. If you're approved, you
 Single Sign-On is an authentication process where you only need to authenticate once before accessing multiple applications. Specifically, multiple applications (aka "Service Providers") use the same authentication server (aka "Identity Provider").  
 
 *Security Assertion Markup Language (SAML)*  
-SAML is a protocol used to faciliate SSO. It's written in XML and transmitted via HTTP. In practice, Service Providers exchange SAML data with an Identity Provider to provide a SSO experience. 
+SAML is a protocol used to facilitate SSO. It's written in XML and transmitted via HTTP. In practice, Service Providers exchange SAML data with an Identity Provider to provide a SSO experience. 
 
 **Federation**  
 Federation is when an external entity is granted access to your resources. 

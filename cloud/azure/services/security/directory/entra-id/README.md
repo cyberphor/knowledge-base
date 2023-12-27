@@ -1,18 +1,8 @@
 # Entra ID
-Entra ID is a [PaaS](/cloud/concepts/README.md#cloud-service-models) offering and identity management service for on-prem, Microsoft 365, and Azure-based resources. 
-* Features: MFA, SSO, RBAC, SSPR 
+Entra ID is a directory and identity management service for on-prem, Microsoft 365, and Azure-based resources.
 
-**Active Directory Domain Services vs Entra ID**
-| Difference | AD DS                                      | Entra ID                                       |
-| ---------- | ------------------------------------------ | ---------------------------------------------- |
-| Scope      | Directory service for on-prem environments | Identity management for web-based apps         | 
-| Management | You manage it (within your infrastructure) | Microsoft manages it (as a PaaS)               |
-| Federation | Included via AD FS                         | Included within Entra ID itself                |
-| Structure  | Hierarchal (i.e., OUs and GPOs)            | Flat                                           |
-| Protocols  | Kerberos                                   | SAML, WS-Federation, OpenID Connect, and OAuth | 
-
-## Definitions
-Entra ID uses the definitions below. 
+## Entra ID Concepts
+Entra ID uses the concepts described below. 
 
 **Identity**  
 An identity is the representation of a person or program.
@@ -21,17 +11,33 @@ An identity is the representation of a person or program.
 An account is an identity with data associated to it. A Microsoft Entra Account is an account created via Microsoft Entra ID or Microsoft 365.
 
 **Tenant**  
-A tenant is a directory of accounts and an instance of Entra ID. Subscriptions can only use one tenant at a time.
+A tenant a directory. It includes identity and authorization information.
 
-## Editions
-There are four editions of Entra ID. 
+**Subscription**  
+A subscription is a organizational unit used to manage billing. They can only be configured to use one tenant at a time. 
 
-**Free** (included with an Azure subscription)  
+## Features
+Entra ID includes the user-friendly and security features listed below. 
+* Cross-Platform (supports Windows, iOS, macOS, and Android devices)
+* Multi-Factor Authentication (MFA)
+* Single Sign-On (SSO) for on-prem and Azure-based resources
+* Role-Based Access Control (RBAC)
+* Self-Service Password Reset (SSPR) 
+* Identity Protection: Entra ID provides a consolidated view of account logons and resource vulnerabilities within your directory
+
+## Self-Service Password Reset
+
+
+## Entra ID Editions
+
+### Free Edition
+The Free Edition is included with an Azure subscription.
 * User/group management
 * On-prem directory synchronization
 * SSO
 
-**Microsoft 365 Apps** (included with Microsoft 365)  
+### Microsoft 365 Apps
+The Microsoft 365 Apps Edition is included with Microsoft 365. 
 * User/group management
 * On-prem directory synchronization
 * SSO
@@ -41,7 +47,7 @@ There are four editions of Entra ID.
 * MFA
 * Password self-service
 
-**Premium P1**  
+### Premium P1  
 * User/group management
 * On-prem directory synchronization
 * SSO
@@ -50,7 +56,7 @@ There are four editions of Entra ID.
 * Hybrid users can access on-prem and cloud resources
 * Password self-service for on-prem users
 
-**Premium P2**  
+### Premium P2  
 * User/group management
 * On-prem directory synchronization
 * SSO
@@ -60,15 +66,3 @@ There are four editions of Entra ID.
 * Password self-service for on-prem users
 * Entra ID Protection (Conditional Access)
 * Privileged Identity Management (e.g., discover, restrict, and monitor admin access)
-
-## Entra Connect  
-Entra Connect is used for syncing directory information between Active Directory and Entra ID.
-
-## Conditional Access
-Conditional Access is the [zero trust](/security/models/zero-trust/README.md) [policy engine](/security/models/zero-trust/README.md) used across multiple Entra services. Conditional Access uses *identity signals* to allow or deny access to a resource. 
-
-**Identity Signal**  
-An identity signal represents the entity requesting access. It includes the properties listed below. 
-* Their identity (i.e., who they claim to be)
-* Their location
-* Their client (i.e., their device)

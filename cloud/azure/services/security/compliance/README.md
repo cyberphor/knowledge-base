@@ -10,7 +10,7 @@ Microsoft's *data governance* solutions are used to discover, analyze, classify,
 Microsoft's *data risk and compliance* solutions are organized around Microsoft 365. They use Microsoft 365 to protect your data and meet compliance requirements. 
 
 ## Azure Policy
-Azure Policy is a service for managing *resource policies* and *initatives*. Once a policy is defined, Azure Policy will perform the functions listed below. Azure Policy can integrate with Azure DevOps. 
+Azure Policy is a service for managing *resource policies* and *initiatives*. Once a policy is defined, Azure Policy will perform the functions listed below. Azure Policy can integrate with Azure DevOps. 
 * Identify resources that are not compliant
 * Prevent the creation of non-compliant resources 
 

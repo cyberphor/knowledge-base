@@ -5,7 +5,7 @@ Logical infrastructure in Azure is represented by accounts, subscriptions, manag
 An Azure account is a globally unique identity that represents a customer (e.g., an individual or business). Azure accounts are used to manage Azure subscriptions and management groups. 
 
 ## Subscriptions
-A subscription is a organizational unit used for managing billing and resource groups. For example, a business could organize billing and resources for each of their deparments using subscriptions (e.g., the "cyber security" subscription includes a "threat hunting" resource group and is paid for using the CISO's company credit card). 
+A subscription is a organizational unit used to manage billing and resource groups. For example, a business could organize billing and resources for each of their deparments using subscriptions (e.g., the "cyber security" subscription includes a "threat hunting" resource group and is paid for using the CISO's company credit card). 
 
 ### Subscription Types
 **Free Trial**    
