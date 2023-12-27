@@ -1,6 +1,4 @@
 # Domain Services
-
-**Domain**  
 A domain is a group of machines that share the same resources and policy (e.g., access rules and machine configuration requirements).
 
 **Domain Services**  
