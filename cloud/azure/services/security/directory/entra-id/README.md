@@ -4,26 +4,60 @@ Entra ID is a directory and identity management service for on-prem, Microsoft 3
 ## Entra ID Concepts
 Entra ID uses the concepts described below. 
 
-**Identity**  
+### Identity  
 An identity is the representation of a person, program, or machine.
 
-**Account**  
-An account is an identity with data associated to it. A Microsoft Entra Account is an account created via Microsoft Entra ID or Microsoft 365.
+### Account  
+An account is an identity with data associated to it. Entra ID supports three types of accounts: Cloud Identity, Directory-Synced Identity, and Guest Users. 
+* An account must have a Display Name and User Principal Name (UPN). Take Elliot Alderson for example. His Display Name would be "Alderson, Elliot" and his UPN would be "elliot.alderson@evil.corp"  
+* Setting account information (e.g., display name, department, and phone number) requires Global Administrator or User Administrator privileges
+* There is a 30 day window to restore deleted accounts
 
-**Tenant**  
+**Cloud Identity**  
+Accounts only defined within Entra ID are called "Cloud Identity accounts" (they only exist in Azure). Cloud Identity accounts include administrators and users within your organization or another organization using Entra ID. 
+* They are created
+
+**Directory-Synchronized Identity**  
+Accounts defined within Active Directory and imported to Entra ID via [Entra Connect](/cloud/azure/services/security/directory/entra-id/entra-connect/README.md) are called "Directory-Synchronized Identity accounts." 
+* They are imported
+
+**Guest User**  
+Accounts defined outside of Azure are called Guest User accounts. Guest User accounts originate from XBox Live, other cloud service providers, etc. 
+* They are invited
+
+### Group
+Entra ID supports two types of groups: Security Groups and Microsoft 365 Groups. It also supports three different ways of assigning group membership (aka "Access Rights"): Assigned, Dynamic User, and Dynamic Device. Group membership via Dynamic Device can only be used with Security Groups. 
+
+**Group Types**  
+Entra ID supports two types of groups. 
+* Security Groups: used to manage access to shared resources in Azure (e.g., web apps and databases) 
+* Microsoft 365 Groups: used to manage access to shared resources in Microsoft 365 (e.g., mailboxes, calendars, and files)
+
+**Access Rights**  
+There are three different ways to assign Access Rights. 
+* Assigned: every user has unique permissions
+* Dynamic User: membership is assigned while the user meets membership requirements
+* Dynamic Device: membership is assigned while the device meets membership requirements
+
+### Administrative Unit
+Administrative Units (AU) are used to organize and manage administrator privileges within Entra ID. For example, say a university has three departments: business, engineering, and medicine. Each of them would be represented as an AU that includes a role with administrative permissions. This allows them to administer their own department's resources (virtual networks, machines, etc.). 
+* Managing AUs requires Global Administrator or Privileged Role Administrator privileges
+
+### Tenant  
 A tenant, aka "directory," contains the identity and authorization information of people, programs, and machines within an organization. A tenant is considered an instance of Entra ID.
 
-**Subscription**  
+### Subscription  
 A subscription is a organizational unit used to manage billing. Subscriptions can only use one tenant at a time. 
 
 ## Features
 Entra ID includes the user-friendly and security features listed below. 
+* Single Sign-On (SSO) for on-prem (e.g., devices registered via Entra Join) and Azure-based resources
+* Self-Service Password Reset (SSPR) 
+* Bulk operations
 * Cross-Platform: supports Windows, iOS, macOS, and Android devices
 * Passwordless authentication: Windows Hello
 * Multi-Factor Authentication (MFA) 
-* Single Sign-On (SSO) for on-prem (e.g., devices registered via Entra Join) and Azure-based resources
 * Role-Based Access Control (RBAC)
-* Self-Service Password Reset (SSPR) 
 * Entra ID Protection (Conditional Access)
 * Privileged Identity Management (e.g., discover, restrict, and monitor admin access)
 
@@ -54,6 +88,9 @@ Require MFA for accounts allowed to use the SSPR feature.
     * None
     * Selected: specific groups can use SSPR
     * All: all accounts can use SSPR
+
+### Bulk Operations
+Accounts can be created or deleted in bulk using CSV files. Creating or deleting accounts requires Global Administrator or User Administrator privileges. 
 
 ## Entra ID Editions
 All Entra ID editions support the features listed below.
