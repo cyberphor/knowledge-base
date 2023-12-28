@@ -1,5 +1,5 @@
 # Entra ID
-Entra ID is a directory and identity management service for on-prem, Microsoft 365, and Azure-based resources. It's queried using a REST API via HTTPS, not LDAP. 
+Entra ID is a directory and identity management service for on-prem, Microsoft 365, and Azure-based resources. It's queried using a REST API via HTTPS, not LDAP. Also, Entra ID does not require you to specify a region.
 
 ## Entra ID Concepts
 Entra ID uses the concepts described below. 

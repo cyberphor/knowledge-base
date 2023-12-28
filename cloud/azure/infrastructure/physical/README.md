@@ -5,7 +5,7 @@ Azure's physical infrastructure is represented by data centers, regions, and ava
 A data center is a building with racks of computing resources and dedicated energy, cooling, and networking. 
 
 **Azure Data Centers**  
-An Azure data center is a data center used to faciliate the Azure cloud. 
+An Azure data center is a data center used to facilitate the Azure cloud. 
 
 ## Regions  
 A region is an area that contains one or more Azure data centers. 
