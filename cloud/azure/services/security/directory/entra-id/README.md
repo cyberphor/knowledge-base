@@ -8,22 +8,23 @@ Entra ID uses the concepts described below.
 An identity is the representation of a person, program, or machine.
 
 ### Account  
-An account is an identity with data associated to it. Entra ID supports three types of accounts: Cloud Identity, Directory-Synced Identity, and Guest Users. 
-* An account must have a Display Name and User Principal Name (UPN). Take Elliot Alderson for example. His Display Name would be "Alderson, Elliot" and his UPN would be "elliot.alderson@evil.corp"  
-* Setting account information (e.g., display name, department, and phone number) requires Global Administrator or User Administrator privileges
-* There is a 30 day window to restore deleted accounts
+An account is an identity with data associated to it. Entra ID supports three types of accounts: Cloud Identity, Directory-Synced Identity, and Guest Users. An account must have a Display Name and User Principal Name (UPN). Take Elliot Alderson for example. His Display Name would be "Alderson, Elliot" and his UPN would be "elliot.alderson@evil.corp." Setting account information (e.g., display name, department, and phone number) requires Global Administrator or User Administrator privileges. There is a 30 day window to restore deleted accounts. 
 
 **Cloud Identity**  
-Accounts only defined within Entra ID are called "Cloud Identity accounts" (they only exist in Azure). Cloud Identity accounts include administrators and users within your organization or another organization using Entra ID. 
-* They are created
+Accounts only defined within Entra ID are called "Cloud Identity accounts" (they only exist in Azure). They are created within your tenant. Cloud Identity accounts include administrators and users within your organization or another organization using Entra ID. 
 
 **Directory-Synchronized Identity**  
-Accounts defined within Active Directory and imported to Entra ID via [Entra Connect](/cloud/azure/services/security/directory/entra-id/entra-connect/README.md) are called "Directory-Synchronized Identity accounts." 
-* They are imported
+Accounts defined within Active Directory and imported to Entra ID via [Entra Connect](/cloud/azure/services/security/directory/entra-id/entra-connect/README.md) are called "Directory-Synchronized Identity accounts." They are imported to your tenant. 
 
 **Guest User**  
-Accounts defined outside of Azure are called Guest User accounts. Guest User accounts originate from XBox Live, other cloud service providers, etc. 
-* They are invited
+Accounts defined outside of Azure are called Guest User accounts. They are invited to your tenant. Guest User accounts originate from XBox Live, other cloud service providers, etc. 
+
+### Roles
+**Global Administrator**  
+The Global Administrator role can manage users and groups and assign other administrator roles. 
+
+**User Administrator**
+The User Administrator role can manage users and groups.
 
 ### Group
 Entra ID supports two types of groups: Security Groups and Microsoft 365 Groups. It also supports three different ways of assigning group membership (aka "Access Rights"): Assigned, Dynamic User, and Dynamic Device. Group membership via Dynamic Device can only be used with Security Groups. 
@@ -34,10 +35,16 @@ Entra ID supports two types of groups.
 * Microsoft 365 Groups: used to manage access to shared resources in Microsoft 365 (e.g., mailboxes, calendars, and files)
 
 **Access Rights**  
-There are three different ways to assign Access Rights. 
+There are three different ways to assign Access Rights. Adding Dynamic User groups to an Assigned group allows you to govern multiple groups at once. For example, you can change something in "IT Administrators" and affect both the "Cloud Administrators" and "System Administrators."
 * Assigned: every user has unique permissions
 * Dynamic User: membership is assigned while the user meets membership requirements
 * Dynamic Device: membership is assigned while the device meets membership requirements
+
+```mermaid
+graph TD
+  A("IT Administrators (Assigned membership)") --> B("Cloud Administrators (Dynamic membership)")
+  A --> C("System Administrators (Dynamic membership)")
+```
 
 ### Administrative Unit
 Administrative Units (AU) are used to organize and manage administrator privileges within Entra ID. For example, say a university has three departments: business, engineering, and medicine. Each of them would be represented as an AU that includes a role with administrative permissions. This allows them to administer their own department's resources (virtual networks, machines, etc.). 
@@ -77,17 +84,10 @@ Joining a device provides SSO benefits and enforce machine configuration require
 Self-Service Password Reset (SSPR) allows users to reset their password on their own. 
 
 **SSPR Requirements**  
-* Every account that requires the SSPR feature must have a license
-* Every account that requires the SSPR feature must be given Global Administrator privileges 
-* SSPR privileges are managed using security groups
+Every account that requires the SSPR feature must (1) be licensed and (2) be assigned Global Administrator privileges. 
 
 **Enabling SSPR**  
-Require MFA for accounts allowed to use the SSPR feature. 
-* Your tenant
-  * Manage > Properties > "Self-service password reset enabled"
-    * None
-    * Selected: specific groups can use SSPR
-    * All: all accounts can use SSPR
+In your tenant, click "Manage > Properties > Self-service password reset enabled." It's best practice to configure accounts to use MFA if they're authorized to use the SSPR feature. 
 
 ### Bulk Operations
 Accounts can be created or deleted in bulk using CSV files. Creating or deleting accounts requires Global Administrator or User Administrator privileges. 
