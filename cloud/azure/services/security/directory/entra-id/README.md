@@ -20,11 +20,18 @@ Accounts defined within Active Directory and imported to Entra ID via [Entra Con
 Accounts defined outside of Azure are called Guest User accounts. They are invited to your tenant. Guest User accounts originate from XBox Live, other cloud service providers, etc. 
 
 ### Roles
-**Global Administrator**  
-The Global Administrator role can manage users and groups and assign other administrator roles. 
+There three role types: Administrator, Member User, and Guest User. 
 
-**User Administrator**
-The User Administrator role can manage users and groups.
+**Administrator Roles**  
+Administrator roles allow entities to control others. There's two administrator roles. 
+* Global Administrator: can manage users and groups and assign other administrator roles 
+* User Administrator: can manage users and groups
+
+**Member User Roles**  
+Member User roles are meant for entities who are internal to the organization and not responsible for administrating others. 
+
+**Guest User Roles**  
+Guest User roles are meant for entities who are external to the organization (i.e., invited to collaborate with Member Users). 
 
 ### Group
 Entra ID supports two types of groups: Security Groups and Microsoft 365 Groups. It also supports three different ways of assigning group membership (aka "Access Rights"): Assigned, Dynamic User, and Dynamic Device. Group membership via Dynamic Device can only be used with Security Groups. 
@@ -80,20 +87,11 @@ Registering a device provides SSO benefits.
 **Joining a Device**  
 Joining a device provides SSO benefits and enforce machine configuration requirements (e.g., via Microsoft Intune). Joining a device also allows people to use a work account instead of a personal account. 
 
-### Self-Service Password Reset
-Self-Service Password Reset (SSPR) allows users to reset their password on their own. 
-
-**SSPR Requirements**  
-Every account that requires the SSPR feature must (1) be licensed and (2) be assigned Global Administrator privileges. 
-
-**Enabling SSPR**  
-In your tenant, click "Manage > Properties > Self-service password reset enabled." It's best practice to configure accounts to use MFA if they're authorized to use the SSPR feature. 
-
 ### Bulk Operations
 Accounts can be created or deleted in bulk using CSV files. Creating or deleting accounts requires Global Administrator or User Administrator privileges. 
 
 ## Entra ID Editions
-All Entra ID editions support the features listed below.
+There's four editions of Entra ID: Free, Microsoft 365 Apps, Premium P1, and Premium P2. All Entra ID editions support the features listed below.
 * Identity and authorization management
 * SSO
 * Business-to-Business Collaboration
@@ -122,3 +120,20 @@ The Premium P2 Edition supports the features listed below.
 * All Premium P1 edition features
 * Entra ID Protection (Conditional Access)
 * Privileged Identity Management (e.g., discover, restrict, and monitor admin access)
+
+## Entra B2B
+Entra Business-to-Business (B2B) allows multiple tenants to work together. For example, developers from another organization could be given Guest User access using the identities that exist in their tenant. Entra B2B also allows you to invite people who aren't supported by an IT department but have personal/work email address. 
+
+## Company Branding
+There's two options to configure company branding: company logo and background image. 
+
+### Image Requirements
+**Company Logo Image**  
+* File Types: PNG or JPG
+* File Size: less than 5 KB
+* Pixel Size: 32 x 32
+
+**Background Image**  
+* File Types: PNG or JPG
+* File Size: less than 300 KB
+* Pixel Size: 1920 x 1080

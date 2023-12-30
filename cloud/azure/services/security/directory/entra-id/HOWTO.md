@@ -1,8 +1,12 @@
 # Entra ID
 * [Create an Entra ID Tenant](#create-an-entra-id-tenant)
-* [Create an Entra ID Group with Dynamic Membership](#create-an-entra-id-group-with-dynamic-membership)
-* [Create an Entra ID Cloud Identity Account](#create-an-entra-id-cloud-identity-account)
-* [Create an Entra ID Guest User Account](#create-an-entra-id-guest-user-account)
+* [Create an Entra ID Group with Dynamic Membership Using Azure Portal](#create-an-entra-id-group-with-dynamic-membership-using-azure-portal)
+* [Create an Entra ID Cloud Identity Account Using Azure Portal](#create-an-entra-id-cloud-identity-account-using-azure-portal)
+* [Create an Entra ID Cloud Identity Account Using Azure CLI](#create-an-entra-id-cloud-identity-account-using-azure-cli)
+* [Create an Entra ID Cloud Identity Account Using Azure PowerShell](#create-an-entra-id-cloud-identity-account-using-azure-cli)
+* [Create an Entra ID Guest User Account Using Azure Portal](#create-an-entra-id-cloud-identity-account-using-azure-portal)
+* [Bulk Create Entra ID Guest User Accounts Using Azure PowerShell](#bulk-create-entra-id-guest-user-accounts-using-azure-powershell)
+* [Update Company Branding](#update-company-branding)
 
 ## Create an Entra ID Tenant
 **Step 1.** Login to the Azure Portal. 
@@ -19,7 +23,7 @@
 
 **Step 6.** Click "Create."
 
-## Create an Entra ID Group with Dynamic Membership
+## Create an Entra ID Group with Dynamic Membership Using Azure Portal
 **Step 1.** Login to the Azure Portal. 
 
 **Step 2.** Click "Manage > Licenses."
@@ -50,7 +54,7 @@
 
 **Step 12.** Click "Create" to create the security group. 
 
-## Create an Entra ID Cloud Identity Account
+## Create an Entra ID Cloud Identity Account Using Azure Portal
 **Step 1.** Login to the Azure Portal. 
 
 **Step 2.** Search for "Entra ID."
@@ -79,7 +83,25 @@
 
 **Step 11.** Click "Add assignments" and select "User administrator."
 
-## Create an Entra ID Guest User Account
+## Create a Cloud Identity Account Using Azure CLI
+```bash
+az ad user create
+```
+
+```bash
+az ad user delete
+```
+
+## Create a Cloud Identity Account Using Azure PowerShell 
+```powershell
+New-MgUser
+```
+
+```powershell
+Remove-MgUser
+```
+
+## Create an Entra ID Guest User Account Using Azure Portal
 **Step 1.** Login to the Azure Portal. 
 
 **Step 2.** Search for "Entra ID."
@@ -101,3 +123,28 @@
 * Department: `IT`
 
 **Step 9.** Click "Invite."
+
+## Bulk Create Entra ID Guest User Accounts Using Azure PowerShell
+```powershell
+$Message = [Microsoft.Graph.PowerShell.Models.MicrosoftGraphInvitation]@{ CustomizedMessageBody = "Welcome!" }
+Import-CSV invites.csv |
+ForEach-Object {
+    New-MgInvitation `
+      -InviteRedirectUrl https://myapps.microsoft.com ` 
+      -InvitedUserDisplayName $_.Name `
+      -InvitedUserEmailAddress $_.InvitedUserEmailAddress `
+      -InvitedUserMessageInfo $Message `
+      -SendInvitationMessage 
+}
+```
+
+### Update Company Branding
+**Step 1.** Login to Azure Portal. 
+
+**Step 2.** Click "Company Branding > Customize."
+
+**Step 3.** Browse for and upload a company logo (i.e., favicon). 
+
+**Step 4.** Browse for and upload a background image. 
+
+**Step 5.** Click "Review + create."

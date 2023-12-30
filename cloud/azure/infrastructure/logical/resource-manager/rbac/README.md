@@ -27,7 +27,7 @@ Azure uses three different role types to implement RBAC: classic subscription ad
 ![azure-rbac-entra-id.png](/cloud/azure/infrastructure/logical/resource-manager/rbac/azure-rbac-entra-id.png)
 
 **Classic Subscription Administrator Roles**  
-Classic subscription administrator roles used only three roles to manage access at the subscription level. 
+Classic subscription administrator roles used only three roles to manage access at the subscription level. They will be replaced by Azure RBAC roles in 2024. 
 * Account Administrator
 * Service Administrator
 * Co-Administrator
@@ -37,10 +37,6 @@ Entra ID roles are used to manage access to Entra ID resources (e.g., users, gro
 
 **Azure RBAC Roles**  
 Azure RBAC roles are used to manage access to resources across Azure. Access can be defined at different scopes (e.g., management groups, subscriptions, resource groups, and resources). 
-
-*Where are Azure RBAC Security Principals defined and/or stored if not in Entra ID?*  
-* Security principals include user accounts, groups, service principals, and managed identities. 
-* Users and groups are Entra ID resources and therefore stored in Entra ID
 
 ### Built-in Role Definitions
 Azure includes built-in role definitions such as: Reader, Contributor, User Access Administrator, and Owner.

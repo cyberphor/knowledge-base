@@ -2,6 +2,7 @@
 * [Create a Management Group](#create-a-management-group)
 * [Add a Custom RBAC Role](#add-a-custom-rbac-role)
 * [Assign an RBAC Role](#assign-an-rbac-role)
+* [Check Access at the Resource Group Scope](#check-access-at-the-resource-group-scope)
 
 ## Create a Management Group
 **Step 1.** Login to the Azure Portal. 
@@ -76,3 +77,14 @@ New-AzRole -InputFile $HOME/custom-role-definition.json
 **Step 14.** Click "Next", click "Select members", and select the user previously created (e.g., `elliot.alderson@evil.corp`). 
 
 **Step 15.** Click "Review + assign."
+
+## Checking Access at the Resource Group Scope
+**Step 1.** Login to the Azure Portal. 
+
+**Step 2.** Navigate to the resource group. 
+
+**Step 3.** Click "Access control (IAM) > Check Access."
+
+**Step 4.** Search for the entity (e.g., user, group, service principal, or managed identity). 
+
+**Step 5.** Review the "Current role assignments" tab.
