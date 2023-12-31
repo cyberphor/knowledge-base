@@ -1,0 +1,2 @@
+# Azure Files  
+Azure Files is a service for deploying file shares. It can be accessed via the Network File System (NFS) and Server Message Block (SMB) protocol. In practice, files are made available after an SMB share is mounted. 

@@ -1,74 +1,32 @@
 # Azure Storage
-Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings include the [storage-related](/storage/README.md) services, options, and tools listed below. 
+Azure Storage is an [IaaS](/cloud/concepts/README.md#cloud-service-models) offering. It's used for storing virtual machine data, structured data, and unstructured data. 
 
-**Services**  
-Storage Services
-* [Azure Blobs](/azure/services/storage/blobs/README.md)
-* [Azure Disks](/azure/services/storage/disks/README.md)
-* [Azure Files](/azure/services/storage/files/README.md)
-* [Azure Queues](/azure/services/storage/queues/README.md)
-* [Azure Tables](/azure/services/storage/tables/README.md)
+## Virtual Machine Data
+[Azure Disks](/cloud/azure/services/storage/types/virtual-machine-data/disks/README.md) and [Azure Files](/cloud/azure/services/storage/types/virtual-machine-data/files/README.md) are categorized as virtual machine data.  
 
-Migration Services
-* [Azure Data Box](/azure/services/storage/data-box/README.md)
-* [Azure Migrate](/azure/services/storage/migrate/README.md)
+**Azure Files**  
+Azure Files is a service for file shares.  
 
-**Options**
-* [Storage Accounts](/azure/services/storage/accounts/README.md)
-* [Storage Access Options](#access-options)
-* [Storage Redundancy Options](#redundancy-options)
+**Azure Disks**  
+Azure Disks is a service used by virtual machines to store database files, static website content, or code. The maximum capacity of an Azure Disk resource is 32,767 GBs. 
 
-**Tools**  
-* [AzCopy](#azcopy)
-* [Azure Storage Explorer](#azure-storage-explorer)
-* [Azure File Sync](#azure-file-sync)
+## Structured Data
+Structured data is stored using relationships and a common schema. Examples include [Azure SQL Database](/cloud/azure/services/storage/types/structured-data/sql-database/README.md), [Azure Cosmos DB](/cloud/azure/services/storage/types/structured-data/cosmos-db/README.md), and [Azure Tables](/cloud/azure/services/storage/types/structured-data/tables/README.md). 
 
-## Access Options
-There are four options for optimizing the way your data is stored in Azure. 
+**Azure SQL Database**  
+Azure SQL Database is a Database-as-a-Service offering based on SQL. 
 
-### Hot Access Tier
-Data labeled with "hot access" is stored in a way to faciliate frequent and fast access (e.g., SSDs and load balancing). 
+**Azure Cosmos DB**  
+Azure Cosmos DB is a Database-as-a-Service offering. 
 
-### Cool Access Tier  
-Data labeled with "cool access" is stored for at least 30 days and optimized to faciliate infrequent and slow access (e.g., SSDs). 
+**Azure Tables**  
+Azure Tables is a service for storing dictionaries. 
 
-### Cold Access Tier
-Data labeled with "cold access" is stored for at least 90 days and optimized to faciliate infrequent and slow access (e.g., HDDs). 
+## Unstructured Data
+[Azure Blobs](/cloud/azure/services/storage/types/unstructured-data/blobs/README.md) and [Azure Data Lake](/cloud/azure/services/storage/types/unstructured-data/data-lake/README.md) are categorized as unstructured data. 
 
-### Archive Access Tier  
-Data labeled with "archive access" is stored for at least 180 days and optimized to faciliate infrequent and slow access (e.g., stored offline). 
+**Azure Blobs**  
+Azure Blobs is a REST-based store for BLOBs (Binary Large Objects). 
 
-
-## Redundancy Options
-There are four options for achieving data redundancy in Azure. 
-
-### Primary Regions
-There is always three copies of your data in your storage account's primary region. Yet, data is replicated using either *Locally Redundant Storage (LRS)* or *Zone Redundant Storage (ZRS)*.
-
-**Locally Redundant Storage**  
-LRS replicates your data within in the same data center (e.g., all three copies are in the same building). 
-
-**Zone-Redundant Storage**  
-ZRS replicates your data between three separate availability zones (e.g., one copy per zone). By definition, ZRS provides *high-availability*. 
-
-### Secondary Regions
-Using an secondary region to store another copy of your data provides *high durability*. Data between primary and secondary regions is replicated using either *Geo-Redundant Storage (GRS)* or *Geo-Zone-Redundant Storage (GZRS)*.
-
-**Geo-Redundant Storage**  
-GRS copies your data using LRS and then asynchronously replicates it to another data center in a different region (e.g., three copies within building 1 of region A and three copies within building 1 of region B). 
-
-**Geo-Zone-Redundant Storage**  
-GZRS replicates your data using ZRS and then asynchronously replicates it to another data center in a different region (e.g., one copy per zone in region A and three copies within building 1 of region B). 
-
-
-## Tools
-There are three tools for moving data in Azure. 
-
-### AzCopy
-AzCopy is a CLI-based program for copying blobs or files to and from a storage account. 
-
-### Azure Storage Explorer
-Azure Storage Explorer is a self-contained, GUI-based program for copying blobs or files to and from a storage account. 
-
-### Azure File Sync
-Azure File Sync is a tool used for syncing files between on-prem and Azure.  
+**Azure Data Lake**  
+Azure Data Lake is a distributed file system service based on Hadoop.  
