@@ -1,12 +1,13 @@
 # Azure Storage Accounts
 ![azure-blobs.png](/cloud/azure/services/storage/types/unstructured-data/blobs/azure-blobs.png)
 
-A storage account provides a namespace for organizing data. They provide access to Azure Blobs, Azure Storage, Azure Tables, and Azure Queues. A container within a storage account is like a folder. All storage account types use Storage Service Encryption. 
+A storage account provides a namespace for organizing data. They can be used for blob containers, file shares, queues, and tables. All storage account types use Storage Service Encryption. 
 * [Storage Account Types](#storage-account-types)
 * [Storage Account Naming Conventions](#storage-account-naming-conventions)
 * [Storage Account URLs](#storage-account-urls)
 * [Storage Account Replication Options](#storage-account-replication-options)
 * [Storage Account Security](#storage-account-security)
+* [Data Migration Tools](#data-migration-tools)
 
 ## Storage Account Types
 There's four types of storage account types: Standard, Premium File Share, Premium Block Blob, and Premium Page Blob. You cannot change your storage account type after it's created. You must create a new account if your requirements (e.g., speed or access frequency) change. 
@@ -86,4 +87,26 @@ By default, GRS is configured to make replicated data "read-only" when Microsoft
 To protect your storage account, set the "Public network access" setting to "Enabled from selected virtual networks and IP addresses." Beware, these virtual networks and subnets must exist within the same region as your storage account. 
 
 **Private Link**  
-Private Links allow you to connect your storage account to Azure resources over the Azure network backbone instead of the public Internet. 
+Private Links allow you to connect your storage account to Azure resources over the Azure network backbone instead of the public Internet.
+
+## Migrating Data Tools
+### AzCopy
+AzCopy is a CLI-based program for copying blobs or files to and from a storage account. 
+
+### Azure Storage Explorer
+Azure Storage Explorer is a self-contained, GUI-based program for copying blobs or files to and from a storage account. It does not include a "cut" option. You must copy your data and then delete the original.
+
+### Azure File Sync
+Azure File Sync is a tool used for syncing files between on-prem and Azure. 
+
+### Azure Data Box
+Azure Data is a service for migrating data from on-prem into Azure using a physical device. 
+
+### Azure Migrate
+Azure Migrate is service for migrating data from on-prem into Azure using the Internet. It includes two tools: *Discovery and Assessment* and *Server Migration*.
+
+**Discovery and Assessment**  
+Discovery and Assessment is the tool Azure Migrate uses to find servers on-prem that need to be migrated. 
+
+**Server Migration**  
+Server Migration is the tool Azure Migrate uses to migrate servers it found on-prem. 
