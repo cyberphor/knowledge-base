@@ -1,10 +1,15 @@
 # Azure Storage Accounts
-Storage accounts provide namespaces like a directory and help organize data. They provide access to Azure Blobs, Azure Storage, Azure Tables, and Azure Queues. A container within a storage account is like a folder. All storage account types use Storage Service Encryption. 
-
 ![azure-blobs.png](/cloud/azure/services/storage/types/unstructured-data/blobs/azure-blobs.png)
 
+A storage account provides a namespace for organizing data. They provide access to Azure Blobs, Azure Storage, Azure Tables, and Azure Queues. A container within a storage account is like a folder. All storage account types use Storage Service Encryption. 
+* [Storage Account Types](#storage-account-types)
+* [Storage Account Naming Conventions](#storage-account-naming-conventions)
+* [Storage Account URLs](#storage-account-urls)
+* [Storage Account Replication Options](#storage-account-replication-options)
+* [Storage Account Security](#storage-account-security)
+
 ## Storage Account Types
-There are two main types of storage accounts: Standard and Premium. You cannot change storage account types after creation. You must create a new account if your requirements (e.g., speed or access frequency) change. 
+There's four types of storage account types: Standard, Premium File Share, Premium Block Blob, and Premium Page Blob. You cannot change your storage account type after it's created. You must create a new account if your requirements (e.g., speed or access frequency) change. 
 
 | Hardware Used     | Type                | Use Cases                        | Redundancy Options  |
 | ----------------- | ------------------- | -------------------------------- | ------------------- |
@@ -27,18 +32,58 @@ The Premium Page Blob storage account is meant for index-based data structures l
 
 ## Storage Account Naming Conventions  
 Storage account accounts must follow the naming convention described below. 
+* Uniqueness: globally (because it's part of a URL)
 * Length: 3 to 24 characters
 * Character sets: lowercase and numbers only
 
-## Storage Account Endpoints
-Storage accounts provide a unique namespace that can be accessed via HTTP or HTTPS. The endpoint (aka URL) is a combination of the storage account name and service used. 
+## Storage Account URLs
+Storage accounts provide a unique namespace that can be accessed via HTTP or HTTPS. The URL is a combination of the storage account name and service used. The URI is the data object you want to access.  
 ```bash
 # Blobs
-https://cyberphorstorage.blob.core.windows.net
+https://cyberphor123456789.blob.core.windows.net/pictures/image01.png
 
 # Files
-https://cyberphorstorage.file.core.windows.net
+https://cyberphor123456789.file.core.windows.net/reports/report01.pdf
 
 # Queue
-https://cyberphorstorage.queue.core.windows.net
+https://cyberphor123456789.queue.core.windows.net/requests/request01
 ```
+
+### Custom Domain Names
+Storage accounts can be configured to use custom domain names instead of the prefix described above using one of two options: Direct Mapping or Intermediary Mapping. 
+
+**Direct Mapping**  
+Direct mapping involves using a CNAME record (e.g., `cyberphor`). 
+* Before: `https://cyberphor123456789.blob.core.windows.net/pictures/image01.png`
+* After: `https://cyberphor.blob.core.windows.net/pictures/image01.png`
+
+**Intermediary Mapping**  
+Intermediary mapping is when you use a domain name that's already in use within Azure. It does require some downtime to apply the new mapping. 
+
+## Storage Account Replication Options
+Storage accounts can be replicated in and between primary and secondary regions. In a primary region, storage accounts are replicated using *Locally Redundant Storage (LRS)* or *Zone Redundant Storage (ZRS)*. Between primary and secondary regions, storage accounts are replicated using *Geo-Redundant Storage (GRS)* or *Geo-Zone-Redundant Storage (GZRS)*.
+* High Availability: when data is replicated between three different zones 
+* High Durability: when data is replicated between a primary and second region 
+
+### Primary Regions
+**Locally Redundant Storage**    
+LRS replicates your storage account within in the same data center (e.g., one building with three copies). It's the cheapest option, but provides the least durability. 
+
+**Zone Redundant Storage**   
+ZRS replicates your storage account between within the same region (e.g., three zones with one copy each). ZRS is not available in every region. 
+
+### Secondary Regions
+**Geo-Redundant Storage**  
+GRS copies your data using LRS and then asynchronously replicates it to another data center in a different region (e.g., three copies within building 1 of region A and three copies within building 1 of region B). 
+
+**Geo-Zone-Redundant Storage**   
+GZRS replicates your data using ZRS and then asynchronously replicates it to another data center in a different region (e.g., one copy per zone in region A and three copies within building 1 of region B).
+
+*Read-Access GRS*  
+By default, GRS is configured to make replicated data "read-only" when Microsoft initiates a failover. In Read-Access GRS, you can make replicated data "read-only" regardless if Microsoft initiated the failover or not.   
+
+## Storage Account Security
+To protect your storage account, set the "Public network access" setting to "Enabled from selected virtual networks and IP addresses." Beware, these virtual networks and subnets must exist within the same region as your storage account. 
+
+**Private Link**  
+Private Links allow you to connect your storage account to Azure resources over the Azure network backbone instead of the public Internet. 
