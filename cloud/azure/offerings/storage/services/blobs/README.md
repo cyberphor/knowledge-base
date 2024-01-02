@@ -57,7 +57,7 @@ Data labeled with "cool access" is optimized for infrequent and slow access (e.g
 Data labeled with "cold access" is optimized for infrequent and slow access (e.g., HDDs). This tier is meant at least 90 days of storage. 
 
 ### Archive Access Tier  
-Data labeled with "archive access" is optimized for infrequent and slow access (e.g., stored offline). This tier is meant at least 180 days of storage. 
+Data labeled with "archive access" is optimized for infrequent and slow access (e.g., stored offline). This tier is meant at least 180 days of storage. You can only set Archive Access at the blob-level not for your entire storage account.
 
 ## Blob Lifecycle Management Rules
 Blob lifecycle management rules allow you to automatically change a blob's access tier and set its expiration date. They help you reduce storage costs.

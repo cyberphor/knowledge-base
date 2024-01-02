@@ -6,7 +6,6 @@ A storage account provides a namespace for organizing data. They can be used for
 * [Storage Account Naming Conventions](#storage-account-naming-conventions)
 * [Storage Account URLs](#storage-account-urls)
 * [Storage Account Replication Options](#storage-account-replication-options)
-* [Storage Account Security](#storage-account-security)
 * [Data Migration Tools](#data-migration-tools)
 
 ## Storage Account Types
@@ -82,12 +81,6 @@ GZRS replicates your data using ZRS and then asynchronously replicates it to ano
 
 *Read-Access GRS*  
 By default, GRS is configured to make replicated data "read-only" when Microsoft initiates a failover. In Read-Access GRS, you can make replicated data "read-only" regardless if Microsoft initiated the failover or not.   
-
-## Storage Account Security
-To protect your storage account, set the "Public network access" setting to "Enabled from selected virtual networks and IP addresses." Beware, these virtual networks and subnets must exist within the same region as your storage account. 
-
-**Private Link**  
-Private Links allow you to connect your storage account to Azure resources over the Azure network backbone instead of the public Internet.
 
 ## Migrating Data Tools
 ### AzCopy
