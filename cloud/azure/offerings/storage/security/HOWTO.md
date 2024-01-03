@@ -144,12 +144,12 @@ cd ..
 ```
 
 ### Add Code to An Existing Web App to Use SAS Tokens
-**Step 14.** Open the `external.cshtml` file within the `Pages` folder. 
+**Step 15.** Open the `external.cshtml` file within the `Pages` folder. 
 ```bash
 code Pages/external.cshtml
 ```
 
-**Step 15.** In the last `<script>` element, replace the current `#btn-submit` code with what's provided below. The new `#btn-submit` code changes the URL previously used in every image request to a "secure" version (it specifically adds `/secure` which was not there before).
+**Step 16.** In the last `<script>` element, replace the current `#btn-submit` code with what's provided below. The new `#btn-submit` code changes the URL previously used in every image request to a "secure" version (it specifically adds `/secure` which was not there before).
 ```js
 $('#btn-submit').click(function(){
     $('#result').empty();
@@ -160,7 +160,7 @@ $('#btn-submit').click(function(){
 });
 ```
 
-**Step 16.** In the same `<script>` element, add the code below between the block you just updated and the closing `</script>` tag. This `#btn-getKey` code generates an SAS token for the image requested. 
+**Step 17.** In the same `<script>` element, add the code below between the block you just updated and the closing `</script>` tag. This `#btn-getKey` code generates an SAS token for the image requested. 
 ```js
 $('#btn-getKey').click(function(){
     $.get('api/PatientRecords/' + $('#patientID').val() + '/secure', function (data) {
@@ -169,9 +169,9 @@ $('#btn-getKey').click(function(){
 });
 ```
 
-**Step 17.** Run the web app from the `sas` folder. 
+**Step 18.** Run the web app from the `sas` folder. 
 ```bash
 dotnet run
 ```
 
-**Step 18.** Navigate to the URL saved earlier. 
+**Step 19.** Navigate to the URL saved earlier. 
