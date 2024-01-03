@@ -5,6 +5,8 @@
 * [Create a Virtual Machine Using a Template and PowerShell](#create-a-virtual-machine-using-a-template-and-powershell)
 * [Create a File Share Using the Azure Portal](#create-a-file-share-using-the-azure-portal)
 * [Configure Network Access for a Storage Account](#configure-network-access-for-a-storage-account)
+* [Create an Azure Import Job](#create-an-azure-import-job)
+* [Create an Azure Export Job](#create-an-azure-export-job)
 
 ## Create a Storage Account Using Azure Portal
 **Step 1.** Login to the Azure Portal.
@@ -188,3 +190,41 @@ New-Item -Type File -Path "Z:\recipes\chicago-style-deep-dish-pizza.txt"
 **Step 4.** In the "Firewalls and virtual networks" tab, set "Public network access" to "Enabled from selected virtual networks and IP addresses."
 
 **Step 5.** Select "Add your client IP address" and click "Save."
+
+## Create an Azure Import Job
+**Step 1.** Identify and collect the disks you need.
+
+**Step 2.** Attach the disks to your computer. 
+
+**Step 3.** Install and run the WAImportExport program on your computer. 
+
+**Step 4.** Login to the Azure Portal. 
+
+**Step 5.** Create a storage account. 
+
+**Step 6.** Create an Azure Import Job using the information below. 
+* Storage account name
+* Your mailing address
+* Your shipment carrier account number
+* The mailing address for the data center where your storage account is located
+
+**Step 7.** Ship the disks and add the tracking number to the Azure Import Job. 
+
+**Step 8.** Wait for your disks to be shipped back to you. 
+
+## Create an Azure Export Job
+**Step 1.** Login to the Azure Portal. 
+
+**Step 2.** Identify the data in Azure Blobs you want to export. 
+
+**Step 3.** Create an Azure Export Job using the information below. 
+* Storage account name
+* The blobs you want to export
+* Your mailing address
+* Your shipment carrier account number
+
+**Step 4.** Ship the disks where your storage account is located and add the tracking number to the Azure Export Job. 
+
+**Step 5.** Wait for your disks to be shipped back to you. 
+
+**Step 6.** Decrypt the disks using the BitLocker keys that were added to your storage account. 

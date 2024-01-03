@@ -1,22 +1,28 @@
 # Azure Storage Accounts
-![azure-blobs.png](/cloud/azure/services/storage/types/unstructured-data/blobs/azure-blobs.png)
+![azure-blobs.png](/cloud/azure/offerings/storage/services/blobs/azure-blobs.png)
 
-A storage account provides a namespace for organizing data. They can be used for blob containers, file shares, queues, and tables. All storage account types use Storage Service Encryption. 
-* [Storage Account Types](#storage-account-types)
+Storage accounts are used to manage one or more Azure Storage services (e.g., Azure Blobs, Files, Queues, and Tables). They provide a namespace for organizing your data. They are not used to manage Azure SQL or Azure Cosmos DB resources. Storage account settings are categorized as advanced (protocol and tier), networking (public access), data protection (soft deletions and versioning), and encryption (Microsoft or customer managed keys). All storage account types use Storage Service Encryption. 
 * [Storage Account Naming Conventions](#storage-account-naming-conventions)
+* [Storage Account Types](#storage-account-types)
 * [Storage Account URLs](#storage-account-urls)
 * [Storage Account Replication Options](#storage-account-replication-options)
-* [Data Migration Tools](#data-migration-tools)
+* [Storage Account Access Keys](#storage-account-access-keys)
+
+## Storage Account Naming Conventions  
+Storage account accounts must follow the naming convention described below. 
+* Uniqueness: globally (because it's part of a URL)
+* Length: 3 to 24 characters
+* Character sets: lowercase and numbers only
 
 ## Storage Account Types
 There's four types of storage account types: Standard, Premium File Share, Premium Block Blob, and Premium Page Blob. You cannot change your storage account type after it's created. You must create a new account if your requirements (e.g., speed or access frequency) change. 
 
-| Hardware Used     | Type                | Use Cases                        | Redundancy Options  |
-| ----------------- | ------------------- | -------------------------------- | ------------------- |
-| Hard Disk Drive   | Standard            | Blobs, tables, and queues        | LRS, ZRS, GRS, GZRS |
-| Solid State Drive | Premium File Shares | File shares                      | LRS, ZRS            |
-| Solid State Drive | Premium Block Blob  | Blobs stored as blocks           | LRS, ZRS            |
-| Solid State Drive | Premium Page Blob   | Virtual machine disks            | LRS                 |
+| Hardware Used     | Type                | Use Cases                         | Redundancy Options  |
+| ----------------- | ------------------- | --------------------------------- | ------------------- |
+| Hard Disk Drive   | Standard            | Blobs, tables, queues, and tables | LRS, ZRS, GRS, GZRS |
+| Solid State Drive | Premium File Shares | File shares only                  | LRS, ZRS            |
+| Solid State Drive | Premium Block Blob  | Block and append blobs only       | LRS, ZRS            |
+| Solid State Drive | Premium Page Blob   | Page blobs only                   | LRS                 |
 
 ### Standard Storage Accounts
 Standard storage accounts are used for infrequently accessed data. Premium storage accounts are used for frequently accessed data.
@@ -29,12 +35,6 @@ The Premium Block Blob storage account is meant for blobs and/or data lakes with
 
 ### Premium Page Blob Storage Account
 The Premium Page Blob storage account is meant for index-based data structures like virtual machine disks. 
-
-## Storage Account Naming Conventions  
-Storage account accounts must follow the naming convention described below. 
-* Uniqueness: globally (because it's part of a URL)
-* Length: 3 to 24 characters
-* Character sets: lowercase and numbers only
 
 ## Storage Account URLs
 Storage accounts provide a unique namespace that can be accessed via HTTP or HTTPS. The URL is a combination of the storage account name and service used. The URI is the data object you want to access.  
@@ -82,24 +82,5 @@ GZRS replicates your data using ZRS and then asynchronously replicates it to ano
 *Read-Access GRS*  
 By default, GRS is configured to make replicated data "read-only" when Microsoft initiates a failover. In Read-Access GRS, you can make replicated data "read-only" regardless if Microsoft initiated the failover or not.   
 
-## Migrating Data Tools
-### AzCopy
-AzCopy is a CLI-based program for copying blobs or files to and from a storage account. 
-
-### Azure Storage Explorer
-Azure Storage Explorer is a self-contained, GUI-based program for copying blobs or files to and from a storage account. It does not include a "cut" option. You must copy your data and then delete the original.
-
-### Azure File Sync
-Azure File Sync is a tool used for syncing files between on-prem and Azure. 
-
-### Azure Data Box
-Azure Data is a service for migrating data from on-prem into Azure using a physical device. 
-
-### Azure Migrate
-Azure Migrate is service for migrating data from on-prem into Azure using the Internet. It includes two tools: *Discovery and Assessment* and *Server Migration*.
-
-**Discovery and Assessment**  
-Discovery and Assessment is the tool Azure Migrate uses to find servers on-prem that need to be migrated. 
-
-**Server Migration**  
-Server Migration is the tool Azure Migrate uses to migrate servers it found on-prem. 
+## Storage Account Access Keys
+Every storage account comes with two 512-bit access keys. They are used to digitally sign Shared Keys and/or SAS tokens. If you're using the Azure CLI and `az storage blob` command, it's an argument for the `--account-key` parameter. 

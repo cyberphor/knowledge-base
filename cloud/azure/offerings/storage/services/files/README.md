@@ -1,5 +1,5 @@
 # Azure Files  
-Azure Files is a service for deploying file shares in the cloud. 
+Azure Files is a service for deploying file shares in the cloud. Large file shares can support up to 100 TBs. 
 * [Azure File Share Access](#azure-file-share-access)
 * [Azure File Share Snapshots](#azure-file-share-snapshots)
 * [Azure File Sync](#azure-file-sync)
