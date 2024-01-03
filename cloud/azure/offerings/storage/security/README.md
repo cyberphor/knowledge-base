@@ -1,7 +1,10 @@
 # Azure Storage Security
 
 ## Network Access
-By default, "Public network access" is "Enabled from all networks." Network access can be restricted to specific virtual networks and/or IP addresses (they must be within the same region as your storage account). 
+By default, storage accounts are configured to allow pubic network access from all networks. Network access can be restricted to specific virtual networks and/or IP addresses (they must be within the same region as your storage account). 
+
+### Secure Transfer Required  
+If a storage account has the "Secure transfer enabled" setting enabled, REST APIs must connect using HTTPS. Connections via HTTP will be ignored. 
 
 ### Private Link  
 Private Links allow you to use the Azure backbone connecting your storage account to Azure resources instead of the public Internet. 
