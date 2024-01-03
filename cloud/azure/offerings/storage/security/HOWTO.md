@@ -1,7 +1,7 @@
 # Azure Storage Security
-* [Update an App to Generate an SAS Token per Blob](#update-an-app-to-generate-an-sas-token-per-blob)
+* [Update a Web App to Generate an SAS Token per Blob](#update-a-web-app-to-generate-an-sas-token-per-blob)
 
-## Update an App to Generate an SAS Token per Blob
+## Update a Web App to Generate an SAS Token per Blob
 In this task, you're going to do the following:
 * [Create a Storage Account and Add Blobs to It](#create-a-storage-account-and-add-blobs-to-it)
 * [Add Code to An Existing Web App to Create SAS Tokens](#add-code-to-an-existing-web-app-to-create-sas-tokens)
