@@ -11,9 +11,26 @@
 ![azure-storage.png](azure-storage.png)
 
 ## Azure Storage Explorer
-Azure Storage Explorer is a self-contained, GUI program for copying data to, from, and between storage accounts. It does not include a "cut" option. You must copy your data and then delete the original. Azure Storage Explorer can connect to multiple storage accounts (e.g., yours and someone else's) and/or services within another subscription (e.g., Blobs, Files, Queues, and Tables). Azure Storage Explorer needs an Account Key or SAS token to connect to storage in Azure. Azure Storage Explorer includes a feature called "Azure Storage Emulator" that allows you to connect to local storage. 
+Azure Storage Explorer is a self-contained, GUI program for edit, delete, or copy data to, from, and between storage accounts. It does not include a "cut" option. You must copy your data and then delete the original. Azure Storage Explorer can connect to multiple storage accounts (e.g., yours and someone else's) and/or services within another subscription (e.g., Blobs, Files, Queues, and Tables). Azure Storage Explorer needs an Account Key or SAS token to connect to storage in Azure. 
 
+### Accessing Azure Data Lake Resources
+Azure Storage Explorer can also connect to Azure Data Lake resources. 
+```bash
+az storage account create \
+    --location westus2 \
+    --resource-group "${RESOURCE_GROUP}" \
+    --name "${STORAGE_ACCOUNT_NAME}" \
+    --kind "StorageV2" \
+    --sku "Standard_LRS" \ 
+    --hns # enable the hierarchical namespace feature (required for the Azure Data Lake Gen2 resource)
+```
+
+### Azure Storage Emulator
+Azure Storage Explorer includes a feature called "Azure Storage Emulator" that allows you to connect to local storage. It uses a local instance of Microsoft SQL Server 2012 Express LocalDB to emulate Azure Blobs, Azure Queues, or Azure Tables.
 ![azure-storage-explorer.png](azure-storage-explorer.png)
+
+### Azurite
+Azurite is an alternative to Azure Storage Explorer and based on Node.js. 
 
 ## Azure Import/Export Service
 The Azure Import/Export Service allows you to import/export data into Azure Blobs or Azure Files using drives you own. It's meant for when you have too much data to upload over the Internet (e.g., migrations, CDNs, and diaster recovery). 
