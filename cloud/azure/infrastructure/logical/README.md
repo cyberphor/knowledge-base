@@ -1,5 +1,9 @@
 # Logical Infrastructure
 Logical infrastructure in Azure is represented by management groups, subscriptions, resource groups, and resources. 
+* [Management Groups](#management-groups)
+* [Subscriptions](#subscriptions)
+* [Resource Groups](#resource-groups)
+* [Resources](#resources)
 
 ## Management Groups
 A management group is an organizational unit used to manage multiple subscriptions. Management groups may be necessary for businesses that have subordinate organizations with similar departments but different missions. For example, a brigade could organize its subscriptions by creating a management group for each battalion. Each battalion would then have a subscription for each staff section and company. Each staff section and company would then have a resource group. Management groups can be nested. Management group IDs cannot be updated after creation.
@@ -33,10 +37,10 @@ A subscription can be purchased through the Open Value program. The Open Value p
 **Microsoft Partner**  
 A subscription can be purchased from a Microsoft partner. Microsoft partners have the business and IT expertise to make recommendations specific to your organization. 
 
-## Resource Group 
+## Resource Groups
 A resource group is a collection of resources. You cannot rename or nest resource groups. Yet, if you apply a setting to a resource group, currrent and future resources inherit it. You have to specify a location for your resource groups so Azure knows where to save the resource group's metadata.
 
-## Resource 
+## Resources 
 Resources represent what you can build, configure, deploy, etc. in Azure. For example, virtual machines, virtual networks, and databases are resources. Every resource exists within a resource group (they cannot be put it into more than one). Resources are managed using the [Azure Resource Manager](/azure/infrastructure/logical/resource-manager/README.md). *Pro-Tip: Use resource groups for resources that have the same lifecycle and use resource tags for everything else*.
 
 *How to Determine Resource Limits*  

@@ -1,4 +1,5 @@
 # Azure Storage
+Azure's offerings include the storage services below. 
 * [Storage Accounts](accounts/README.md)
 * [Storage Services](services/)
 * [Storage Security](#storage-security)

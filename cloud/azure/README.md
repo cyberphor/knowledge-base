@@ -49,4 +49,3 @@ The Pricing Calculator is used for estimating how much it will cost to provision
 
 **Total Cost of Ownership Calculator**  
 The Total Cost of Ownership Calculator is used for comparing the difference in cost between hosting infrastructure on-prem vs in Azure. 
-

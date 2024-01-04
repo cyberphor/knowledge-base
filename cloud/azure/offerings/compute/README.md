@@ -1,47 +1,18 @@
 # Azure Compute Services
-Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings include the compute services listed and described below. 
-* [Virtual Machines](#virtual-machines)
-* [Containers](#containers)
-* [Serverless Functions](#serverless-functions)
+Azure's offerings include the compute services below. 
+* [Virtual Machines](virtual-machines/README.md)
+* [Containers](containers/README.md)
+* [Serverless Functions](functions/README.md)
+* [Maintenance Events](#maintenance-events)
 
-## Virtual Machines
-[Virtual machines](/virtualization/virtual-machines/README.md) are provided through Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings. 
+## Maintenance Events
+Azure define outage categories: Unplanned Hardware Maintenance, Unexpected Downtime, and Planned Maintenance. 
 
-**Virtual Machine Components**  
-An virtual machine in Azure is represented by the components listed below. 
-* Size: number of processor cores and amount of memory
-* Disk: hard disk drive vs solid state drive
-* Network settings: virtual network, public IP address, and port configuration
+### Unplanned Hardware Maintenance  
+Unplanned hardware maintenance is when Azure predicts hardware you're using is about to fail. In response, a notification is sent to Azure's "Live Migration" service. This service will suspend your resources while they are moved to safer hardware. 
 
-**Scale Sets**  
-A scale set is a resource used to load balance and [horizontally scale](/cloud/concepts/README.md#cloud-benefits) of identical virtual machines. If you wanted to vertically scale a virtual machine, you would change the size of it. 
+### Unexpected Downtime  
+Unexpected downtime is when hardware failure was not predicted. 
 
-**Availability Sets**  
-An availability set is a resource used to separate virtual machines into update or fault domains. Availability sets are free. 
-
-*Update Domain*  
-An update domain is group of virtual machines that can be updated and/or rebooted at the same time. 
-
-*Fault Domain*  
-A vault domain is a group of virtual machines with the same source of power and network switch. 
-
-**Azure Virtual Desktop**  
-Azure Virtual Desktop (AVD) is a IaaS offering that provides a cloud-hosted version of a client operating system (e.g., Windows 10 or 11). AVD can be protected using Role-Based Access Control and Multi-Factor Authentication. 
-
-## Containers
-[Containers](/virtualization/containers/README.md) are provided through Azure's [PaaS](/cloud/concepts/README.md#cloud-service-models) offerings. 
-
-**Azure Container Instances**  
-Azure Container Instances (ACI) is a PaaS offering that allows you to run containers. 
-
-**Azure Container Apps**  
-Azure Container Apps (ACA) is a PaaS offering that allows you to run, scale, and load balance containers. 
-
-**Azure Kubermetes Service**  
-Azure Kubernetes Service (AKS) is a PaaS offering that allows you to run and manage containers using Kubernetes. 
-
-## Serverless Functions
-[Serverless functions](/virtualization/serverless-functions/README.md) are provided through Azure's [PaaS](/cloud/concepts/README.md#cloud-service-models) offerings. 
-
-**Azure Functions**  
-Azure Functions is a PaaS offering used for serverless functions. 
+### Planned Maintenance  
+Planned maintenance is when Microsoft updates Azure. 

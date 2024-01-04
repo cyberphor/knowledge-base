@@ -1,0 +1,2 @@
+# Azure Virtual Desktop
+Azure Virtual Desktop (AVD) is a IaaS offering that provides a cloud-hosted version of a client operating system (e.g., Windows 10 or 11). AVD can be protected using Role-Based Access Control and Multi-Factor Authentication. 

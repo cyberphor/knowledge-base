@@ -1,5 +1,5 @@
 # Azure Network Services
-Azure's [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings include the network services listed and described below. 
+Azure's offerings include the network services below. 
 * [Virtual Networking](#virtual-networking)
 * [Segmentation](#segmentation)
 * [Communication Between Cloud Resources](#communication-between-cloud-resources)
