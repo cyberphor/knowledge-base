@@ -11,11 +11,12 @@ Azure is a cloud computing platform hosted by Microsoft.
 * [Azure PowerShell](/cloud/azure/interfaces/powershell/README.md)
 * [Azure CLI](/cloud/azure/interfaces/cli/README.md)
 
-## Azure Services
-* [Compute](/cloud/azure/services/compute/README.md)
-* [Network](/cloud/azure/services/network/README.md)
-* [Storage](/cloud/azure/services/storage/README.md)
-* [Security](/cloud/azure/services/security/README.md)
+## Azure Offerings
+* [DevOps](devops/README.md)
+* [Compute](compute/README.md)
+* [Network](network/README.md)
+* [Storage](storage/README.md)
+* [Security](security/README.md)
 
 ## Cost 
 ### Cost Factors

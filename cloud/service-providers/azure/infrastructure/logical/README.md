@@ -4,6 +4,7 @@ Logical infrastructure in Azure is represented by management groups, subscriptio
 * [Subscriptions](#subscriptions)
 * [Resource Groups](#resource-groups)
 * [Resources](#resources)
+* [Maintenance Events](#maintenance-events)
 
 ## Management Groups
 A management group is an organizational unit used to manage multiple subscriptions. Management groups may be necessary for businesses that have subordinate organizations with similar departments but different missions. For example, a brigade could organize its subscriptions by creating a management group for each battalion. Each battalion would then have a subscription for each staff section and company. Each staff section and company would then have a resource group. Management groups can be nested. Management group IDs cannot be updated after creation.
@@ -54,3 +55,15 @@ A resource tag is metadata used for to identify resources that relate to each ot
 * Managing security
 * Managing compliance levels
 * Managing automation
+
+## Maintenance Events
+Azure define outage categories: Unplanned Hardware Maintenance, Unexpected Downtime, and Planned Maintenance. 
+
+### Unplanned Hardware Maintenance  
+Unplanned hardware maintenance is when Azure predicts hardware you're using is about to fail. In response, a notification is sent to Azure's "Live Migration" service. This service will suspend your resources while they are moved to safer hardware. 
+
+### Unexpected Downtime  
+Unexpected downtime is when hardware failure was not predicted. 
+
+### Planned Maintenance  
+Planned maintenance is when Microsoft updates Azure. 

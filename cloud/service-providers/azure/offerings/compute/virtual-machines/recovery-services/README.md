@@ -1,5 +1,4 @@
 # Azure Recovery Services
-
 Azure Recovery Services is used for storing backup and recovery points. It also allows you to replicate, failover, and failback (return from a failover) to on-prem and/or Azure-based virtual machines.
 
 **Best Practices**  
