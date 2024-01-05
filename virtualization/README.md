@@ -1,4 +1,7 @@
 # Virtualization
+* [Virtual Machines](#virtual-machines)
+* [Containers](containers/README.md)
+* [Serverless Functions](#serverless-functions)
 
 ## Virtual Machines
 A virtual machine is a computer emulated using a hypervisor. 

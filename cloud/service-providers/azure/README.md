@@ -2,14 +2,14 @@
 Azure is a cloud computing platform hosted by Microsoft. 
 
 ## Azure Infrastructure
-* [Physical Infrastructure](/cloud/azure/infrastructure/physical/README.md)
-* [Logical Infrastructure](/cloud/azure/infrastructure/logical/README.md)
+* [Physical Infrastructure](infrastructure/physical/README.md)
+* [Logical Infrastructure](infrastructure/logical/README.md)
 
 ## Azure Interfaces
-* [Azure Portal](/cloud/azure/interfaces/portal/README.md)
-* [Azure Cloud Shell](/cloud/azure/interfaces/cloud-shell/README.md)
-* [Azure PowerShell](/cloud/azure/interfaces/powershell/README.md)
-* [Azure CLI](/cloud/azure/interfaces/cli/README.md)
+* [Azure Portal](interfaces/portal/README.md)
+* [Azure Cloud Shell](interfaces/cloud-shell/README.md)
+* [Azure PowerShell](interfaces/powershell/README.md)
+* [Azure CLI](interfaces/cli/README.md)
 
 ## Azure Offerings
 * [DevOps](devops/README.md)
@@ -26,7 +26,7 @@ The cost to use Azure is determined by the factors described below.
 * Maintenance: deprovision resources when they are no longer needed to reduce cost 
 * Geography: different regions will show different prices for the same resource type 
 * Network Traffic: putting data in Azure is mostly free, getting data out of Azure is not (Azure maintains a "bandwidth pricing page")
-* Subscription Type: Azure offers multiple [subscription types](/cloud/azure/infrastructure/logical/README.md#subscription-types) with varying costs
+* Subscription Type: Azure offers multiple [subscription types](infrastructure/logical/README.md#subscription-types) with varying costs
 * Azure Marketplace: products purchased in the Azure Marketplace may include paying for third-party services (e.g., paying for SonarQube's vulnerability scanner)
 
 ### Reducing Costs
