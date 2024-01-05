@@ -1,6 +1,5 @@
 # Azure Containers
 Containers in Azure can be configured to use Azure Files or Azure Disks. 
-Containers in Azure can be configured to use Azure Files or Azure Disks. 
 
 ## Azure Container Instances  
 The Azure Container Instances service is used to run containers. 
