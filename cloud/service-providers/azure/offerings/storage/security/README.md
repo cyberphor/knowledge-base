@@ -13,9 +13,6 @@ If a storage account has the "AllowBlobPublicAccess" setting enabled, Azure Blob
 ### Secure Transfer Required  
 If a storage account has the "Secure transfer enabled" setting enabled, REST APIs must connect using HTTPS. Connections via HTTP will be ignored. 
 
-### Private Link  
-Private Links allow you to use the Azure backbone connecting your storage account to Azure resources instead of the public Internet. 
-
 ## Authorization
 Azure Storage services support three different authorization options: [Public Read Access](#public-read-access), Shared Key, or Shared Access Signature (SAS) tokens. User delegated SAS tokens are the most secure because they require you to have an SAS token and know the associated user's Entra ID credentials. 
 

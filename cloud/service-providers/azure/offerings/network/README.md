@@ -1,58 +1,55 @@
 # Azure Network Services
-Azure's offerings include the network services below. 
-* [Virtual Networking](#virtual-networking)
-* [Segmentation](#segmentation)
-* [Communication Between Cloud Resources](#communication-between-cloud-resources)
-* [Communication With the Internet](#communication-with-the-internet)
-* [Communication With On-Prem Resources](#communication-with-on-prem-resources)
-  * [Azure VPN Gateway](/azure/services/network/vpn-gateway/README.md)
-  * [Azure ExpressRoute](/azure/services/network/expressroute/README.md)
-* [Traffic Filtering](#traffic-filtering)
-* [Domain Name Resolution](#domain-name-resolution)
+* [Azure Virtual Networks](#virtual-networks)
+* [Azure Subnets](#azure-subnets)
+* [Azure Network Security Groups](#azure-network-security-groups)
+* [Azure Network Interfaces](#azure-network-interfaces)
+* [Azure Private Links](#azure-private-links)
+* [Azure DNS](#azure-dns)
+* [Azure Load Balancers](#azure-load-balancers)
+* [Azure Traffic Manager](#azure-traffic-manager)
+* [Azure VPN Gateway](vpn-gateway/README.md)
+* [Azure ExpressRoute](expressroute/README.md)
 
-## Virtual Networking
-**Virtual Network**  
-A virtual network allows resources to communicate with each other and/or the Internet. 
+## Azure Virtual Networks
+Azure Virtual Networks (VNets) allows resources to communicate with each other and/or the Internet. They are used to create private clouds, hybrid clouds, and Virtual Private Networks (VPNs). Once you create a VNet, you can't change it's IP address scheme. 
 
-**Endpoints**  
-An endpoint is a virtual network interface. Endpoints give resources the ability to communicate on a virtual network. 
+### Peering  
+Peering is when two VNets, regardless of their region, are connected to each other. Peering traffic is private and transmitted over the Azure backbone. 
 
-**Peering**  
-Peering is when two virtual networks connect directly to each other (even if they are in separate regions). Peering traffic is transmitted over the Azure backbone and private. 
+## Azure Subnets
+Azure Subnets are segments of a VNet. They have unique IP address ranges. 
 
-**User-Defined Routes**  
-User-Defined Routes (UDR) are used to control routing tables. 
+### Reserved IP Addresses  
+Azure uses five IP addresses in every subnet. 
+* Network ID
+* Default gateway (e.g., first usable IP address)
+* DNS servers (e.g., the second and third usable IP addresses)
+* Broadcast address (e.g., the last IP address within the subnet)
 
-## Segmentation
-**Virtual Subnets**  
-A virtual subnet is a segment of a virtual network.
+## Azure Network Security Groups  
+Azure Network Security Groups (NSGs) filter traffic. By default, Azure routes traffic between all subnets in a VNet. 
 
-## Communication Between Cloud Resources 
-**Private Endpoints**  
-A private endpoint is a virtual network interface with a private IP address. 
+## Azure Network Interfaces 
+Azure network interfaces allow resources to communicate on a VNet. 
 
-**Service Endppoint**  
-A service endpoint allows resources to connect to Azure services as they are within the same virtual network. They are similar to Virtual Private Network (VPN) technology. 
+### Private Endpoints  
+A private endpoint is a network interface with a private IP address. 
 
-## Communication With the Internet
-**Public Endpoints**  
-A public endpoint is a virtual network interface with a public IP address. 
+### Service Endppoints  
+A service endpoint allows resources to connect to Azure services as if they're within the same virtual network. They're similar to VPNs. 
 
-**Load Balancers**  
-Load balancers are used to distribute traffic from the Internet to a resource. 
+### Public Endpoints
+A public endpoint is a network interface with a public IP address.
 
-## Communication with On-Prem Resources
-Communication with on-prem resources is provided through the two [IaaS](/cloud/concepts/README.md#cloud-service-models) offerings below.
-* [Azure VPN Gateway](/azure/services/network/vpn-gateway/README.md)
-* [Azure ExpressRoute](/azure/services/expressroute/README.md)
+## Azure Private Links  
+Azure Private Links allow you to make connections between Azure services using the Azure backbone instead of the public Internet. 
 
-## Traffic Filtering
-Traffic filtering is provided through Network Security Groups (NSG). 
+## Azure DNS
+Azure DNS allows you to use and manage Domain Name System (DNS) records. It's not used for purchasing domain names. DNS records hosted in Azure can be managed using the Azure portal, Azure CLI, and PowerShell. DNS records hosted in Azure can be protected using Azure's Role-Based Access Control features. 
 
-**Network Security Groups**  
-A NSG is a virtual firewall. It uses rules to approve or deny network communication.  
+## Azure Load Balancers  
+Azure Load balancers are used to distribute traffic. 
 
-## Domain Name Resolution
-Azure DNS allows you to use and manage Domain Name System (DNS) records. Azure DNS is not used for purchasing domain names. 
-* DNS records hosted in Azure can be managed using the Azure portal, Azure CLI, and PowerShell
-* DNS records hosted in Azure can be protected using Azure's Role-Based Access Control features
+## Azure Traffic Manager
+Azure Traffic Manager is a load balancing service. It distributes traffic from across the Internet to the deployment groups closest to the user. The Azure Traffic Manager also provides health monitoring. 
+ 
