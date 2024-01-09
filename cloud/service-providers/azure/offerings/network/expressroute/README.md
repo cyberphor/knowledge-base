@@ -1,5 +1,5 @@
 # Azure ExpressRoute
-Azure ExpressRoute is an [IaaS](/cloud/concepts/README.md#cloud-service-models) offering used to enable communication between on-prem resources and Azure. DNS queries, certificate revocation list checking, and Azure Content Delivery Network requests are still eventually sent over the public internet (i.e., you send traffic over an ExpressRoute connection, but it eventually finds its way onto the Internet because it required a public service).
+Azure ExpressRoute is an [IaaS](/cloud/concepts/README.md#cloud-service-models) offering used to enable communication between on-prem resources and Azure. DNS queries, certificate revocation list checking, and Azure Content Delivery Network requests are still eventually sent over the public internet (i.e., you send traffic over an ExpressRoute connection, but it eventually finds its way onto the Internet because it required a public service). Azure ExpressRoute connections can be configured to failover to Azure VPN Gateways. 
 
 **ExpressRoute**  
 An ExpressRoute is a direct and physical connection from an on-prem network to Azure. 
