@@ -3,9 +3,9 @@
 * [Azure Subnets](#azure-subnets)
 * [Azure Network Security Groups](#azure-network-security-groups)
 * [Azure Endpoints](#azure-endpoints)
-* [Azure DNS](#azure-dns)
+* [Azure DNS](dns/README.md)
 * [Azure Load Balancers](#azure-load-balancers)
-* [Azure Traffic Manager](#azure-traffic-manager)
+* [Azure Traffic Manager](traffic-manager/README.md)
 * [Azure VPN Gateway](vpn-gateway/README.md)
 * [Azure ExpressRoute](expressroute/README.md)
 
@@ -57,12 +57,6 @@ A Private Link is a Private Endpoint that uses the Azure backbone to access Azur
 **Service Endpoints**  
 A Service Endpoint is when an Azure service has been configured to accept connects from your VNet. They're useful when more than one person or resource (e.g., virtual machine) needs to access an Azure service. 
 
-## Azure DNS
-Azure DNS is used to manage Domain Name System (DNS) records. Azure DNS can be configured to protect your records using Azure RBAC. 
-
 ## Azure Load Balancers  
 Azure Load balancers are used to distribute traffic in Azure. 
-
-## Azure Traffic Manager
-Azure Traffic Manager is a load balancing service. It distributes traffic from the Internet to *deployment groups* closest to the user. It can also provide *health monitoring*. 
  
