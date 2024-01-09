@@ -7,4 +7,5 @@ Azure's offerings include the network services below.
 * [Azure ExpressRoute](expressroute/README.md)
 * [Azure VPN Gateway](vpn-gateway/README.md)
 * [Azure Load Balancers](load-balancers/)
+* [Azure Application Gateways](application-gateways/README.md)
 * [Azure Traffic Manager](traffic-manager/README.md) 
