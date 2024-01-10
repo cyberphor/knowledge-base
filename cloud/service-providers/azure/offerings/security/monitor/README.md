@@ -1,6 +1,5 @@
 # Azure Monitor
-Azure Monitor helps you collect, analyze, and respond to telemetry data. 
-Application Insights, Metrics Explorer, and Log Analytics allows you to collect and analyze while Dashboards and Workbooks visualize. Alerts are used to sending notifications of when certain conditions are met. Event Hubs allow you to integrate Azure Monitor into other tools like SIEM servers. 
+Azure Monitor helps you collect, analyze, and respond to telemetry data. Application Insights, Metrics Explorer, and Log Analytics allows you to collect and analyze while Dashboards and Workbooks visualize. Alerts are used to sending notifications of when certain conditions are met. Event Hubs allow you to integrate Azure Monitor into other tools like SIEM servers. 
 * [Activity Log](#activity-log)
 * [Application Insights](#application-insights)
 * [Metric Explorer](#metric-explorer)
