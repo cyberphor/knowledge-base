@@ -3,9 +3,6 @@
 ## Public Endpoint
 A Public Endpoint is a an Azure network interface with a public IP address. Public must leave the VNet to access Azure services. 
 
-### Public IP Addresses  
-The Standard SKU of a public IP address in Azure uses static IP addressing, denies inbound traffic by default, and is zone-redundant. The Basic SKU supports static and dynamic IP addresses. Yet, it's allows inbound traffic by default and is not zone-redundant. 
-
 ## Private Endpoint
 A Private Endpoint is a an Azure network interface with a private IP address. Private Endpoint traffic must leave the VNet to access Azure services. 
 

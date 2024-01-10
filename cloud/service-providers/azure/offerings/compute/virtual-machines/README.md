@@ -4,7 +4,6 @@ Azure Virtual Machines is a service for creating and using virtual machines.
 * [Managed Disks](#managed-disks)
 * [Vertical Scaling](#vertical-scaling)
 * [Horizontal Scaling](#horizontal-scaling)
-* [Availability Sets](#availability-sets)
 * [Azure Bastion](#azure-bastion)
 
 ## Planning Virtual Machine Configurations
@@ -72,17 +71,6 @@ You manually create and add a virtual machine to the scale set.
 
 **Uniform Orchestration Mode**  
 Azure automatically creates and adds a virtual model using a model you pick. 
-
-## Availability Sets
-Availability Sets are used to separate virtual machines into update or fault domains. They're created at the same time as a virtual machine. To add a virtual machine to an availability set, you must delete it and recreate it. Mitigate single-points-of-failure in your application by separating its components (e.g., frontend, backend, and data) into separate availability sets. Availability sets can be configured to load balance across an availability set. 
-
-### Update Domain  
-An update domain is a group of virtual machines that can be updated and/or rebooted at the same time. During [planned maintenance](/cloud/azure/offerings/compute/README.md#maintenance-events), only one update domain can be rebooted at a time. You can define up to 20 update domains. 
-
-### Fault Domain  
-A vault domain is a group of virtual machines that share the same hardware (e.g., switches or cabinets).
-
-![fault-domains.png](fault-domains.png) 
 
 ## Azure Bastion
 You can use SSH, RDP, or Azure Bastion to connect to a virtual machine. Azure Bastion is a proxy service for connecting to virtual machines within an Azure virtual network. If you use Azure Bastion for remote administration, your virtual machines don't need a public IP address. 

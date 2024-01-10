@@ -20,7 +20,7 @@ If you need to "delegate a domain," you must update the NS records your registra
 If you need to "delegate a subdomain," you have to create a child DNS zone first. Then, you'd follow the same process described above. 
 
 ### DNS Record Sets
-A DNS record set (aka "Resource Record Set") is a collection of related DNS records within a DNS zone. All DNS records within a DNS record set must have different IP addresses, but the same name (e.g., "cyberphor.com") and record type (e.g., "A"). If a DNS record set uses the "CNAME" type, it can only have one record. Azure DNS servers hide DNS record sets when they're empty. 
+A DNS record set (aka "Resource Record Set") is one domain name mapped to multiple IP addresses. Azure DNS servers hide DNS record sets when they're empty. 
 
 ## Azure Private DNS Zones
 Azure Private DNS Zones allow you to register and resolve domain names without needing a custom DNS solution. They can also be used to provide *split-horizon DNS.*
