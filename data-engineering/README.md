@@ -1,50 +1,42 @@
 # Data Engineering
-Data engineering is when you categorize, process, and visualize data to provide insight. 
+Data engineering is the process of categorizing, processing, and visualizing data to provide insight. Data Engineers are responsible for data stores and data pipelines. They organize data to maximize value and accessibility. 
+* [Data Encoding](#data-encoding)
+* [Data Types](#data-types)
+* [Data Operations](#data-operations)
 
-> The data problem of every organization is not storage, but how to organize data for maximum accessibility and value. 
+## Data Encoding
+**Text-Encoded Data**  
+Text-encoded data is meant to be read by a human. 
 
-## Categorizing Data
-You must categorize and understand data before you can use it. There are two ways to categorize data:
-* By their structure (structured, semi-structured, or unstructured)
-* By their encoding (e.g., text vs binary)
+**Binary-Encoded Data**  
+Binary-encoded data is meant to be read by a computer. 
 
-### Categorizing Data by Their Structure
-**Structured Data**  
-Structured data is data with range of fields that won't change. Structured data is either: quantitative or qualitative. 
+## Data Types
+### Structured Data
+Structured data is flat, has a predefined schema, and originates from table-based data sources like relational databases and CSV files. Data is considered flat when it uses rows and columns.
 
-*Quantitative*  
+**Quantitative**    
 Can be counted in numerical values using statistics such as mean, median, mode, frequency, min/max, and standard deviation (i.e., how data is dispersed in relation to the mean)
 * Discrete Quantitative: whole number values (cannot be divided)
 * Continuous Quantitative: fractional values (can be divided)
 
-*Qualitative*  
+**Qualitative**  
 Cannot be counted, but describes attributes.
 * Nominal Qualitative: unordered categories (e.g., colors)
 * Ordinal Qualitative: ordered categories (e.g., pain scale)
 * Binary Qualitative: belongs to one of two categories (e.g., pass or fail)
 
-**Semi-Structured Data**  
-Semi-structured data is data with a range of fields that may change. Below is a list of examples.
-* JSON
-* XML
-* Logs
-* The headers in an email
+### Semi-Structured Data
+Semi-structured data uses key-value pairs but does not have a predefined schema. Semi-structured data originates from nested data sources like JSON, XML, and email files. 
 
-**Unstructured Data**  
+### Unstructured Data  
 Unstructured data is data without a pre-defined set of fields. Unstructured data must be *preprocessed* for it to be converted into structured data. Below is a list of examples.
 * Pictures
 * Videos
 * Microsoft PowerPoint files
 * The body of an email
 
-### Categorizing Data by Their Encoding
-**Text**  
-Text-encoded data includes human-readable characters. 
-
-**Binary**  
-Binary-encoded data includes machine-readable characters. 
-
-## Processing Data
+## Data Operations
 There are two ways to process data: ETL (Extract, Transform, and Load) or ELT (Extract, Load, and Transform). ELT is preferred for handling big and/or unstructured data. 
 
 ### Extract
@@ -79,13 +71,10 @@ Data manipulation is when you modify data so it'll fit inside your target data s
 The loading phase is when you deliver your data set. The final result could be an object (e.g., list of dictionaries), file, or database.  
 
 **Extract, Transform, and Load (ETL)**  
-![etl-process.png](/data-science/data-analysis/etl-process.png)
+![etl-process.png](etl-process.png)
 
 **Extract, Load, and Transform (ELT)**   
-![elt-process.png](/data-science/data-analysis/elt-process.png)
-
-## Visualizing Data
-Data visualization is the process of generating a graphical representation of data. 
+![elt-process.png](elt-process.png)
 
 ### Visualization Types
 **Bar Charts**  
@@ -106,7 +95,7 @@ Histograms are used to show frequency or proportion of numerical data.
 **Box Plots**  
 Box plots are used to show the average, median, etc. of data.
 
-### Data Visualization Pitfalls
+**Data Visualization Pitfalls**  
 Below is a list of common data visualization pitfalls.
 * Using more variables than needed
 * Using the wrong visualization
@@ -115,7 +104,7 @@ Below is a list of common data visualization pitfalls.
 * Confusing correlation as causation 
 * Ignoring important attributes of your data
 
-### Data Visualization Best Practices
+**Data Visualization Best Practices**  
 Below is a list of data visualization best practices. 
 * Consider colorblindness
 * The less color the better
