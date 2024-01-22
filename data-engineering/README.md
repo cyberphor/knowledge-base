@@ -1,7 +1,26 @@
 # Data Engineering
-Data engineering is when you categorize, process, and visualize data to provide insight. 
+Data engineering is when you categorize, process, and visualize data to provide insight. The data problem of every organization is not storage, but how to organize data for maximum accessibility and value. 
+* [Data Properties](#data-properties)
+* [Data Access Patterns](#data-access-patterns)
+* [Data Science](#data-science)
 
-> The data problem of every organization is not storage, but how to organize data for maximum accessibility and value. 
+**Principles**  
+* Provenance: where did it come from?
+* Privacy: what am I allowed to do with it?
+* Protection: how do I avoid losing it?
+* Preparation: how to make it useful?
+
+## Data Properties
+Data is defined by the following properties: Structure, Volatility, and Granularity. 
+
+## Data Access Patterns
+There's two ways to access data: Sequential and Direct. 
+
+### Sequential 
+Data is accessed after the element before it is processed. 
+
+### Direct
+Data can be accessed without processing the element before it. 
 
 ## Categorizing Data
 You must categorize and understand data before you can use it. There are two ways to categorize data:

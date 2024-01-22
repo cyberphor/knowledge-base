@@ -17,7 +17,7 @@ Data science projects do not use Software Development Life Cycle (SDLC) models l
 3. Develop a model
 4. Deploy the model
 
-### Develop an Understanding of the Business
+### Business Understanding
 **Identify business objectives using the organization’s needs**  
 Background, key variables, standards of success.
 
@@ -33,7 +33,7 @@ Data Science Goals: your goals will answer one or more of the questions listed b
 * Anomaly Detection: determine if something is normal
 * Recommendation: determine the best COA
 
-### Develop an Understanding of the Data Set
+### Data Acquisition
 **Ingest data**  
 Your target analytic environment may originate from organic data or designed study data.
 
@@ -46,7 +46,7 @@ It may be batch-based (i.e., groups of files at a time), streaming-based, or a h
 **Prepare the dataset**  
 Selecting, cleaning, integrating, and formatting data.
 
-### Develop a Model
+### Model Development
 **Feature engineering**  
 Transform, binning temporal, text, image, and feature selection.
 
@@ -56,7 +56,7 @@ Algorithms, ensemble, parameter tuning, retraining.
 **Model evaluation**  
 Cross validation, model reporting, A/B testing.
 
-### Deploy the Model
+### Model Deployment
 **Scoring**  
 Text goes here.
 
