@@ -12,10 +12,10 @@ A Data Pipeline is technology that extracts operational data from a data source,
 
 ### Data Stores
 **Data Lake**  
-A Data Lake stores data in its original form. 
+A Data Lake stores operational data in files. 
 
 **Data Warehouse**  
-A Data Warehouse stores data that has been transformed and loaded into relational tables.
+A Data Warehouse stores analytical data into relational tables.
 
 ## Data Transformation
 Data Transformation is when you convert *operational data* from a single data source into *analytical data*. This is done using an ETL or ELT process. The primary difference between the two is when transformation occurs. ELT extracts, tranforms, and loads data while ELT extracts, loads, and then transforms data. It's best practice to use the latter when handling big and/or unstructured data.

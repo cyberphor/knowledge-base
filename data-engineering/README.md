@@ -10,9 +10,12 @@ Most Data Science teams have a Data Analyst, Data Scientist, Data Engineer, and 
 ```mermaid
 graph TB
     A1(("Data Engineer")) -- builds --> A2["Data pipelines"]
-    B1(("Data Analyst")) -- uses --> A2 -- to perform --> B2["EDA"]
-    C1(("Data Scientist")) -- uses --> B2 -- to develop --> C2["Models"] 
-    D1(("ML Engineer")) -- to deploy --> C2
+    B1(("Data Analyst")) -- does --> B2["EDA"]
+    C1(("Data Scientist")) -- develops --> C2["Models"] 
+    D1(("ML Engineer")) -- deploys --> C2
+
+    B2 -- depends on --> A2
+    C2 -- depends on --> A2
 ```
     
 
