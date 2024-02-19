@@ -41,3 +41,10 @@ A router provided by your Cloud Service Provider (not Kubernetes). Allows you to
 
 **ExternalName**  
 Allows you to use an existing domain name. 
+
+### North-to-South Traffic
+**Ingress**  
+Allows you to expose nodes and ports using "Layer 7" routing (i.e., HTTP endpoints and headers). Yet, it lacks standardization, authorization levels, and support for protocols that are not HTTP and HTTPS. It's also tedious to coordinate Ingress updates between multiple teams. 
+
+**Gateway API**  
+Allows you to expose nodes and ports using "Layer 7" routing with more standardization, authorization levels, and protocol support than an Ingress. It also provides additional resources to make it easier to coordinate updates with other teams. 
