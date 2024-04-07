@@ -20,5 +20,19 @@ Player, enemies, objects, and animations.
 ## App Icons
 [https://www.appicon.co/](https://www.appicon.co/)
 
+## SpriteKit
+**SpriteKit**  
+SpriteKit is Swift's framework for making 2D games.
+
+**Sprite**   
+A sprite is a 2D object. 
+
+**Sprite Node**  
+A sprite node holds the metadata of a sprite (e.g., position, rotation, and scale) within a *scene graph*. 
+
+**Texture**  
+A texture is the image overlayed onto a sprite. 
+
 ## References
 * [Apple Developer Documentation Archive](https://developer.apple.com/library/archive/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/LoadingImages/LoadingImages.html)
+* [Introducing Xcode’s Scene Editor](https://www.checksimgames.com/introducing-xcodes-scene-editor/)
