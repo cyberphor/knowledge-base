@@ -20,6 +20,23 @@ Player, enemies, objects, and animations.
 ## App Icons
 [https://www.appicon.co/](https://www.appicon.co/)
 
+## Cocoa Application Terms
+**Storyboard**  
+A storyboard is a visual representation of your application's user interface. They allow you to define how data is transferred between *scenes*. 
+
+**Scene**  
+A scene is a screen's worth of content. For example, when you open an application, you're looking at one scene. If you tap a button and the screen changes, you're looking at another scene. It represents a view and view controller. 
+
+**View**  
+A view is an area of a window that can respond to user input. 
+
+**Seque**  
+A seque represents a transition between *view controllers*. 
+
+**View Controller**  
+A view controller listens for model object changes and updates view objects. 
+
+
 ## SpriteKit
 **SpriteKit**  
 SpriteKit is Swift's framework for making 2D games.
